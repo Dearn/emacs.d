@@ -1,0 +1,83 @@
+;; Object pygame/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pygame/"
+  :tables
+  (list
+    (semanticdb-table "Mouse.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("random" include nil nil [1 14])
+            ("pygame" include nil nil [15 28])
+            ("white" variable nil nil [29 42])
+            ("Mouse" type
+               (:superclasses ("pygame.sprite.Sprite")
+                :members 
+                  ( ("x" variable nil (reparse-symbol indented_block_body) [216 221])
+                    ("y" variable nil (reparse-symbol indented_block_body) [226 231])
+                    ("change_x" variable nil (reparse-symbol indented_block_body) [237 249])
+                    ("change_y" variable nil (reparse-symbol indented_block_body) [254 266])
+                    ("size" variable nil (reparse-symbol indented_block_body) [272 281])
+                    ("color" variable nil (reparse-symbol indented_block_body) [286 307])
+                    ("screen_width" variable nil (reparse-symbol indented_block_body) [312 328])
+                    ("screen_height" variable nil (reparse-symbol indented_block_body) [333 350])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [412 465])
+                            ("self" variable nil (reparse-symbol indented_block_body) [483 515])
+                            ("self" variable nil (reparse-symbol indented_block_body) [524 558]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [368 372])
+                            ("screen_width" variable nil (reparse-symbol function_parameters) [374 386])
+                            ("screen_height" variable nil (reparse-symbol function_parameters) [388 401]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [355 559])
+                    ("move" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [572 576]))                          )
+                        (reparse-symbol indented_block_body) [563 1270])
+                    ("draw" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1292 1296])
+                            ("screen" variable nil (reparse-symbol function_parameters) [1297 1303]))                          )
+                        (reparse-symbol indented_block_body) [1283 1434]))                  
+                :type "class")
+                nil [43 1434]))          
+      :file "Mouse.py"
+      :pointmax 1434
+      :fsize 1479
+      :lastmodtime '(21224 8569 845443 167000)
+      :unmatched-syntax nil)
+    (semanticdb-table "main.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("pygame" include nil nil [1 14])
+            ("random" include nil nil [15 28])
+            ("Mouse" include nil nil [29 41])
+            ("screen_width" variable nil nil [42 61])
+            ("screen_height" variable nil nil [62 81])
+            ("black" variable nil nil [83 98])
+            ("white" variable nil nil [99 120])
+            ("pygame" code nil nil [121 134])
+            ("size" variable nil nil [135 171])
+            ("screen" variable nil nil [173 211])
+            ("player_image" variable nil nil [213 266])
+            ("color" variable nil nil [267 301])
+            ("player_image" code nil nil [302 334])
+            ("mice" variable nil nil [335 344])
+            ("for" code nil nil [345 563])
+            ("clock" variable nil nil [683 710])
+            ("pygame" code nil nil [711 742])
+            ("done" variable nil nil [744 756])
+            ("while" code nil nil [758 1094])
+            ("pygame" code nil nil [1094 1107]))          
+      :file "main.py"
+      :pointmax 1108
+      :fsize 1161
+      :lastmodtime '(21224 50422 234628 290000)
+      :unmatched-syntax nil))
+  :file "!home!dearn!pygame!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

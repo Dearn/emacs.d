@@ -1,0 +1,16 @@
+;; Object git-commit-mode-20140110.833/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "git-commit-mode-20140110.833/"
+  :tables
+  (list
+    (semanticdb-table "git-commit-mode-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "git-commit-mode-autoloads.el"
+      :pointmax 287
+      :fsize 1021
+      :lastmodtime '(21216 57814 181137 718000)
+      :unmatched-syntax nil))
+  :file "!home!dearn!.emacs.d!elpa!git-commit-mode-20140110.833!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

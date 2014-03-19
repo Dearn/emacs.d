@@ -1,0 +1,16 @@
+;; Object lua-mode-20140306.2249/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lua-mode-20140306.2249/"
+  :tables
+  (list
+    (semanticdb-table "lua-mode-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "lua-mode-autoloads.el"
+      :pointmax 266
+      :fsize 698
+      :lastmodtime '(21285 55006 435332 747000)
+      :unmatched-syntax nil))
+  :file "!home!dearn!.emacs.d!elpa!lua-mode-20140306.2249!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

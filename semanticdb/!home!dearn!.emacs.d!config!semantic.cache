@@ -1,0 +1,67 @@
+;; Object config/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "config/"
+  :tables
+  (list
+    (semanticdb-table "cedet.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("setq" code nil nil [342 423])
+            ("load-file" code nil nil [425 483])
+            ("add-to-list" code nil nil [484 543])
+            ("add-to-list" code nil nil [590 665])
+            ("add-to-list" code nil nil [666 736])
+            ("add-to-list" code nil nil [737 814])
+            ("add-to-list" code nil nil [815 888])
+            ("add-to-list" code nil nil [889 957])
+            ("add-to-list" code nil nil [958 1035])
+            ("add-to-list" code nil nil [1036 1106])
+            ("semantic/ia" include nil nil [1466 1488])
+            ("semantic/bovine/gcc" include nil nil [1489 1519])
+            ("semantic-mode" code nil nil [1556 1573])
+            ("eassist" include nil nil [1599 1617])
+            ("alexott/cedet-hook" function nil nil [1645 2141])
+            ("add-hook" code nil nil [2142 2192])
+            ("add-hook" code nil nil [2193 2239])
+            ("add-hook" code nil nil [2240 2288])
+            ("add-hook" code nil nil [2289 2341])
+            ("add-hook" code nil nil [2342 2390])
+            ("alexott/c-mode-cedet-hook" function nil nil [2392 2621])
+            ("add-hook" code nil nil [2622 2679])
+            ("semanticdb-enable-gnu-global-databases" code nil nil [2681 2731])
+            ("semanticdb-enable-gnu-global-databases" code nil nil [2732 2784])
+            ("when" code nil nil [2786 2870])
+            ("global-srecode-minor-mode" code nil nil [2883 2912])
+            ("global-ede-mode" code nil nil [2921 2940])
+            ("ede-enable-generic-projects" code nil nil [2942 2971])
+            ("semantic-load-enable-code-helpers" code nil nil [2972 3007])
+            ("setq" code nil nil [3094 3132])
+            ("semantic-add-system-include" code nil nil [3133 3200])
+            ("semantic-add-system-include" code nil nil [3201 3271])
+            ("semantic-add-system-include" code nil nil [3272 3343])
+            ("semantic-add-system-include" code nil nil [3344 3415])
+            ("semantic-add-system-include" code nil nil [3416 3490])
+            ("semantic-add-system-include" code nil nil [3491 3561])
+            ("semantic-add-system-include" code nil nil [3562 3614])
+            ("add-to-list" code nil nil [3615 3675])
+            ("semantic-add-system-include" code nil nil [3678 3743])
+            ("semantic-add-system-include" code nil nil [3744 3812])
+            ("semantic-add-system-include" code nil nil [3813 3882])
+            ("semantic-add-system-include" code nil nil [3883 3952])
+            ("semantic-add-system-include" code nil nil [3953 4025])
+            ("semantic-add-system-include" code nil nil [4026 4094])
+            ("semantic-add-system-include" code nil nil [4095 4145])
+            ("add-to-list" code nil nil [4146 4204])
+            ("semantic-lex-c-preprocessor-symbol-file" variable (:default-value (quote nil)) nil [4207 4259])
+            ("add-to-list" code nil nil [4261 4353])
+            ("add-to-list" code nil nil [4354 4451])
+            ("add-to-list" code nil nil [4452 4544])
+            ("add-hook" code nil nil [4549 4637]))          
+      :file "cedet.el"
+      :pointmax 4638
+      :fsize 4637
+      :lastmodtime '(21231 51266 144340 104000)
+      :unmatched-syntax nil))
+  :file "!home!dearn!.emacs.d!config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

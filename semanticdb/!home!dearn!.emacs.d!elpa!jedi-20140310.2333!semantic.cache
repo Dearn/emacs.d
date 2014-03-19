@@ -1,0 +1,16 @@
+;; Object jedi-20140310.2333/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "jedi-20140310.2333/"
+  :tables
+  (list
+    (semanticdb-table "jedi-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "jedi-autoloads.el"
+      :pointmax 254
+      :fsize 3849
+      :lastmodtime '(21285 55007 916332 884000)
+      :unmatched-syntax nil))
+  :file "!home!dearn!.emacs.d!elpa!jedi-20140310.2333!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,62 @@
+;; Object dearn/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dearn/"
+  :tables
+  (list
+    (semanticdb-table ".emacs"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("add-to-list" code nil nil [1 39])
+            ("load" code nil nil [40 75])
+            ("add-to-list" code nil nil [76 153])
+            ("ecb" include nil nil [154 168])
+            ("load-theme" code nil nil [196 218])
+            ("defalias" code nil nil [219 252])
+            ("setq" code nil nil [253 304])
+            ("package" include nil nil [306 324])
+            ("add-to-list" code nil nil [325 410])
+            ("package-initialize" code nil nil [411 431])
+            ("tool-bar-mode" code nil nil [469 487])
+            ("setq" code nil nil [488 532])
+            ("setq" code nil nil [533 568])
+            ("setq" code nil nil [569 602])
+            ("display-battery-mode" code nil nil [603 627])
+            ("display-time-mode" code nil nil [628 649])
+            ("show-paren-mode" code nil nil [675 694])
+            ("setq" code nil nil [695 720])
+            ("ido-mode" code nil nil [722 734])
+            ("global-linum-mode" code nil nil [735 756])
+            ("setq" code nil nil [757 778])
+            ("set-scroll-bar-mode" code nil nil [779 807])
+            ("global-set-key" code nil nil [1047 1099])
+            ("global-set-key" code nil nil [1100 1154])
+            ("yasnippet" include nil nil [1647 1667])
+            ("yas/load-directory" code nil nil [1690 1743])
+            ("yas-global-mode" code nil nil [1744 1763])
+            ("bind-magit-status-key" function nil nil [2112 2186])
+            ("bind-compile-key" function nil nil [2187 2252])
+            ("add-hook" code nil nil [2254 2297])
+            ("add-hook" code nil nil [2298 2339])
+            ("add-hook" code nil nil [2340 2388])
+            ("add-hook" code nil nil [2389 2439])
+            ("add-hook" code nil nil [2442 2651])
+            ("add-hook" code nil nil [2663 2703])
+            ("octave-mode" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [2705 2747])
+            ("setq" code nil nil [2748 2824])
+            ("setq" code nil nil [2826 2899])
+            ("auto-complete-config" include nil nil [2919 2950])
+            ("setq" code nil nil [2951 3030])
+            ("ac-config-default" code nil nil [3031 3050])
+            ("custom-set-variables" code nil nil [3060 3788])
+            ("custom-set-faces" code nil nil [3789 4028]))          
+      :file ".emacs"
+      :pointmax 4029
+      :fsize 4028
+      :lastmodtime '(21288 20841 755998 834000)
+      :unmatched-syntax nil))
+  :file "!home!dearn!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

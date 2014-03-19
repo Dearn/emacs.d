@@ -1,0 +1,577 @@
+;; Object calc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "calc/"
+  :tables
+  (list
+    (semanticdb-table "calc.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("calc-macs" include nil nil [6927 6947])
+            ("declare-function" code nil nil [6999 7082])
+            ("declare-function" code nil nil [7083 7147])
+            ("declare-function" code nil nil [7148 7198])
+            ("declare-function" code nil nil [7199 7261])
+            ("declare-function" code nil nil [7262 7314])
+            ("declare-function" code nil nil [7315 7384])
+            ("declare-function" code nil nil [7385 7468])
+            ("declare-function" code nil nil [7469 7540])
+            ("declare-function" code nil nil [7541 7602])
+            ("declare-function" code nil nil [7603 7649])
+            ("declare-function" code nil nil [7650 7698])
+            ("declare-function" code nil nil [7699 7762])
+            ("declare-function" code nil nil [7763 7825])
+            ("declare-function" code nil nil [7826 7891])
+            ("declare-function" code nil nil [7892 7960])
+            ("declare-function" code nil nil [7961 8025])
+            ("declare-function" code nil nil [8026 8097])
+            ("declare-function" code nil nil [8098 8154])
+            ("declare-function" code nil nil [8155 8208])
+            ("declare-function" code nil nil [8209 8272])
+            ("declare-function" code nil nil [8273 8320])
+            ("declare-function" code nil nil [8321 8382])
+            ("declare-function" code nil nil [8383 8444])
+            ("declare-function" code nil nil [8445 8517])
+            ("declare-function" code nil nil [8518 8567])
+            ("declare-function" code nil nil [8568 8646])
+            ("declare-function" code nil nil [8647 8712])
+            ("declare-function" code nil nil [8713 8768])
+            ("declare-function" code nil nil [8769 8823])
+            ("declare-function" code nil nil [8824 8896])
+            ("declare-function" code nil nil [8897 8941])
+            ("declare-function" code nil nil [8942 9005])
+            ("declare-function" code nil nil [9006 9064])
+            ("declare-function" code nil nil [9065 9115])
+            ("declare-function" code nil nil [9116 9170])
+            ("declare-function" code nil nil [9171 9230])
+            ("declare-function" code nil nil [9231 9289])
+            ("declare-function" code nil nil [9290 9391])
+            ("declare-function" code nil nil [9392 9452])
+            ("declare-function" code nil nil [9453 9506])
+            ("declare-function" code nil nil [9507 9564])
+            ("declare-function" code nil nil [9565 9617])
+            ("declare-function" code nil nil [9618 9668])
+            ("declare-function" code nil nil [9669 9724])
+            ("declare-function" code nil nil [9725 9785])
+            ("declare-function" code nil nil [9786 9843])
+            ("declare-function" code nil nil [9844 9895])
+            ("declare-function" code nil nil [9896 9951])
+            ("declare-function" code nil nil [9952 10012])
+            ("declare-function" code nil nil [10013 10070])
+            ("declare-function" code nil nil [10071 10140])
+            ("declare-function" code nil nil [10141 10195])
+            ("declare-function" code nil nil [10196 10247])
+            ("declare-function" code nil nil [10248 10303])
+            ("declare-function" code nil nil [10304 10359])
+            ("declare-function" code nil nil [10360 10420])
+            ("declare-function" code nil nil [10421 10478])
+            ("declare-function" code nil nil [10479 10549])
+            ("declare-function" code nil nil [10550 10599])
+            ("declare-function" code nil nil [10600 10676])
+            ("declare-function" code nil nil [10677 10739])
+            ("declare-function" code nil nil [10740 10806])
+            ("declare-function" code nil nil [10807 10861])
+            ("declare-function" code nil nil [10862 10914])
+            ("declare-function" code nil nil [10915 10966])
+            ("declare-function" code nil nil [10967 11028])
+            ("declare-function" code nil nil [11029 11081])
+            ("declare-function" code nil nil [11082 11127])
+            ("declare-function" code nil nil [11128 11191])
+            ("declare-function" code nil nil [11192 11250])
+            ("declare-function" code nil nil [11251 11307])
+            ("declare-function" code nil nil [11308 11372])
+            ("declare-function" code nil nil [11373 11457])
+            ("declare-function" code nil nil [11458 11537])
+            ("declare-function" code nil nil [11538 11617])
+            ("declare-function" code nil nil [11618 11681])
+            ("declare-function" code nil nil [11682 11735])
+            ("calc" customgroup (:user-visible-flag t) nil [11738 11868])
+            ("calc-settings-file" variable (:default-value (locate-user-emacs-file "calc.el" ".calc.el")) nil [11965 12122])
+            ("calc-language-alist" variable (:default-value (quote ((latex-mode . latex) (tex-mode . tex) (plain-tex-mode . tex) (context-mode . tex) (nroff-mode . eqn) (pascal-mode . pascal) (c-mode . c) (c++-mode . c) (fortran-mode . fortran) (f90-mode . fortran) (texinfo-mode . calc-normal-language)))) nil [12124 12623])
+            ("calc-embedded-announce-formula" variable (:default-value "%Embed
+\\(% .*
+\\)*") nil [12625 12808])
+            ("calc-embedded-announce-formula-alist" variable (:default-value (quote ((c++-mode . "//Embed
+\\(// .*
+\\)*") (c-mode . "/\\*Embed\\*/
+\\(/\\* .*\\*/
+\\)*") (f90-mode . "!Embed
+\\(! .*
+\\)*") (fortran-mode . "C Embed
+\\(C .*
+\\)*") (html-helper-mode . "<!-- Embed -->
+\\(<!-- .* -->
+\\)*") (html-mode . "<!-- Embed -->
+\\(<!-- .* -->
+\\)*") (nroff-mode . "\\\\\"Embed
+\\(\\\\\" .*
+\\)*") (pascal-mode . "{Embed}
+\\({.*}
+\\)*") (sgml-mode . "<!-- Embed -->
+\\(<!-- .* -->
+\\)*") (xml-mode . "<!-- Embed -->
+\\(<!-- .* -->
+\\)*") (texinfo-mode . "@c Embed
+\\(@c .*
+\\)*")))) nil [12810 13676])
+            ("calc-embedded-open-formula" variable (:default-value "\\`\\|^
+\\|\\$\\$?\\|\\\\\\[\\|^\\\\begin[^{].*
+\\|^\\\\begin{.*[^x]}.*
+\\|^@.*
+\\|^\\.EQ.*
+\\|\\\\(\\|^%
+\\|^\\.\\\\\"
+") nil [13678 13968])
+            ("calc-embedded-close-formula" variable (:default-value "\\'\\|
+$\\|\\$\\$?\\|\\\\]\\|^\\\\end[^{].*
+\\|^\\\\end{.*[^x]}.*
+\\|^@.*
+\\|^\\.EN.*
+\\|\\\\)\\|
+%
+\\|^\\.\\\\\"
+") nil [13970 14256])
+            ("calc-embedded-open-close-formula-alist" variable nil nil [14258 14617])
+            ("calc-embedded-word-regexp" variable (:default-value "[-+]?[0-9]+\\(\\.[0-9]+\\)?\\([eE][-+]?[0-9]+\\)?") nil [14619 14811])
+            ("calc-embedded-word-regexp-alist" variable nil nil [14813 15062])
+            ("calc-embedded-open-plain" variable (:default-value "%%% ") nil [15064 15294])
+            ("calc-embedded-close-plain" variable (:default-value " %%%
+") nil [15296 15476])
+            ("calc-embedded-open-close-plain-alist" variable (:default-value (quote ((c++-mode "// %% " " %%
+") (c-mode "/* %% " " %% */
+") (f90-mode "! %% " " %%
+") (fortran-mode "C %% " " %%
+") (html-helper-mode "<!-- %% " " %% -->
+") (html-mode "<!-- %% " " %% -->
+") (nroff-mode "\\\" %% " " %%
+") (pascal-mode "{%% " " %%}
+") (sgml-mode "<!-- %% " " %% -->
+") (xml-mode "<!-- %% " " %% -->
+") (texinfo-mode "@c %% " " %%
+")))) nil [15478 16266])
+            ("calc-embedded-open-new-formula" variable (:default-value "
+
+") nil [16268 16433])
+            ("calc-embedded-close-new-formula" variable (:default-value "
+
+") nil [16435 16599])
+            ("calc-embedded-open-close-new-formula-alist" variable nil nil [16601 16976])
+            ("calc-embedded-open-mode" variable (:default-value "% ") nil [16978 17189])
+            ("calc-embedded-close-mode" variable (:default-value "
+") nil [17191 17402])
+            ("calc-embedded-open-close-mode-alist" variable (:default-value (quote ((c++-mode "// " "
+") (c-mode "/* " " */
+") (f90-mode "! " "
+") (fortran-mode "C " "
+") (html-helper-mode "<!-- " " -->
+") (html-mode "<!-- " " -->
+") (nroff-mode "\\\" " "
+") (pascal-mode "{ " " }
+") (sgml-mode "<!-- " " -->
+") (xml-mode "<!-- " " -->
+") (texinfo-mode "@c " "
+")))) nil [17404 18128])
+            ("calc-gnuplot-name" variable (:default-value (if (eq system-type (quote windows-nt)) "pgnuplot" "gnuplot")) nil [18130 18303])
+            ("calc-gnuplot-plot-command" variable nil nil [18305 18473])
+            ("calc-gnuplot-print-command" variable (:default-value "lp %s") nil [18475 18646])
+            ("calc-multiplication-has-precedence" variable (:default-value t) nil [18648 18806])
+            ("calc-ensure-consistent-units" variable nil nil [18808 18997])
+            ("calc-context-sensitive-enter" variable nil nil [18999 19204])
+            ("calc-undo-length" variable (:default-value 100) nil [19206 19343])
+            ("calc-highlight-selections-with-faces" variable nil nil [19345 19801])
+            ("calc-lu-field-reference" variable (:default-value "20 uPa") nil [19803 19963])
+            ("calc-lu-power-reference" variable (:default-value "mW") nil [19965 20121])
+            ("calc-note-threshold" variable (:default-value "1") nil [20123 20301])
+            ("math-format-date-cache" variable nil nil [20303 20334])
+            ("calc-nonselected-face" variable
+               (:default-value (quote ((t :inherit shadow :slant italic)))
+                :type "face")
+                nil [20352 20505])
+            ("calc-selected-face" variable
+               (:default-value (quote ((t :weight bold)))
+                :type "face")
+                nil [20507 20629])
+            ("calc-bug-address" variable (:default-value "jay.p.belanger@gmail.com") nil [20631 20752])
+            ("calc-scan-for-dels" variable (:default-value t) nil [20754 20880])
+            ("calc-stack" variable (:default-value (quote ((top-of-stack 1 nil)))) nil [20882 21017])
+            ("calc-stack-top" variable (:default-value 1) nil [21019 21147])
+            ("calc-display-sci-high" variable nil nil [21149 21325])
+            ("calc-display-sci-low" variable (:default-value -3) nil [21327 21471])
+            ("calc-other-modes" variable nil nil [21473 21570])
+            ("calc-Y-help-msgs" variable nil nil [21572 21640])
+            ("calc-loaded-settings-file" variable nil nil [21642 21731])
+            ("calc-mode-var-list" variable (:default-value (quote nil)) nil [21734 21817])
+            ("defcalcmodevar" function (:arguments ("var" "defval" "doc")) nil [21819 22119])
+            ("calc-mode-var-list-restore-default-values" function nil nil [22121 22334])
+            ("calc-mode-var-list-restore-saved-values" function nil nil [22336 23564])
+            ("defcalcmodevar" code nil nil [23566 23690])
+            ("defcalcmodevar" code nil nil [23692 23789])
+            ("defcalcmodevar" code nil nil [23791 23905])
+            ("defcalcmodevar" code nil nil [23907 24076])
+            ("defcalcmodevar" code nil nil [24078 24354])
+            ("defcalcmodevar" code nil nil [24356 24456])
+            ("defcalcmodevar" code nil nil [24458 24575])
+            ("defcalcmodevar" code nil nil [24577 24787])
+            ("defcalcmodevar" code nil nil [24789 24954])
+            ("defcalcmodevar" code nil nil [24956 25067])
+            ("defcalcmodevar" code nil nil [25069 25190])
+            ("defcalcmodevar" code nil nil [25192 25292])
+            ("defcalcmodevar" code nil nil [25294 25489])
+            ("defcalcmodevar" code nil nil [25491 25648])
+            ("defcalcmodevar" code nil nil [25650 26492])
+            ("defcalcmodevar" code nil nil [26494 26601])
+            ("defcalcmodevar" code nil nil [26603 26825])
+            ("defcalcmodevar" code nil nil [26827 26934])
+            ("defcalcmodevar" code nil nil [26936 27137])
+            ("defcalcmodevar" code nil nil [27139 27247])
+            ("defcalcmodevar" code nil nil [27249 27430])
+            ("defcalcmodevar" code nil nil [27432 27525])
+            ("defcalcmodevar" code nil nil [27527 27640])
+            ("defcalcmodevar" code nil nil [27642 27743])
+            ("defcalcmodevar" code nil nil [27745 27857])
+            ("defcalcmodevar" code nil nil [27859 27967])
+            ("defcalcmodevar" code nil nil [27969 28277])
+            ("defcalcmodevar" code nil nil [28279 28967])
+            ("defcalcmodevar" code nil nil [28969 29080])
+            ("defcalcmodevar" code nil nil [29082 29158])
+            ("defcalcmodevar" code nil nil [29160 29238])
+            ("defcalcmodevar" code nil nil [29240 29355])
+            ("defcalcmodevar" code nil nil [29357 29450])
+            ("defcalcmodevar" code nil nil [29452 29900])
+            ("defcalcmodevar" code nil nil [29902 30005])
+            ("defcalcmodevar" code nil nil [30007 30114])
+            ("defcalcmodevar" code nil nil [30116 30225])
+            ("defcalcmodevar" code nil nil [30227 30377])
+            ("defcalcmodevar" code nil nil [30379 30543])
+            ("defcalcmodevar" code nil nil [30545 30659])
+            ("defcalcmodevar" code nil nil [30661 30842])
+            ("defcalcmodevar" code nil nil [30844 31203])
+            ("defcalcmodevar" code nil nil [31205 31310])
+            ("defcalcmodevar" code nil nil [31313 31432])
+            ("defcalcmodevar" code nil nil [31434 31512])
+            ("defcalcmodevar" code nil nil [31514 31622])
+            ("defcalcmodevar" code nil nil [31624 31818])
+            ("defcalcmodevar" code nil nil [31820 31972])
+            ("defcalcmodevar" code nil nil [31974 32086])
+            ("defcalcmodevar" code nil nil [32088 32220])
+            ("defcalcmodevar" code nil nil [32222 32339])
+            ("defcalcmodevar" code nil nil [32341 32438])
+            ("defcalcmodevar" code nil nil [32440 32483])
+            ("defcalcmodevar" code nil nil [32485 32823])
+            ("defcalcmodevar" code nil nil [32825 32951])
+            ("defcalcmodevar" code nil nil [32953 33047])
+            ("defcalcmodevar" code nil nil [33049 33142])
+            ("defcalcmodevar" code nil nil [33144 33241])
+            ("defcalcmodevar" code nil nil [33243 33347])
+            ("defcalcmodevar" code nil nil [33349 33452])
+            ("defcalcmodevar" code nil nil [33454 33559])
+            ("defcalcmodevar" code nil nil [33561 33655])
+            ("defcalcmodevar" code nil nil [33657 33748])
+            ("defcalcmodevar" code nil nil [33750 33859])
+            ("defcalcmodevar" code nil nil [33861 33984])
+            ("defcalcmodevar" code nil nil [33986 34104])
+            ("defcalcmodevar" code nil nil [34106 34199])
+            ("calc-local-var-list" variable
+               (:constant-flag t
+                :default-value (quote (calc-stack calc-stack-top calc-undo-list calc-redo-list calc-always-load-extensions calc-mode-save-mode calc-display-raw calc-line-numbering calc-line-breaking calc-display-just calc-display-origin calc-left-label calc-right-label calc-auto-why calc-algebraic-mode calc-incomplete-algebraic-mode calc-symbolic-mode calc-matrix-mode calc-inverse-flag calc-hyperbolic-flag calc-option-flag calc-keep-args-flag calc-angle-mode calc-number-radix calc-leading-zeros calc-group-digits calc-group-char calc-point-char calc-frac-format calc-prefer-frac calc-hms-format calc-date-format calc-standard-date-formats calc-float-format calc-full-float-format calc-complex-format calc-matrix-just calc-full-vectors calc-full-trail-vectors calc-break-vectors calc-vector-commas calc-vector-brackets calc-matrix-brackets calc-complex-mode calc-infinite-mode calc-display-strings calc-simplify-mode calc-auto-recompute calc-autorange-units calc-show-plain calc-show-selections calc-use-selections calc-assoc-selections calc-word-size calc-internal-prec)))
+                nil [34201 35514])
+            ("calc-mode-hook" variable nil nil [35516 35581])
+            ("calc-trail-mode-hook" variable nil nil [35583 35660])
+            ("calc-start-hook" variable nil nil [35662 35725])
+            ("calc-end-hook" variable nil nil [35727 35785])
+            ("calc-load-hook" variable nil nil [35787 35851])
+            ("calc-window-hook" variable nil nil [35853 35925])
+            ("calc-trail-window-hook" variable nil nil [35927 36011])
+            ("calc-embedded-new-buffer-hook" variable nil nil [36013 36113])
+            ("calc-embedded-new-formula-hook" variable nil nil [36115 36217])
+            ("calc-embedded-mode-hook" variable nil nil [36219 36297])
+            ("put" code nil nil [36352 36389])
+            ("put" code nil nil [36390 36433])
+            ("define-error" code nil nil [36435 36483])
+            ("define-error" code nil nil [36484 36567])
+            ("define-error" code nil nil [36569 36645])
+            ("define-error" code nil nil [36646 36724])
+            ("calc-trail-pointer" variable nil nil [36726 36800])
+            ("calc-trail-overlay" variable nil nil [36801 36871])
+            ("calc-undo-list" variable nil nil [36872 36945])
+            ("calc-redo-list" variable nil nil [36946 37013])
+            ("calc-main-buffer" variable nil nil [37014 37079])
+            ("calc-buffer-list" variable nil nil [37080 37141])
+            ("calc-trail-buffer" variable nil nil [37142 37208])
+            ("calc-why" variable nil nil [37209 37270])
+            ("calc-next-why" variable nil nil [37271 37297])
+            ("calc-inverse-flag" variable nil nil [37298 37371])
+            ("calc-hyperbolic-flag" variable nil nil [37372 37451])
+            ("calc-option-flag" variable nil nil [37452 37535])
+            ("calc-keep-args-flag" variable nil nil [37536 37643])
+            ("calc-function-open" variable (:default-value "(") nil [37644 37731])
+            ("calc-function-close" variable (:default-value ")") nil [37732 37821])
+            ("calc-language-output-filter" variable nil nil [37822 37923])
+            ("calc-language-input-filter" variable nil nil [37924 38022])
+            ("calc-radix-formatter" variable nil nil [38023 38110])
+            ("calc-lang-slash-idiv" variable nil nil [38111 38213])
+            ("calc-lang-allow-underscores" variable nil nil [38214 38321])
+            ("calc-lang-allow-percentsigns" variable nil nil [38322 38432])
+            ("calc-lang-c-type-hex" variable nil nil [38433 38546])
+            ("calc-lang-brackets-are-subscripts" variable nil nil [38547 38654])
+            ("calc-lang-parens-are-subscripts" variable nil nil [38655 38763])
+            ("calc-last-kill" variable nil nil [38765 38833])
+            ("calc-dollar-values" variable nil nil [38834 38896])
+            ("calc-dollar-used" variable nil nil [38897 38970])
+            ("calc-hashes-used" variable nil nil [38971 39044])
+            ("calc-quick-prev-results" variable nil nil [39045 39119])
+            ("calc-said-hello" variable nil nil [39120 39203])
+            ("calc-executing-macro" variable nil nil [39204 39302])
+            ("calc-any-selections" variable nil nil [39303 39380])
+            ("calc-help-phase" variable nil nil [39381 39455])
+            ("calc-full-help-flag" variable nil nil [39456 39539])
+            ("calc-refresh-count" variable nil nil [39540 39609])
+            ("calc-display-dirty" variable nil nil [39610 39718])
+            ("calc-prepared-composition" variable nil nil [39719 39757])
+            ("calc-selection-cache-default-entry" variable nil nil [39758 39805])
+            ("calc-embedded-info" variable nil nil [39806 39907])
+            ("calc-embedded-active" variable nil nil [39908 40004])
+            ("calc-standalone-flag" variable nil nil [40005 40089])
+            ("var-EvalRules" variable nil nil [40090 40175])
+            ("math-eval-rules-cache-tag" variable (:default-value t) nil [40176 40212])
+            ("math-radix-explicit-format" variable (:default-value t) nil [40213 40250])
+            ("math-expr-function-mapping" variable nil nil [40251 40352])
+            ("math-expr-variable-mapping" variable nil nil [40353 40454])
+            ("math-read-expr-quotes" variable nil nil [40455 40489])
+            ("math-working-step" variable nil nil [40490 40520])
+            ("math-working-step-2" variable nil nil [40521 40553])
+            ("var-i" variable (:default-value (quote (special-const (math-imaginary 1)))) nil [40554 40604])
+            ("var-pi" variable (:default-value (quote (special-const (math-pi)))) nil [40605 40647])
+            ("var-π" variable (:default-value (quote (special-const (math-pi)))) nil [40648 40689])
+            ("var-e" variable (:default-value (quote (special-const (math-e)))) nil [40690 40730])
+            ("var-phi" variable (:default-value (quote (special-const (math-phi)))) nil [40731 40775])
+            ("var-φ" variable (:default-value (quote (special-const (math-phi)))) nil [40776 40818])
+            ("var-gamma" variable (:default-value (quote (special-const (math-gamma-const)))) nil [40819 40873])
+            ("var-γ" variable (:default-value (quote (special-const (math-gamma-const)))) nil [40874 40924])
+            ("var-Modes" variable (:default-value (quote (special-const (math-get-modes-vec)))) nil [40925 40981])
+            ("mapc" code nil nil [40983 41056])
+            ("calc-mode-map" variable (:default-value (let ((map (make-keymap))) (suppress-keymap map t) (define-key map "+" (quote calc-plus)) (define-key map "-" (quote calc-minus)) (define-key map "*" (quote calc-times)) (define-key map "/" (quote calc-divide)) (define-key map "%" (quote calc-mod)) (define-key map "&" (quote calc-inv)) (define-key map "^" (quote calc-power)) (define-key map "\245" (quote calc-percent)) (define-key map "e" (quote calcDigit-start)) (define-key map "i" (quote calc-info)) (define-key map "n" (quote calc-change-sign)) (define-key map "q" (quote calc-quit)) (define-key map "Y" (quote nil)) (define-key map "Y?" (quote calc-shift-Y-prefix-help)) (define-key map "?" (quote calc-help)) (define-key map " " (quote calc-enter)) (define-key map "'" (quote calc-algebraic-entry)) (define-key map "$" (quote calc-auto-algebraic-entry)) (define-key map "\"" (quote calc-auto-algebraic-entry)) (define-key map "	" (quote calc-roll-down)) (define-key map "\211" (quote calc-roll-up)) (define-key map "" (quote calc-transpose-lines)) (define-key map "" (quote calc-enter)) (define-key map "\215" (quote calc-last-args-stub)) (define-key map "
+" (quote calc-over)) (define-key map "" (quote calc-yank)) (define-key map [mouse-2] (quote calc-yank)) (define-key map [remap undo] (quote calc-undo)) (mapc (lambda (x) (define-key map (char-to-string x) (quote undefined))) "lOW") (mapc (lambda (x) (define-key map (char-to-string x) (quote calc-missing-key))) (concat "ABCDEFGHIJKLMNOPQRSTUVXZabcdfghjkmoprstuvwxyz" ":\\|!()[]<>{},;=~`")) (define-key map "\367" (quote calc-missing-key)) (define-key map "\353" (quote calc-missing-key)) (define-key map "\227" (quote calc-missing-key)) (mapc (lambda (x) (define-key map (char-to-string x) (quote calcDigit-start))) "_0123456789.#@") map)) nil [41058 42854])
+            ("calc-digit-map" variable (:default-value (let ((map (make-keymap))) (map-keymap (lambda (key bind) (define-key map (vector key) (if (eq bind (quote undefined)) (quote undefined) (quote calcDigit-nondigit)))) calc-mode-map) (mapc (lambda (x) (define-key map (char-to-string x) (quote calcDigit-key))) "_0123456789.e+-:n#@oh'\"mspM") (mapc (lambda (x) (define-key map (char-to-string x) (quote calcDigit-letter))) "abcdfgijklqrtuvwxyzABCDEFGHIJKLNOPQRSTUVWXYZ") (define-key map "'" (quote calcDigit-algebraic)) (define-key map "`" (quote calcDigit-edit)) (define-key map "" (quote abort-recursive-edit)) map)) nil [42856 43563])
+            ("mapc" code nil nil [43565 44381])
+            ("calc-dispatch-map" variable (:default-value (let ((map (make-keymap))) (mapc (lambda (x) (let* ((x-chr (car x)) (x-str (char-to-string x-chr)) (x-def (cdr x))) (define-key map x-str x-def) (when (string-match "[a-z]" x-str) (define-key map (upcase x-str) x-def) (unless (string-match "[gmv]" x-str) (define-key map (vector (list (quote control) x-chr)) x-def))) (define-key map (format "%c" x-chr) x-def))) (quote ((97 . calc-embedded-activate) (98 . calc-big-or-small) (99 . calc) (100 . calc-embedded-duplicate) (101 . calc-embedded) (102 . calc-embedded-new-formula) (103 . calc-grab-region) (104 . calc-dispatch-help) (105 . calc-info) (106 . calc-embedded-select) (107 . calc-keypad) (108 . calc-load-everything) (109 . read-kbd-macro) (110 . calc-embedded-next) (111 . calc-other-window) (112 . calc-embedded-previous) (113 . quick-calc) (114 . calc-grab-rectangle) (115 . calc-info-summary) (116 . calc-tutorial) (117 . calc-embedded-update-formula) (119 . calc-embedded-word) (120 . calc-quit) (121 . calc-copy-to-buffer) (122 . calc-user-invocation) (39 . calc-embedded-new-formula) (96 . calc-embedded-edit) (58 . calc-grab-sum-down) (95 . calc-grab-sum-across) (48 . calc-reset) (63 . calc-dispatch-help) (35 . calc-same-interface) (38 . calc-same-interface) (92 . calc-same-interface) (61 . calc-same-interface) (42 . calc-same-interface) (47 . calc-same-interface) (43 . calc-same-interface) (45 . calc-same-interface)))) map)) nil [44383 46545])
+            ("load" code nil nil [46570 46601])
+            ("calc-dispatch" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [46676 47417])
+            ("calc-dispatch-help" variable nil nil [47419 47450])
+            ("calc-do-dispatch" function (:arguments ("arg")) nil [47451 47954])
+            ("calc-read-key-sequence" function (:arguments ("prompt" "map")) nil [47956 48490])
+            ("calc-alg-map" variable nil nil [48492 48513])
+            ("calc-embedded-modes" variable nil nil [48541 48569])
+            ("calc-override-minor-modes" variable nil nil [48597 48631])
+            ("calc-kill-stack-buffer" function nil nil [48659 51326])
+            ("calc-mode" function (:user-visible-flag t) nil [51328 54195])
+            ("calc-check-defines" variable (:default-value (quote calc-check-defines)) nil [54197 54244])
+            ("calc-check-defines" function nil nil [54272 54840])
+            ("calc-trail-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (set-keymap-parent map calc-mode-map) map)) nil [54842 54957])
+            ("define-derived-mode" code nil nil [54959 55663])
+            ("calc-create-buffer" function nil nil [55665 56081])
+            ("calc" function
+               (:user-visible-flag t
+                :arguments ("arg" "full-display" "interactive"))
+                nil [56098 58126])
+            ("full-calc" function
+               (:user-visible-flag t
+                :arguments ("interactive"))
+                nil [58143 58290])
+            ("calc-same-interface" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [58292 58693])
+            ("calc-quit" function
+               (:user-visible-flag t
+                :arguments ("non-fatal" "interactive"))
+                nil [58695 60572])
+            ("quick-calc" function (:user-visible-flag t) nil [60589 60728])
+            ("calc-eval" function (:arguments ("str" "separator" "args")) nil [60745 61046])
+            ("calc-keypad" function
+               (:user-visible-flag t
+                :arguments ("interactive"))
+                nil [61063 61427])
+            ("full-calc-keypad" function
+               (:user-visible-flag t
+                :arguments ("interactive"))
+                nil [61444 61661])
+            ("calc-aborted-prefix" variable nil nil [61664 61696])
+            ("calc-start-time" variable nil nil [61697 61725])
+            ("calc-command-flags" variable nil nil [61726 61757])
+            ("calc-final-point-line" variable nil nil [61758 61788])
+            ("calc-final-point-column" variable nil nil [61789 61821])
+            ("calc-do" function (:arguments ("do-body" "do-slow")) nil [61895 64612])
+            ("calc-set-command-flag" function (:arguments ("f")) nil [64650 64780])
+            ("calc-select-buffer" function nil nil [64782 65033])
+            ("calc-cursor-stack-index" function (:arguments ("index")) nil [65035 65167])
+            ("calc-stack-size" function nil nil [65169 65236])
+            ("calc-substack-height" function (:arguments ("n")) nil [65238 65464])
+            ("calc-set-mode-line" function nil nil [65466 69695])
+            ("calc-align-stack-window" function nil nil [69697 70141])
+            ("calc-check-stack" function (:arguments ("n")) nil [70143 70292])
+            ("calc-push-list" function (:arguments ("vals" "m" "sels")) nil [70294 70987])
+            ("calc-pop-push-list" function (:arguments ("n" "vals" "m" "sels")) nil [70989 71190])
+            ("calc-pop-push-record-list" function (:arguments ("n" "prefix" "vals" "m" "sels")) nil [71192 71598])
+            ("calc-enter-result" function (:arguments ("n" "prefix" "vals" "m")) nil [71600 72091])
+            ("calc-normalize" function (:arguments ("val")) nil [72093 72252])
+            ("calc-handle-whys" function nil nil [72254 72330])
+            ("calc-pop-stack" function (:arguments ("n" "m" "sel-ok")) nil [72333 73238])
+            ("calc-get-stack-element" function (:arguments ("x" "sel-mode")) nil [73240 73502])
+            ("calc-top" function (:arguments ("n" "sel-mode")) nil [73566 73725])
+            ("calc-top-n" function (:arguments ("n" "sel-mode")) nil [73727 73867])
+            ("calc-top-list" function (:arguments ("n" "m" "sel-mode")) nil [73869 74210])
+            ("calc-top-list-n" function (:arguments ("n" "m" "sel-mode")) nil [74212 74349])
+            ("calc-renumber-stack" function nil nil [74352 75336])
+            ("calc-any-evaltos" variable nil nil [75338 75367])
+            ("calc-refresh" function (:arguments ("align")) nil [75368 76568])
+            ("calc-gregorian-switch" variable nil nil [76718 79224])
+            ("calc-check-trail-aligned" function nil nil [79255 79431])
+            ("calc-trail-buffer" function nil nil [79433 80166])
+            ("calc-record" function (:arguments ("val" "prefix")) nil [80168 81072])
+            ("calc-trail-display" function (:arguments ("flag" "no-refresh" "interactive")) nil [81075 82042])
+            ("calc-trail-here" function nil nil [82044 83022])
+            ("calc-record-undo" function (:arguments ("rec")) nil [83048 83356])
+            ("calc-binary-op" function (:arguments ("name" "func" "arg" "ident" "unary" "func2")) nil [83387 83707])
+            ("calc-unary-op" function (:arguments ("name" "func" "arg" "func2")) nil [83709 83979])
+            ("calc-plus" function (:arguments ("arg")) nil [83982 84098])
+            ("calc-minus" function (:arguments ("arg")) nil [84100 84218])
+            ("calc-times" function (:arguments ("arg")) nil [84220 84337])
+            ("calc-divide" function (:arguments ("arg")) nil [84339 84467])
+            ("calc-left-divide" function (:arguments ("arg")) nil [84469 84597])
+            ("calc-change-sign" function (:arguments ("arg")) nil [84599 84700])
+            ("calc-enter" function (:arguments ("n")) nil [84736 85269])
+            ("calc-pop" function (:arguments ("n")) nil [85271 86547])
+            ("calc-buffer" variable nil nil [86601 86621])
+            ("calc-prev-char" variable nil nil [86622 86645])
+            ("calc-prev-prev-char" variable nil nil [86646 86674])
+            ("calc-digit-value" variable nil nil [86675 86700])
+            ("calcDigit-start" function nil nil [86701 87924])
+            ("calc-minibuffer-size" function nil nil [87926 88002])
+            ("calcDigit-nondigit" function nil nil [88004 88713])
+            ("calc-minibuffer-contains" function (:arguments ("rex")) nil [88716 88834])
+            ("calcDigit-key" function nil nil [88836 92830])
+            ("calcDigit-backspace" function nil nil [92833 93308])
+            ("math-bignum-digit-length" variable
+               (:constant-flag t
+                :default-value (truncate (/ (log (/ most-positive-fixnum 2) 10) 2)))
+                nil [93313 93656])
+            ("math-bignum-digit-size" variable
+               (:constant-flag t
+                :default-value (expt 10 math-bignum-digit-length))
+                nil [93658 93795])
+            ("math-small-integer-size" variable
+               (:constant-flag t
+                :default-value (expt math-bignum-digit-size 2))
+                nil [93797 93928])
+            ("math-eval-rules-cache" variable nil nil [98235 98265])
+            ("math-eval-rules-cache-other" variable nil nil [98266 98302])
+            ("math-normalize-a" variable nil nil [98378 98403])
+            ("math-normalize-error" variable nil nil [98404 98506])
+            ("math-normalize" function (:arguments ("math-normalize-a")) nil [98508 103832])
+            ("math-floatp" function (:arguments ("a")) nil [103909 104190])
+            ("math-check-complete" function (:arguments ("a")) nil [104262 104442])
+            ("math-bignum" function (:arguments ("a")) nil [104489 104612])
+            ("math-bignum-big" function (:arguments ("a")) nil [104614 104773])
+            ("math-make-float" function (:arguments ("mant" "exp")) nil [104830 105724])
+            ("math-div10-bignum" function (:arguments ("a")) nil [105726 105965])
+            ("math-float" function (:arguments ("a")) nil [106016 106306])
+            ("math-neg" function (:arguments ("a")) nil [106309 106664])
+            ("math-numdigs" function (:arguments ("a")) nil [106729 107087])
+            ("math-scale-int" function (:arguments ("a" "n")) nil [107161 107292])
+            ("math-scale-left" function (:arguments ("a" "n")) nil [107294 107913])
+            ("math-scale-left-bignum" function (:arguments ("a" "n")) nil [107915 108180])
+            ("math-scale-right" function (:arguments ("a" "n")) nil [108182 108657])
+            ("math-scale-right-bignum" function (:arguments ("a" "n")) nil [108659 108951])
+            ("math-scale-rounding" function (:arguments ("a" "n")) nil [109015 109994])
+            ("math-add" function (:arguments ("a" "b")) nil [110047 111684])
+            ("math-add-bignum" function (:arguments ("a" "b")) nil [111686 112554])
+            ("math-sub-bignum" function (:arguments ("a" "b")) nil [112556 113416])
+            ("math-add-float" function (:arguments ("a" "b")) nil [113418 113922])
+            ("math-sub" function (:arguments ("a" "b")) nil [113981 114193])
+            ("math-sub-float" function (:arguments ("a" "b")) nil [114195 114745])
+            ("math-mul" function (:arguments ("a" "b")) nil [114802 116338])
+            ("math-infinitep" function (:arguments ("a" "undir")) nil [116340 116714])
+            ("math-mul-bignum" function (:arguments ("a" "b")) nil [116766 117540])
+            ("math-mul-bignum-digit" function (:arguments ("a" "d" "c")) nil [117600 118091])
+            ("math-idivmod" function (:arguments ("a" "b")) nil [118309 118913])
+            ("math-quotient" function (:arguments ("a" "b")) nil [118915 119722])
+            ("math-div-bignum" function (:arguments ("a" "b")) nil [119859 120325])
+            ("math-div-bignum-digit" function (:arguments ("a" "b")) nil [120381 120605])
+            ("math-div-bignum-big" function (:arguments ("a" "b" "alen" "blen")) nil [120607 120916])
+            ("math-div-bignum-part" function (:arguments ("a" "b" "blen")) nil [120918 121263])
+            ("math-div-bignum-try" function (:arguments ("a" "b" "c" "guess")) nil [121265 121466])
+            ("math-div" function (:arguments ("a" "b")) nil [121524 122575])
+            ("math-div-float" function (:arguments ("a" "b")) nil [122577 122862])
+            ("calc-selection-cache-entry" variable nil nil [122867 122902])
+            ("math-format-stack-value" function (:arguments ("entry")) nil [122961 124789])
+            ("math-stack-value-offset" function (:arguments ("math-svo-c")) nil [124957 125414])
+            ("calc-count-lines" function (:arguments ("s")) nil [125416 125572])
+            ("math-format-value" function (:arguments ("a" "w")) nil [125574 125840])
+            ("calc-window-width" function nil nil [125842 126108])
+            ("math-comp-concat" function (:arguments ("c1" "c2")) nil [126110 126226])
+            ("math-format-flat-expr" function (:arguments ("a" "prec")) nil [126302 126859])
+            ("math-half-2-word-size" variable nil nil [126896 126926])
+            ("math-format-number" function (:arguments ("a" "prec")) nil [126927 131204])
+            ("math-format-bignum" function (:arguments ("a")) nil [131206 131435])
+            ("math-format-bignum-decimal" function (:arguments ("a")) nil [131437 131929])
+            ("math-read-number" function (:arguments ("s" "decimal")) nil [131992 134416])
+            ("math-read-number-simple" function (:arguments ("s")) nil [134470 135504])
+            ("math-match-substring" function (:arguments ("s" "n")) nil [135506 135628])
+            ("math-read-bignum" function (:arguments ("s")) nil [135630 135891])
+            ("math-standard-opers" variable
+               (:constant-flag t
+                :default-value (quote (("_" calcFunc-subscr 1200 1201) ("%" calcFunc-percent 1100 -1) ("u!" calcFunc-lnot -1 1000) ("mod" mod 400 400 185) ("+/-" sdev 300 300 185) ("!!" calcFunc-dfact 210 -1) ("!" calcFunc-fact 210 -1) ("^" ^ 201 200) ("**" ^ 201 200) ("u+" ident -1 197) ("u-" neg -1 197) ("/" / 190 191) ("%" % 190 191) ("\\" calcFunc-idiv 190 191) ("+" + 180 181) ("-" - 180 181) ("|" | 170 171) ("<" calcFunc-lt 160 161) (">" calcFunc-gt 160 161) ("<=" calcFunc-leq 160 161) (">=" calcFunc-geq 160 161) ("=" calcFunc-eq 160 161) ("==" calcFunc-eq 160 161) ("!=" calcFunc-neq 160 161) ("&&" calcFunc-land 110 111) ("||" calcFunc-lor 100 101) ("?" (math-read-if) 91 90) ("!!!" calcFunc-pnot -1 85) ("&&&" calcFunc-pand 80 81) ("|||" calcFunc-por 75 76) (":=" calcFunc-assign 51 50) ("::" calcFunc-condition 45 46) ("=>" calcFunc-evalto 40 41) ("=>" calcFunc-evalto 40 -1))))
+                nil [135893 137230])
+            ("math-standard-ops" function nil nil [137232 137572])
+            ("math-expr-opers" variable (:default-value (math-standard-ops)) nil [137574 137618])
+            ("math-standard-ops-p" function nil nil [137620 137740])
+            ("math-expr-ops" function nil nil [137742 137841])
+            ("calc-grab-region" function
+               (:user-visible-flag t
+                :arguments ("top" "bot" "arg"))
+                nil [137858 138058])
+            ("calc-grab-rectangle" function
+               (:user-visible-flag t
+                :arguments ("top" "bot" "arg"))
+                nil [138075 138282])
+            ("calc-grab-sum-down" function
+               (:user-visible-flag t
+                :arguments ("top" "bot" "arg"))
+                nil [138284 138492])
+            ("calc-grab-sum-across" function
+               (:user-visible-flag t
+                :arguments ("top" "bot" "arg"))
+                nil [138494 138701])
+            ("calc-embedded" function
+               (:user-visible-flag t
+                :arguments ("arg" "end" "obeg" "oend"))
+                nil [138719 138914])
+            ("calc-embedded-activate" function
+               (:user-visible-flag t
+                :arguments ("arg" "cbuf"))
+                nil [138931 139176])
+            ("calc-user-invocation" function nil nil [139178 139379])
+            ("defmath" function (:arguments ("func" "args" "body")) nil [139423 139912])
+            ("calc-read-key" function (:arguments ("optkey")) nil [139961 140254])
+            ("calc-unread-command" function (:arguments ("input")) nil [140256 140515])
+            ("calc-clear-unread-commands" function nil nil [140517 140655])
+            ("defcalcmodevar" code nil nil [140657 140773])
+            ("defcalcmodevar" code nil nil [140775 140908])
+            ("when" code nil nil [140910 140991])
+            ("run-hooks" code nil nil [140994 141021])
+            ("calc" package nil nil [141023 141038]))          
+      :file "calc.el"
+      :pointmax 141108
+      :fsize 141110
+      :lastmodtime '(21187 50982 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "calc-macs.el"
+      :file "calc-macs.el"
+      :fsize 5574
+      :lastmodtime '(21187 50982 0 0)))
+  :file "!usr!share!emacs!24.3.50!lisp!calc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

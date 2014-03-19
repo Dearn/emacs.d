@@ -1,0 +1,4 @@
+/sudo:root@v3.home:/etc/X11/xorg.conf.d/40-monitor.conf
+#_asudo_broot@v3.home_b_aetc_aX11_axorg.conf.d_a40-monitor.conf#
+/var/log/Xorg.0.log
+/var/log/#Xorg.0.log#

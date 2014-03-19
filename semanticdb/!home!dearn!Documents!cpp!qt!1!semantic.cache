@@ -1,0 +1,83 @@
+;; Object 1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "1/"
+  :tables
+  (list
+    (semanticdb-table "1.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("ui_untitled.h" include nil nil [1 25])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [38 47])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48 61]))                  
+                :type "int")
+                nil [28 327]))          
+      :file "1.cpp"
+      :pointmax 328
+      :fsize 327
+      :lastmodtime '(21288 25893 357998 231000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ui_untitled.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("UI_UNTITLED_H" variable (:constant-flag t) nil [392 405])
+            ("QtCore/QVariant" include (:system-flag t) nil [407 433])
+            ("QtGui/QAction" include (:system-flag t) nil [434 458])
+            ("QtGui/QApplication" include (:system-flag t) nil [459 488])
+            ("QtGui/QButtonGroup" include (:system-flag t) nil [489 518])
+            ("QtGui/QDialog" include (:system-flag t) nil [519 543])
+            ("QtGui/QDialogButtonBox" include (:system-flag t) nil [544 577])
+            ("QtGui/QHeaderView" include (:system-flag t) nil [578 606])
+            ("Ui_Dialog" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [646 653])
+                    ("buttonBox" variable
+                       (:pointer 1
+                        :type ("QDialogButtonBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [658 686])
+                    ("setupUi" function
+                       (:arguments 
+                          ( ("Dialog" variable
+                               (:pointer 1
+                                :type ("QDialog" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [705 721]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [692 1429])
+                    ("retranslateUi" function
+                       (:arguments 
+                          ( ("Dialog" variable
+                               (:pointer 1
+                                :type ("QDialog" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1465 1481]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1446 1600]))                  
+                :type "class")
+                nil [628 1621])
+            ("Ui" type
+               (:members 
+                  ( ("Dialog" type
+                       (:superclasses 
+                          ( ("Ui_Dialog" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1642 1676]))                  
+                :type "namespace")
+                nil [1623 1678]))          
+      :file "ui_untitled.h"
+      :pointmax 1738
+      :fsize 1737
+      :lastmodtime '(21288 19655 739998 976000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("UI_UNTITLED_H")
+          )
+))
+  :file "!home!dearn!Documents!cpp!qt!1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

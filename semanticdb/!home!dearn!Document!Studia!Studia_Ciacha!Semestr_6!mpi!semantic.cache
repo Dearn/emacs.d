@@ -1,0 +1,53 @@
+;; Object mpi/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mpi/"
+  :tables
+  (list
+    (semanticdb-table "lab2.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("mpi.h" include (:system-flag t) nil [1 17])
+            ("iostream" include (:system-flag t) nil [18 37])
+            ("vector" include (:system-flag t) nil [38 55])
+            ("fstream" include (:system-flag t) nil [56 74])
+            ("cmath" include (:system-flag t) nil [75 91])
+            ("iterator" include (:system-flag t) nil [92 111])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [113 133])
+            ("wyswietlWynik" function
+               (:arguments 
+                  ( ("v" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [154 168]))                  
+                :type "void")
+                nil [135 361])
+            ("wyswietl" function
+               (:arguments 
+                  ( ("v" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("int" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [377 391]))                  
+                :type "void")
+                nil [363 553])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [564 573])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [574 586]))                  
+                :type "int")
+                nil [555 1817]))          
+      :file "lab2.cpp"
+      :pointmax 1818
+      :fsize 1817
+      :lastmodtime '(21258 26502 878998 669000)
+      :unmatched-syntax nil))
+  :file "!home!dearn!Document!Studia!Studia_Ciacha!Semestr_6!mpi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

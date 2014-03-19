@@ -1,0 +1,17 @@
+;; Object 4/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "4/"
+  :tables
+  (list
+    (semanticdb-table "Project.ede"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("ede-proj-project" code nil nil [73 158]))          
+      :file "Project.ede"
+      :pointmax 159
+      :fsize 158
+      :lastmodtime '(21200 21409 774510 918000)
+      :unmatched-syntax nil))
+  :file "!home!dearn!Document!Studia!Grafika!4!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

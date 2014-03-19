@@ -1,0 +1,16 @@
+;; Object epc-20140301.1811/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "epc-20140301.1811/"
+  :tables
+  (list
+    (semanticdb-table "epc-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "epc-autoloads.el"
+      :pointmax 251
+      :fsize 357
+      :lastmodtime '(21285 55009 927333 70000)
+      :unmatched-syntax nil))
+  :file "!home!dearn!.emacs.d!elpa!epc-20140301.1811!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object concurrent-20130914.536/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "concurrent-20130914.536/"
+  :tables
+  (list
+    (semanticdb-table "concurrent-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "concurrent-autoloads.el"
+      :pointmax 293
+      :fsize 375
+      :lastmodtime '(21248 47735 342761 471000)
+      :unmatched-syntax nil))
+  :file "!home!dearn!.emacs.d!elpa!concurrent-20130914.536!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

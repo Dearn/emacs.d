@@ -1,0 +1,16 @@
+;; Object mmm-mode-20140211.2104/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mmm-mode-20140211.2104/"
+  :tables
+  (list
+    (semanticdb-table "mmm-mode-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "mmm-mode-autoloads.el"
+      :pointmax 289
+      :fsize 1130
+      :lastmodtime '(21248 47759 575911 967000)
+      :unmatched-syntax nil))
+  :file "!home!dearn!.emacs.d!elpa!mmm-mode-20140211.2104!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

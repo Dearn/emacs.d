@@ -1,0 +1,73 @@
+;; Object Gentoo/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Gentoo/"
+  :tables
+  (list
+    (semanticdb-table "gentoo-qconfig.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("QT_ZLIB" variable (:constant-flag t) nil [9 16])
+            ("QT_DBUS" variable (:constant-flag t) nil [25 32])
+            ("QT_ACCESSIBILITY" variable (:constant-flag t) nil [41 57])
+            ("QT_CUPS" variable (:constant-flag t) nil [66 73])
+            ("QT_FONTCONFIG" variable (:constant-flag t) nil [82 95])
+            ("QT_FREETYPE" variable (:constant-flag t) nil [104 115])
+            ("QT_STYLE_GTK" variable (:constant-flag t) nil [124 136])
+            ("QT_IMAGEFORMAT_JPEG" variable (:constant-flag t) nil [145 164])
+            ("QT_IMAGEFORMAT_PNG" variable (:constant-flag t) nil [173 191])
+            ("QT_IMAGEFORMAT_MNG" variable (:constant-flag t) nil [200 218])
+            ("QT_IMAGEFORMAT_TIFF" variable (:constant-flag t) nil [227 246])
+            ("QT_SESSIONMANAGER" variable (:constant-flag t) nil [255 272])
+            ("QT_SHAPE" variable (:constant-flag t) nil [281 289])
+            ("QT_TABLET" variable (:constant-flag t) nil [298 307])
+            ("QT_XCURSOR" variable (:constant-flag t) nil [316 326])
+            ("QT_XFIXES" variable (:constant-flag t) nil [335 344])
+            ("QT_XINPUT" variable (:constant-flag t) nil [353 362])
+            ("QT_XKB" variable (:constant-flag t) nil [371 377])
+            ("QT_XRANDR" variable (:constant-flag t) nil [386 395])
+            ("QT_XRENDER" variable (:constant-flag t) nil [404 414])
+            ("QT_XSYNC" variable (:constant-flag t) nil [423 431])
+            ("QT_XVIDEO" variable (:constant-flag t) nil [440 449])
+            ("QT_OPENGL" variable (:constant-flag t) nil [458 467])
+            ("QT_SCRIPT" variable (:constant-flag t) nil [476 485])
+            ("QT_SVG" variable (:constant-flag t) nil [494 500])
+            ("QT_WEBKIT" variable (:constant-flag t) nil [509 518])
+            ("QT_XMLPATTERNS" variable (:constant-flag t) nil [527 541]))          
+      :file "gentoo-qconfig.h"
+      :pointmax 542
+      :fsize 541
+      :lastmodtime '(21189 15488 933425 115000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("QT_TABLET")
+          ("QT_XINPUT")
+          ("QT_ACCESSIBILITY")
+          ("QT_XKB")
+          ("QT_XRENDER")
+          ("QT_CUPS")
+          ("QT_DBUS")
+          ("QT_FONTCONFIG")
+          ("QT_XVIDEO")
+          ("QT_WEBKIT")
+          ("QT_XMLPATTERNS")
+          ("QT_IMAGEFORMAT_MNG")
+          ("QT_IMAGEFORMAT_PNG")
+          ("QT_SESSIONMANAGER")
+          ("QT_SHAPE")
+          ("QT_XCURSOR")
+          ("QT_XSYNC")
+          ("QT_OPENGL")
+          ("QT_SCRIPT")
+          ("QT_SVG")
+          ("QT_STYLE_GTK")
+          ("QT_IMAGEFORMAT_JPEG")
+          ("QT_XRANDR")
+          ("QT_IMAGEFORMAT_TIFF")
+          ("QT_XFIXES")
+          ("QT_ZLIB")
+          ("QT_FREETYPE")
+          )
+))
+  :file "!usr!include!qt4!Gentoo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object yasnippet-20140314.255/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "yasnippet-20140314.255/"
+  :tables
+  (list
+    (semanticdb-table "yasnippet-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "yasnippet-autoloads.el"
+      :pointmax 269
+      :fsize 1682
+      :lastmodtime '(21285 55001 541332 294000)
+      :unmatched-syntax nil))
+  :file "!home!dearn!.emacs.d!elpa!yasnippet-20140314.255!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,66 @@
+;; Object Wspolbiezne/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Wspolbiezne/"
+  :tables
+  (list
+    (semanticdb-table "lab1.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("mpi.h" include nil nil [1 17])
+            ("iostream" include (:system-flag t) nil [18 37])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [38 58])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [71 80])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [81 94]))                  
+                :type "int")
+                nil [62 1715]))          
+      :file "lab1.cpp"
+      :pointmax 1716
+      :fsize 1715
+      :lastmodtime '(21268 21731 968380 464000)
+      :unmatched-syntax nil)
+    (semanticdb-table "lab2.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("mpi.h" include nil nil [21 37])
+            ("max" function
+               (:arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [52 68])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [69 85]))                  
+                :type "float")
+                nil [42 109])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [123 132])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [133 146]))                  
+                :type "int")
+                nil [114 2444]))          
+      :file "lab2.cpp"
+      :pointmax 2445
+      :fsize 2444
+      :lastmodtime '(21277 39444 222069 464000)
+      :unmatched-syntax nil))
+  :file "!home!dearn!Document!Studia!Wspolbiezne!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

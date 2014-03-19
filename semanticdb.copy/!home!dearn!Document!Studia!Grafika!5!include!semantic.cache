@@ -1,0 +1,233 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "scena.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("SCENA_H" variable (:constant-flag t) nil [96 103])
+            ("cmath" include (:system-flag t) nil [105 121])
+            ("cstdlib" include (:system-flag t) nil [122 140])
+            ("iostream" include (:system-flag t) nil [141 160])
+            ("qapplication.h" include (:system-flag t) nil [161 186])
+            ("qcursor.h" include (:system-flag t) nil [187 207])
+            ("qgl.h" include (:system-flag t) nil [208 224])
+            ("qimage.h" include (:system-flag t) nil [225 244])
+            ("qtimer.h" include (:system-flag t) nil [245 264])
+            ("sstream" include (:system-flag t) nil [265 283])
+            ("GL/glu.h" include (:system-flag t) nil [284 303])
+            ("QKeyEvent" include (:system-flag t) nil [304 324])
+            ("unistd.h" include (:system-flag t) nil [325 344])
+            ("flag" variable
+               (:typemodifiers ("extern")
+                :type "bool")
+                nil [359 376])
+            ("delta" variable
+               (:typemodifiers ("extern")
+                :type "float")
+                nil [377 396])
+            ("Bazowa" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [414 421])
+                    ("paintGL" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [424 449])
+                    ("Bazowa" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [452 471]))                  
+                :type "class")
+                nil [398 474])
+            ("scenapierw" type
+               (:superclasses 
+                  ( ("Bazowa" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [511 519])
+                    ("koloQ" variable
+                       (:pointer 1
+                        :type ("GLUquadric" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [522 540])
+                    ("public" label nil (reparse-symbol classsubparts) [542 549])
+                    ("paintGL" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [552 567])
+                    ("scenapierw" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [570 584]))                  
+                :type "class")
+                nil [476 597])
+            ("scenadruga" type
+               (:superclasses 
+                  ( ("Bazowa" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [634 642])
+                    ("tablica" variable
+                       (:pointer 2
+                        :type "float")
+                        (reparse-symbol classsubparts) [645 661])
+                    ("tablica2" variable
+                       (:pointer 2
+                        :type "float")
+                        (reparse-symbol classsubparts) [664 681])
+                    ("quadratic" variable
+                       (:pointer 1
+                        :type ("GLUquadric" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [684 706])
+                    ("sky" variable
+                       (:pointer 1
+                        :type ("GLUquadric" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [716 732])
+                    ("public" label nil (reparse-symbol classsubparts) [734 741])
+                    ("paintGL" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [744 759])
+                    ("podloga" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [762 777])
+                    ("podloga2" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [780 796])
+                    ("podloga3" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [799 815])
+                    ("niebo" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [818 831])
+                    ("lisc" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [834 846])
+                    ("drzewo" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [849 863])
+                    ("scenadruga" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("scenadruga" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [866 879])
+                    ("scenadruga" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [882 896]))                  
+                :type "class")
+                nil [599 899])
+            ("Scena" type
+               (:superclasses 
+                  ( ("QGLWidget" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [948 956])
+                    ("application" variable
+                       (:pointer 1
+                        :type ("QApplication" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [959 985])
+                    ("tab" variable
+                       (:pointer 2
+                        :type ("Bazowa" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [988 1001])
+                    ("public" label nil (reparse-symbol classsubparts) [1004 1011])
+                    ("Scena" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("app" variable
+                               (:pointer 1
+                                :type ("QApplication" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1020 1038])
+                            ("parent" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("QWidget" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1039 1059])
+                            ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "NULL"
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1061 1082]))                          
+                        :type ("Scena" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1014 1084])
+                    ("initializeGL" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1088 1108])
+                    ("resizeGL" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("w" variable (:type "int") (reparse-symbol arg-sub-list) [1125 1131])
+                            ("h" variable (:type "int") (reparse-symbol arg-sub-list) [1132 1138]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1111 1139])
+                    ("paintGL" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1142 1157])
+                    ("keyPressEvent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:pointer 1
+                                :type ("QKeyEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1180 1193]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1161 1194])
+                    ("keyReleaseEvent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:pointer 1
+                                :type ("QKeyEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1218 1231]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1197 1232])
+                    ("Scena" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1236 1245])
+                    ("private" label nil (reparse-symbol classsubparts) [1249 1263])
+                    ("timerGL" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1268 1283])
+                    ("timerFPS" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1288 1304]))                  
+                :type "class")
+                nil [903 1307]))          
+      :file "scena.h"
+      :pointmax 1330
+      :fsize 1330
+      :lastmodtime '(21222 15617 707571 501000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SCENA_H")
+          )
+))
+  :file "!home!dearn!Document!Studia!Grafika!5!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

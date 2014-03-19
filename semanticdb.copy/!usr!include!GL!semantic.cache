@@ -1,0 +1,1710 @@
+;; Object GL/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "GL/"
+  :tables
+  (list
+    (semanticdb-table "glu.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__glu_h__" variable (:constant-flag t) nil [1595 1604])
+            ("GL/gl.h" include (:system-flag t) nil [1669 1687])
+            ("GLAPIENTRY" variable (:constant-flag t) nil [1797 1807])
+            ("GLAPIENTRYP" variable (:constant-flag t) nil [1851 1862])
+            ("GLAPI" variable (:constant-flag t) nil [2279 2284])
+            ("gluUnProject4" function
+               (:type ("GLint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("winX" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16978 16992])
+                    ("winY" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16993 17007])
+                    ("winZ" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17008 17022])
+                    ("clipW" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17023 17038])
+                    ("model" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("GLdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17039 17061])
+                    ("proj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("GLdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17062 17083])
+                    ("view" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("GLint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17084 17102])
+                    ("nearVal" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17103 17120])
+                    ("farVal" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17121 17137])
+                    ("objX" variable
+                       (:pointer 1
+                        :type ("GLdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17138 17153])
+                    ("objY" variable
+                       (:pointer 1
+                        :type ("GLdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17154 17169])
+                    ("objZ" variable
+                       (:pointer 1
+                        :type ("GLdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17170 17185])
+                    ("objW" variable
+                       (:pointer 1
+                        :type ("GLdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17186 17201]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16940 17202])
+            ("gluUnProject" function
+               (:type ("GLint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("winX" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16782 16796])
+                    ("winY" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16797 16811])
+                    ("winZ" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16812 16826])
+                    ("model" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("GLdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16827 16849])
+                    ("proj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("GLdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16850 16871])
+                    ("view" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("GLint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16872 16890])
+                    ("objX" variable
+                       (:pointer 1
+                        :type ("GLdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16891 16906])
+                    ("objY" variable
+                       (:pointer 1
+                        :type ("GLdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16907 16922])
+                    ("objZ" variable
+                       (:pointer 1
+                        :type ("GLdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16923 16938]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16745 16939])
+            ("gluTessVertex" function
+               (:type "void"
+                :arguments 
+                  ( ("tess" variable
+                       (:pointer 1
+                        :type ("GLUtesselator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16689 16709])
+                    ("location" variable
+                       (:pointer 1
+                        :type ("GLdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16710 16729])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("GLvoid" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16730 16743]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16652 16744])
+            ("gluTessProperty" function
+               (:type "void"
+                :arguments 
+                  ( ("tess" variable
+                       (:pointer 1
+                        :type ("GLUtesselator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16601 16621])
+                    ("which" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16622 16635])
+                    ("data" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16636 16650]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16562 16651])
+            ("gluTessNormal" function
+               (:type "void"
+                :arguments 
+                  ( ("tess" variable
+                       (:pointer 1
+                        :type ("GLUtesselator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16489 16509])
+                    ("valueX" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16510 16526])
+                    ("valueY" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16527 16543])
+                    ("valueZ" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16544 16560]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16452 16561])
+            ("gluTessEndPolygon" function
+               (:type "void"
+                :arguments 
+                  ( ("tess" variable
+                       (:pointer 1
+                        :type ("GLUtesselator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16430 16450]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16389 16451])
+            ("gluTessEndContour" function
+               (:type "void"
+                :arguments 
+                  ( ("tess" variable
+                       (:pointer 1
+                        :type ("GLUtesselator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16367 16387]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16326 16388])
+            ("gluTessCallback" function
+               (:type "void"
+                :arguments 
+                  ( ("tess" variable
+                       (:pointer 1
+                        :type ("GLUtesselator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16264 16284])
+                    ("which" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16285 16298])
+                    ("CallBackFunc" variable (:type ("_GLUfuncptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16299 16324]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16225 16325])
+            ("gluTessBeginPolygon" function
+               (:type "void"
+                :arguments 
+                  ( ("tess" variable
+                       (:pointer 1
+                        :type ("GLUtesselator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16189 16209])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("GLvoid" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16210 16223]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16146 16224])
+            ("gluTessBeginContour" function
+               (:type "void"
+                :arguments 
+                  ( ("tess" variable
+                       (:pointer 1
+                        :type ("GLUtesselator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16124 16144]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16081 16145])
+            ("gluSphere" function
+               (:type "void"
+                :arguments 
+                  ( ("quad" variable
+                       (:pointer 1
+                        :type ("GLUquadric" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16017 16034])
+                    ("radius" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16035 16051])
+                    ("slices" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16052 16065])
+                    ("stacks" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16066 16079]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15984 16080])
+            ("gluScaleImage" function
+               (:type ("GLint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("format" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15846 15860])
+                    ("wIn" variable (:type ("GLsizei" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15861 15873])
+                    ("hIn" variable (:type ("GLsizei" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15874 15886])
+                    ("typeIn" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15887 15901])
+                    ("dataIn" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15902 15921])
+                    ("wOut" variable (:type ("GLsizei" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15922 15935])
+                    ("hOut" variable (:type ("GLsizei" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15936 15949])
+                    ("typeOut" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15950 15965])
+                    ("dataOut" variable
+                       (:pointer 1
+                        :type ("GLvoid" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15966 15982]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15808 15983])
+            ("gluQuadricTexture" function
+               (:type "void"
+                :arguments 
+                  ( ("quad" variable
+                       (:pointer 1
+                        :type ("GLUquadric" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15770 15787])
+                    ("texture" variable (:type ("GLboolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15788 15806]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15729 15807])
+            ("gluQuadricOrientation" function
+               (:type "void"
+                :arguments 
+                  ( ("quad" variable
+                       (:pointer 1
+                        :type ("GLUquadric" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15690 15707])
+                    ("orientation" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15708 15727]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15645 15728])
+            ("gluQuadricNormals" function
+               (:type "void"
+                :arguments 
+                  ( ("quad" variable
+                       (:pointer 1
+                        :type ("GLUquadric" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15611 15628])
+                    ("normal" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15629 15643]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15570 15644])
+            ("gluQuadricDrawStyle" function
+               (:type "void"
+                :arguments 
+                  ( ("quad" variable
+                       (:pointer 1
+                        :type ("GLUquadric" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15538 15555])
+                    ("draw" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15556 15568]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15495 15569])
+            ("gluQuadricCallback" function
+               (:type "void"
+                :arguments 
+                  ( ("quad" variable
+                       (:pointer 1
+                        :type ("GLUquadric" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15436 15453])
+                    ("which" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15454 15467])
+                    ("CallBackFunc" variable (:type ("_GLUfuncptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15468 15493]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15394 15494])
+            ("gluPwlCurve" function
+               (:type "void"
+                :arguments 
+                  ( ("nurb" variable
+                       (:pointer 1
+                        :type ("GLUnurbs" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15322 15337])
+                    ("count" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15338 15350])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("GLfloat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15351 15365])
+                    ("stride" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15366 15379])
+                    ("type" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15380 15392]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15287 15393])
+            ("gluProject" function
+               (:type ("GLint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("objX" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15129 15143])
+                    ("objY" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15144 15158])
+                    ("objZ" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15159 15173])
+                    ("model" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("GLdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15174 15196])
+                    ("proj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("GLdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15197 15218])
+                    ("view" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("GLint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15219 15237])
+                    ("winX" variable
+                       (:pointer 1
+                        :type ("GLdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15238 15253])
+                    ("winY" variable
+                       (:pointer 1
+                        :type ("GLdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15254 15269])
+                    ("winZ" variable
+                       (:pointer 1
+                        :type ("GLdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15270 15285]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15094 15286])
+            ("gluPickMatrix" function
+               (:type "void"
+                :arguments 
+                  ( ("x" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15022 15033])
+                    ("y" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15034 15045])
+                    ("delX" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15046 15060])
+                    ("delY" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15061 15075])
+                    ("viewport" variable
+                       (:pointer 1
+                        :type ("GLint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15076 15092]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14985 15093])
+            ("gluPerspective" function
+               (:type "void"
+                :arguments 
+                  ( ("fovy" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14921 14935])
+                    ("aspect" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14936 14952])
+                    ("zNear" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14953 14968])
+                    ("zFar" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14969 14983]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14883 14984])
+            ("gluPartialDisk" function
+               (:type "void"
+                :arguments 
+                  ( ("quad" variable
+                       (:pointer 1
+                        :type ("GLUquadric" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14773 14790])
+                    ("inner" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14791 14806])
+                    ("outer" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14807 14822])
+                    ("slices" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14823 14836])
+                    ("loops" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14837 14849])
+                    ("start" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14850 14865])
+                    ("sweep" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14866 14881]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14735 14882])
+            ("gluOrtho2D" function
+               (:type "void"
+                :arguments 
+                  ( ("left" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14672 14686])
+                    ("right" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14687 14702])
+                    ("bottom" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14703 14719])
+                    ("top" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14720 14733]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14638 14734])
+            ("gluNurbsSurface" function
+               (:type "void"
+                :arguments 
+                  ( ("nurb" variable
+                       (:pointer 1
+                        :type ("GLUnurbs" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14462 14477])
+                    ("sKnotCount" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14478 14495])
+                    ("sKnots" variable
+                       (:pointer 1
+                        :type ("GLfloat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14496 14512])
+                    ("tKnotCount" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14513 14530])
+                    ("tKnots" variable
+                       (:pointer 1
+                        :type ("GLfloat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14531 14547])
+                    ("sStride" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14548 14562])
+                    ("tStride" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14563 14577])
+                    ("control" variable
+                       (:pointer 1
+                        :type ("GLfloat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14578 14595])
+                    ("sOrder" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14596 14609])
+                    ("tOrder" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14610 14623])
+                    ("type" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14624 14636]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14423 14637])
+            ("gluNurbsProperty" function
+               (:type "void"
+                :arguments 
+                  ( ("nurb" variable
+                       (:pointer 1
+                        :type ("GLUnurbs" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14374 14389])
+                    ("property" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14390 14406])
+                    ("value" variable (:type ("GLfloat" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14407 14421]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14334 14422])
+            ("gluNurbsCurve" function
+               (:type "void"
+                :arguments 
+                  ( ("nurb" variable
+                       (:pointer 1
+                        :type ("GLUnurbs" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14226 14241])
+                    ("knotCount" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14242 14258])
+                    ("knots" variable
+                       (:pointer 1
+                        :type ("GLfloat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14259 14274])
+                    ("stride" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14275 14288])
+                    ("control" variable
+                       (:pointer 1
+                        :type ("GLfloat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14289 14306])
+                    ("order" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14307 14319])
+                    ("type" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14320 14332]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14189 14333])
+            ("gluNurbsCallbackDataEXT" function
+               (:type "void"
+                :arguments 
+                  ( ("nurb" variable
+                       (:pointer 1
+                        :type ("GLUnurbs" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14154 14169])
+                    ("userData" variable
+                       (:pointer 1
+                        :type ("GLvoid" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14170 14187]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14107 14188])
+            ("gluNurbsCallbackData" function
+               (:type "void"
+                :arguments 
+                  ( ("nurb" variable
+                       (:pointer 1
+                        :type ("GLUnurbs" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14072 14087])
+                    ("userData" variable
+                       (:pointer 1
+                        :type ("GLvoid" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14088 14105]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14028 14106])
+            ("gluNurbsCallback" function
+               (:type "void"
+                :arguments 
+                  ( ("nurb" variable
+                       (:pointer 1
+                        :type ("GLUnurbs" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13971 13986])
+                    ("which" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13987 14000])
+                    ("CallBackFunc" variable (:type ("_GLUfuncptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14001 14026]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13931 14027])
+            ("gluNextContour" function
+               (:type "void"
+                :arguments 
+                  ( ("tess" variable
+                       (:pointer 1
+                        :type ("GLUtesselator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13896 13916])
+                    ("type" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13917 13929]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13858 13930])
+            ("gluNewTess" function
+               (:type ("GLUtesselator" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13851 13856]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13807 13857])
+            ("gluNewQuadric" function
+               (:type ("GLUquadric" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13800 13805]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13756 13806])
+            ("gluNewNurbsRenderer" function
+               (:type ("GLUnurbs" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13749 13754]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13701 13755])
+            ("gluLookAt" function
+               (:type "void"
+                :arguments 
+                  ( ("eyeX" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13559 13573])
+                    ("eyeY" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13574 13588])
+                    ("eyeZ" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13589 13603])
+                    ("centerX" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13604 13621])
+                    ("centerY" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13622 13639])
+                    ("centerZ" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13640 13657])
+                    ("upX" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13658 13671])
+                    ("upY" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13672 13685])
+                    ("upZ" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13686 13699]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13526 13700])
+            ("gluLoadSamplingMatrices" function
+               (:type "void"
+                :arguments 
+                  ( ("nurb" variable
+                       (:pointer 1
+                        :type ("GLUnurbs" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13440 13455])
+                    ("model" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("GLfloat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13456 13477])
+                    ("perspective" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("GLfloat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13478 13505])
+                    ("view" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("GLint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13506 13524]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13393 13525])
+            ("gluGetTessProperty" function
+               (:type "void"
+                :arguments 
+                  ( ("tess" variable
+                       (:pointer 1
+                        :type ("GLUtesselator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13341 13361])
+                    ("which" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13362 13375])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("GLdouble" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13376 13391]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13299 13392])
+            ("gluGetString" function
+               (:type ("GLubyte" type (:type "class") nil nil)
+                :arguments 
+                  ( ("name" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13285 13297]))                  
+                :constant-flag t
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13238 13298])
+            ("gluGetNurbsProperty" function
+               (:type "void"
+                :arguments 
+                  ( ("nurb" variable
+                       (:pointer 1
+                        :type ("GLUnurbs" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13189 13204])
+                    ("property" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13205 13221])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("GLfloat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13222 13236]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13146 13237])
+            ("gluErrorString" function
+               (:type ("GLubyte" type (:type "class") nil nil)
+                :arguments 
+                  ( ("error" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13131 13144]))                  
+                :constant-flag t
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13082 13145])
+            ("gluEndTrim" function
+               (:type "void"
+                :arguments 
+                  ( ("nurb" variable
+                       (:pointer 1
+                        :type ("GLUnurbs" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13065 13080]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13031 13081])
+            ("gluEndSurface" function
+               (:type "void"
+                :arguments 
+                  ( ("nurb" variable
+                       (:pointer 1
+                        :type ("GLUnurbs" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13014 13029]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12977 13030])
+            ("gluEndPolygon" function
+               (:type "void"
+                :arguments 
+                  ( ("tess" variable
+                       (:pointer 1
+                        :type ("GLUtesselator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12955 12975]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12918 12976])
+            ("gluEndCurve" function
+               (:type "void"
+                :arguments 
+                  ( ("nurb" variable
+                       (:pointer 1
+                        :type ("GLUnurbs" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12901 12916]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12866 12917])
+            ("gluDisk" function
+               (:type "void"
+                :arguments 
+                  ( ("quad" variable
+                       (:pointer 1
+                        :type ("GLUquadric" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12788 12805])
+                    ("inner" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12806 12821])
+                    ("outer" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12822 12837])
+                    ("slices" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12838 12851])
+                    ("loops" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12852 12864]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12757 12865])
+            ("gluDeleteTess" function
+               (:type "void"
+                :arguments 
+                  ( ("tess" variable
+                       (:pointer 1
+                        :type ("GLUtesselator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12735 12755]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12698 12756])
+            ("gluDeleteQuadric" function
+               (:type "void"
+                :arguments 
+                  ( ("quad" variable
+                       (:pointer 1
+                        :type ("GLUquadric" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12679 12696]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12639 12697])
+            ("gluDeleteNurbsRenderer" function
+               (:type "void"
+                :arguments 
+                  ( ("nurb" variable
+                       (:pointer 1
+                        :type ("GLUnurbs" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12622 12637]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12576 12638])
+            ("gluCylinder" function
+               (:type "void"
+                :arguments 
+                  ( ("quad" variable
+                       (:pointer 1
+                        :type ("GLUquadric" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12483 12500])
+                    ("base" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12501 12515])
+                    ("top" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12516 12529])
+                    ("height" variable (:type ("GLdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12530 12546])
+                    ("slices" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12547 12560])
+                    ("stacks" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12561 12574]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12448 12575])
+            ("gluCheckExtension" function
+               (:type ("GLboolean" type (:type "class") nil nil)
+                :arguments 
+                  ( ("extName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("GLubyte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12397 12420])
+                    ("extString" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("GLubyte" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12421 12446]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12351 12447])
+            ("gluBuild3DMipmaps" function
+               (:type ("GLint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("target" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12221 12235])
+                    ("internalFormat" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12236 12257])
+                    ("width" variable (:type ("GLsizei" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12258 12272])
+                    ("height" variable (:type ("GLsizei" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12273 12288])
+                    ("depth" variable (:type ("GLsizei" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12289 12303])
+                    ("format" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12304 12318])
+                    ("type" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12319 12331])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12332 12349]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12179 12350])
+            ("gluBuild3DMipmapLevels" function
+               (:type ("GLint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("target" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12013 12027])
+                    ("internalFormat" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12028 12049])
+                    ("width" variable (:type ("GLsizei" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12050 12064])
+                    ("height" variable (:type ("GLsizei" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12065 12080])
+                    ("depth" variable (:type ("GLsizei" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12081 12095])
+                    ("format" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12096 12110])
+                    ("type" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12111 12123])
+                    ("level" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12124 12136])
+                    ("base" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12137 12148])
+                    ("max" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12149 12159])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12160 12177]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11966 12178])
+            ("gluBuild2DMipmaps" function
+               (:type ("GLint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("target" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11851 11865])
+                    ("internalFormat" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11866 11887])
+                    ("width" variable (:type ("GLsizei" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11888 11902])
+                    ("height" variable (:type ("GLsizei" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11903 11918])
+                    ("format" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11919 11933])
+                    ("type" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11934 11946])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11947 11964]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11809 11965])
+            ("gluBuild2DMipmapLevels" function
+               (:type ("GLint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("target" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11658 11672])
+                    ("internalFormat" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11673 11694])
+                    ("width" variable (:type ("GLsizei" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11695 11709])
+                    ("height" variable (:type ("GLsizei" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11710 11725])
+                    ("format" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11726 11740])
+                    ("type" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11741 11753])
+                    ("level" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11754 11766])
+                    ("base" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11767 11778])
+                    ("max" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11779 11789])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11790 11807]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11611 11808])
+            ("gluBuild1DMipmaps" function
+               (:type ("GLint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("target" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11512 11526])
+                    ("internalFormat" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11527 11548])
+                    ("width" variable (:type ("GLsizei" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11549 11563])
+                    ("format" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11564 11578])
+                    ("type" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11579 11591])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11592 11609]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11470 11610])
+            ("gluBuild1DMipmapLevels" function
+               (:type ("GLint" type (:type "class") nil nil)
+                :arguments 
+                  ( ("target" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11335 11349])
+                    ("internalFormat" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11350 11371])
+                    ("width" variable (:type ("GLsizei" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11372 11386])
+                    ("format" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11387 11401])
+                    ("type" variable (:type ("GLenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11402 11414])
+                    ("level" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11415 11427])
+                    ("base" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11428 11439])
+                    ("max" variable (:type ("GLint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11440 11450])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11451 11468]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11288 11469])
+            ("gluBeginTrim" function
+               (:type "void"
+                :arguments 
+                  ( ("nurb" variable
+                       (:pointer 1
+                        :type ("GLUnurbs" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11271 11286]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11235 11287])
+            ("gluBeginSurface" function
+               (:type "void"
+                :arguments 
+                  ( ("nurb" variable
+                       (:pointer 1
+                        :type ("GLUnurbs" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11218 11233]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11179 11234])
+            ("gluBeginPolygon" function
+               (:type "void"
+                :arguments 
+                  ( ("tess" variable
+                       (:pointer 1
+                        :type ("GLUtesselator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11157 11177]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11118 11178])
+            ("gluBeginCurve" function
+               (:type "void"
+                :arguments 
+                  ( ("nurb" variable
+                       (:pointer 1
+                        :type ("GLUnurbs" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11101 11116]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11064 11117])
+            ("_GLUfuncptr" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [11056 11061]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11025 11062])
+            ("GLU_TESS_MAX_COORD" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10953 10971])
+            ("GLUtriangulatorObj" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("GLUtesselator" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [10902 10943])
+            ("GLUtesselatorObj" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("GLUtesselator" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [10862 10901])
+            ("GLUquadricObj" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("GLUquadric" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [10828 10861])
+            ("GLUnurbsObj" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("GLUnurbs" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [10798 10827])
+            ("GLUtesselator" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "class"
+                :prototype t)
+                (reparse-symbol extern-c-contents) [10647 10667])
+            ("GLUquadric" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "class"
+                :prototype t)
+                (reparse-symbol extern-c-contents) [10629 10646])
+            ("GLUnurbs" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "class"
+                :prototype t)
+                (reparse-symbol extern-c-contents) [10613 10628])
+            ("GLU_TESS_WINDING_ABS_GEQ_TWO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10485 10513])
+            ("GLU_TESS_WINDING_NEGATIVE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10435 10460])
+            ("GLU_TESS_WINDING_POSITIVE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10385 10410])
+            ("GLU_TESS_WINDING_NONZERO" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10335 10359])
+            ("GLU_TESS_WINDING_ODD" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10285 10305])
+            ("GLU_TESS_NEED_COMBINE_CALLBACK" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10216 10246])
+            ("GLU_TESS_COORD_TOO_LARGE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10166 10190])
+            ("GLU_TESS_MISSING_END_CONTOUR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10116 10144])
+            ("GLU_TESS_MISSING_END_POLYGON" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10066 10094])
+            ("GLU_TESS_MISSING_BEGIN_CONTOUR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [10016 10046])
+            ("GLU_TESS_MISSING_BEGIN_POLYGON" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9966 9996])
+            ("GLU_TESS_ERROR8" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9916 9931])
+            ("GLU_TESS_ERROR7" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9866 9881])
+            ("GLU_TESS_ERROR6" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9816 9831])
+            ("GLU_TESS_ERROR5" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9766 9781])
+            ("GLU_TESS_ERROR4" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9716 9731])
+            ("GLU_TESS_ERROR3" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9666 9681])
+            ("GLU_TESS_ERROR2" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9616 9631])
+            ("GLU_TESS_ERROR1" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9566 9581])
+            ("GLU_TESS_TOLERANCE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9499 9517])
+            ("GLU_TESS_BOUNDARY_ONLY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9449 9471])
+            ("GLU_TESS_WINDING_RULE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9399 9420])
+            ("GLU_UNKNOWN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9329 9340])
+            ("GLU_EXTERIOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9279 9291])
+            ("GLU_INTERIOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9229 9241])
+            ("GLU_CCW" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9179 9186])
+            ("GLU_CW" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9129 9135])
+            ("GLU_TESS_COMBINE_DATA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9060 9081])
+            ("GLU_TESS_EDGE_FLAG_DATA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [9010 9033])
+            ("GLU_TESS_ERROR_DATA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8960 8979])
+            ("GLU_TESS_END_DATA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8910 8927])
+            ("GLU_TESS_VERTEX_DATA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8860 8880])
+            ("GLU_TESS_BEGIN_DATA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8810 8829])
+            ("GLU_TESS_COMBINE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8760 8776])
+            ("GLU_EDGE_FLAG" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8710 8723])
+            ("GLU_TESS_EDGE_FLAG" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8660 8678])
+            ("GLU_TESS_ERROR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8610 8624])
+            ("GLU_END" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8560 8567])
+            ("GLU_TESS_END" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8510 8522])
+            ("GLU_VERTEX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8460 8470])
+            ("GLU_TESS_VERTEX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8410 8425])
+            ("GLU_BEGIN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8360 8369])
+            ("GLU_TESS_BEGIN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8310 8324])
+            ("GLU_INSIDE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8240 8250])
+            ("GLU_OUTSIDE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8190 8201])
+            ("GLU_NONE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8114 8122])
+            ("GLU_FLAT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8064 8072])
+            ("GLU_SMOOTH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [8014 8024])
+            ("GLU_SILHOUETTE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7899 7913])
+            ("GLU_FILL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7849 7857])
+            ("GLU_LINE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7799 7807])
+            ("GLU_POINT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7749 7758])
+            ("GLU_MAP1_TRIM_3" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7675 7690])
+            ("GLU_MAP1_TRIM_2" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7625 7640])
+            ("GLU_DOMAIN_DISTANCE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7558 7577])
+            ("GLU_PARAMETRIC_ERROR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7508 7528])
+            ("GLU_PATH_LENGTH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7458 7473])
+            ("GLU_OBJECT_PATH_LENGTH_EXT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7408 7434])
+            ("GLU_OBJECT_PATH_LENGTH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7358 7380])
+            ("GLU_OBJECT_PARAMETRIC_ERROR_EXT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7308 7339])
+            ("GLU_OBJECT_PARAMETRIC_ERROR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7258 7285])
+            ("GLU_NURBS_RENDERER_EXT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7187 7209])
+            ("GLU_NURBS_RENDERER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7137 7155])
+            ("GLU_NURBS_TESSELLATOR_EXT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7087 7112])
+            ("GLU_NURBS_TESSELLATOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7037 7058])
+            ("GLU_NURBS_MODE_EXT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6987 7005])
+            ("GLU_NURBS_MODE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6937 6951])
+            ("GLU_V_STEP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6887 6897])
+            ("GLU_U_STEP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6837 6847])
+            ("GLU_SAMPLING_METHOD" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6787 6806])
+            ("GLU_PARAMETRIC_TOLERANCE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6737 6761])
+            ("GLU_DISPLAY_MODE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6687 6703])
+            ("GLU_SAMPLING_TOLERANCE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6637 6659])
+            ("GLU_CULLING" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6587 6598])
+            ("GLU_AUTO_LOAD_MATRIX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6537 6557])
+            ("GLU_NURBS_ERROR37" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6466 6483])
+            ("GLU_NURBS_ERROR36" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6416 6433])
+            ("GLU_NURBS_ERROR35" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6366 6383])
+            ("GLU_NURBS_ERROR34" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6316 6333])
+            ("GLU_NURBS_ERROR33" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6266 6283])
+            ("GLU_NURBS_ERROR32" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6216 6233])
+            ("GLU_NURBS_ERROR31" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6166 6183])
+            ("GLU_NURBS_ERROR30" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6116 6133])
+            ("GLU_NURBS_ERROR29" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6066 6083])
+            ("GLU_NURBS_ERROR28" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6016 6033])
+            ("GLU_NURBS_ERROR27" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5966 5983])
+            ("GLU_NURBS_ERROR26" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5916 5933])
+            ("GLU_NURBS_ERROR25" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5866 5883])
+            ("GLU_NURBS_ERROR24" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5816 5833])
+            ("GLU_NURBS_ERROR23" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5766 5783])
+            ("GLU_NURBS_ERROR22" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5716 5733])
+            ("GLU_NURBS_ERROR21" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5666 5683])
+            ("GLU_NURBS_ERROR20" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5616 5633])
+            ("GLU_NURBS_ERROR19" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5566 5583])
+            ("GLU_NURBS_ERROR18" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5516 5533])
+            ("GLU_NURBS_ERROR17" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5466 5483])
+            ("GLU_NURBS_ERROR16" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5416 5433])
+            ("GLU_NURBS_ERROR15" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5366 5383])
+            ("GLU_NURBS_ERROR14" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5316 5333])
+            ("GLU_NURBS_ERROR13" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5266 5283])
+            ("GLU_NURBS_ERROR12" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5216 5233])
+            ("GLU_NURBS_ERROR11" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5166 5183])
+            ("GLU_NURBS_ERROR10" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5116 5133])
+            ("GLU_NURBS_ERROR9" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5066 5082])
+            ("GLU_NURBS_ERROR8" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5016 5032])
+            ("GLU_NURBS_ERROR7" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4966 4982])
+            ("GLU_NURBS_ERROR6" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4916 4932])
+            ("GLU_NURBS_ERROR5" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4866 4882])
+            ("GLU_NURBS_ERROR4" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4816 4832])
+            ("GLU_NURBS_ERROR3" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4766 4782])
+            ("GLU_NURBS_ERROR2" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4716 4732])
+            ("GLU_NURBS_ERROR1" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4666 4682])
+            ("GLU_NURBS_END_DATA_EXT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4598 4620])
+            ("GLU_NURBS_END_DATA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4548 4566])
+            ("GLU_NURBS_TEX_COORD_DATA_EXT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4498 4526])
+            ("GLU_NURBS_TEXTURE_COORD_DATA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4448 4476])
+            ("GLU_NURBS_COLOR_DATA_EXT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4398 4422])
+            ("GLU_NURBS_COLOR_DATA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4348 4368])
+            ("GLU_NURBS_NORMAL_DATA_EXT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4298 4323])
+            ("GLU_NURBS_NORMAL_DATA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4248 4269])
+            ("GLU_NURBS_VERTEX_DATA_EXT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4198 4223])
+            ("GLU_NURBS_VERTEX_DATA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4148 4169])
+            ("GLU_NURBS_BEGIN_DATA_EXT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4098 4122])
+            ("GLU_NURBS_BEGIN_DATA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4048 4068])
+            ("GLU_NURBS_END_EXT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3998 4015])
+            ("GLU_NURBS_END" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3948 3961])
+            ("GLU_NURBS_TEX_COORD_EXT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3898 3921])
+            ("GLU_NURBS_TEXTURE_COORD" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3848 3871])
+            ("GLU_NURBS_COLOR_EXT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3798 3817])
+            ("GLU_NURBS_COLOR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3748 3763])
+            ("GLU_NURBS_NORMAL_EXT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3698 3718])
+            ("GLU_NURBS_NORMAL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3648 3664])
+            ("GLU_NURBS_VERTEX_EXT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3598 3618])
+            ("GLU_NURBS_VERTEX" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3548 3564])
+            ("GLU_NURBS_BEGIN_EXT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3498 3517])
+            ("GLU_NURBS_BEGIN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3448 3463])
+            ("GLU_ERROR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3398 3407])
+            ("GLU_NURBS_ERROR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3348 3363])
+            ("GLU_OUTLINE_PATCH" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3277 3294])
+            ("GLU_OUTLINE_POLYGON" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3227 3246])
+            ("GLU_INVALID_OPERATION" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3137 3158])
+            ("GLU_INCOMPATIBLE_GL_VERSION" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3087 3114])
+            ("GLU_OUT_OF_MEMORY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3037 3054])
+            ("GLU_INVALID_VALUE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2987 3004])
+            ("GLU_INVALID_ENUM" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2937 2953])
+            ("GLU_EXTENSIONS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2870 2884])
+            ("GLU_VERSION" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2820 2831])
+            ("GLU_VERSION_1_3" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2757 2772])
+            ("GLU_VERSION_1_2" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2712 2727])
+            ("GLU_VERSION_1_1" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2667 2682])
+            ("GLU_TRUE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2607 2615])
+            ("GLU_FALSE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2562 2571])
+            ("GLU_EXT_nurbs_tessellator" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2502 2527])
+            ("GLU_EXT_object_space_tess" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2457 2482]))          
+      :file "glu.h"
+      :pointmax 17256
+      :fsize 17255
+      :lastmodtime '(21077 993 294936 735000)
+      :unmatched-syntax '((TYPEDEF 11017 . 11024))
+      :lexical-table 
+        '(("GLAPIENTRYP" . ((symbol "GLAPIENTRY" 1863 . 1873) (punctuation "*" 1874 . 1875)))
+          ("GLU_NURBS_TEXTURE_COORD" . ((number "100168" 3883 . 3889)))
+          ("GLU_NURBS_VERTEX_DATA" . ((number "100171" 4183 . 4189)))
+          ("GLU_NURBS_TEX_COORD_DATA_EXT" . ((number "100174" 4533 . 4539)))
+          ("GLU_NURBS_END_DATA" . ((number "100175" 4583 . 4589)))
+          ("GLU_NURBS_ERROR3" . ((number "100253" 4801 . 4807)))
+          ("GLU_NURBS_ERROR18" . ((number "100268" 5551 . 5557)))
+          ("GLU_NURBS_ERROR25" . ((number "100275" 5901 . 5907)))
+          ("GLU_NURBS_ERROR32" . ((number "100282" 6251 . 6257)))
+          ("GLU_OBJECT_PATH_LENGTH" . ((number "100209" 7393 . 7399)))
+          ("GLU_OBJECT_PATH_LENGTH_EXT" . ((number "100209" 7443 . 7449)))
+          ("GLU_NONE" . ((number "100002" 8149 . 8155)))
+          ("GLU_END" . ((number "100102" 8595 . 8601)))
+          ("GLU_TESS_ERROR1" . ((number "100151" 9601 . 9607)))
+          ("GLU_NURBS_VERTEX" . ((number "100165" 3583 . 3589)))
+          ("GLU_NURBS_END" . ((number "100169" 3983 . 3989)))
+          ("GLU_NURBS_ERROR4" . ((number "100254" 4851 . 4857)))
+          ("GLU_NURBS_ERROR19" . ((number "100269" 5601 . 5607)))
+          ("GLU_NURBS_ERROR26" . ((number "100276" 5951 . 5957)))
+          ("GLU_NURBS_ERROR33" . ((number "100283" 6301 . 6307)))
+          ("GLU_V_STEP" . ((number "100207" 6922 . 6928)))
+          ("GLU_PARAMETRIC_ERROR" . ((number "100216" 7543 . 7549)))
+          ("GLU_TESS_BEGIN" . ((number "100100" 8345 . 8351)))
+          ("GLU_TESS_ERROR" . ((number "100103" 8645 . 8651)))
+          ("GLU_EDGE_FLAG" . ((number "100104" 8745 . 8751)))
+          ("GLU_TESS_EDGE_FLAG_DATA" . ((number "100110" 9045 . 9051)))
+          ("GLU_TESS_TOLERANCE" . ((number "100142" 9534 . 9540)))
+          ("GLU_TESS_ERROR2" . ((number "100152" 9651 . 9657)))
+          ("GLU_TESS_MISSING_END_POLYGON" . ((number "100153" 10101 . 10107)))
+          ("GLU_TESS_WINDING_ODD" . ((number "100130" 10320 . 10326)))
+          ("GLU_TESS_WINDING_POSITIVE" . ((number "100132" 10420 . 10426)))
+          ("GLU_TESS_WINDING_ABS_GEQ_TWO" . ((number "100134" 10520 . 10526)))
+          ("GLU_TRUE" . ((number "1" 2642 . 2643)))
+          ("GLU_OUTLINE_POLYGON" . ((number "100240" 3262 . 3268)))
+          ("GLU_NURBS_BEGIN_EXT" . ((number "100164" 3533 . 3539)))
+          ("GLU_NURBS_VERTEX_EXT" . ((number "100165" 3633 . 3639)))
+          ("GLU_NURBS_NORMAL" . ((number "100166" 3683 . 3689)))
+          ("GLU_NURBS_TEXTURE_COORD_DATA" . ((number "100174" 4483 . 4489)))
+          ("GLU_NURBS_ERROR5" . ((number "100255" 4901 . 4907)))
+          ("GLU_NURBS_ERROR27" . ((number "100277" 6001 . 6007)))
+          ("GLU_NURBS_ERROR34" . ((number "100284" 6351 . 6357)))
+          ("GLU_NURBS_MODE_EXT" . ((number "100160" 7022 . 7028)))
+          ("GLU_OBJECT_PARAMETRIC_ERROR_EXT" . ((number "100208" 7343 . 7349)))
+          ("GLU_PATH_LENGTH" . ((number "100215" 7493 . 7499)))
+          ("GLU_CW" . ((number "100120" 9164 . 9170)))
+          ("GLU_EXTERIOR" . ((number "100123" 9314 . 9320)))
+          ("GLU_TESS_WINDING_RULE" . ((number "100140" 9434 . 9440)))
+          ("GLU_TESS_ERROR3" . ((number "100153" 9701 . 9707)))
+          ("GLU_TESS_MISSING_BEGIN_CONTOUR" . ((number "100152" 10051 . 10057)))
+          ("GLU_FALSE" . ((number "0" 2597 . 2598)))
+          ("GLU_INVALID_OPERATION" . ((number "100904" 3172 . 3178)))
+          ("GLU_NURBS_ERROR" . ((number "100103" 3383 . 3389)))
+          ("GLU_NURBS_BEGIN" . ((number "100164" 3483 . 3489)))
+          ("GLU_NURBS_BEGIN_DATA_EXT" . ((number "100170" 4133 . 4139)))
+          ("GLU_NURBS_COLOR_DATA" . ((number "100173" 4383 . 4389)))
+          ("GLU_NURBS_ERROR6" . ((number "100256" 4951 . 4957)))
+          ("GLU_NURBS_ERROR28" . ((number "100278" 6051 . 6057)))
+          ("GLU_NURBS_ERROR35" . ((number "100285" 6401 . 6407)))
+          ("GLU_AUTO_LOAD_MATRIX" . ((number "100200" 6572 . 6578)))
+          ("GLU_SAMPLING_TOLERANCE" . ((number "100203" 6672 . 6678)))
+          ("GLU_SAMPLING_METHOD" . ((number "100205" 6822 . 6828)))
+          ("GLU_OUTSIDE" . ((number "100020" 8225 . 8231)))
+          ("GLU_TESS_VERTEX" . ((number "100101" 8445 . 8451)))
+          ("GLU_TESS_ERROR4" . ((number "100154" 9751 . 9757)))
+          ("GLU_TESS_NEED_COMBINE_CALLBACK" . ((number "100156" 10251 . 10257)))
+          ("GLAPI" . ((EXTERN "extern" 2285 . 2291)))
+          ("GLU_VERSION_1_1" . ((number "1" 2702 . 2703)))
+          ("GLU_NURBS_ERROR7" . ((number "100257" 5001 . 5007)))
+          ("GLU_NURBS_ERROR29" . ((number "100279" 6101 . 6107)))
+          ("GLU_NURBS_ERROR36" . ((number "100286" 6451 . 6457)))
+          ("GLU_OBJECT_PARAMETRIC_ERROR" . ((number "100208" 7293 . 7299)))
+          ("GLU_FILL" . ((number "100012" 7884 . 7890)))
+          ("GLU_INTERIOR" . ((number "100122" 9264 . 9270)))
+          ("GLU_TESS_ERROR5" . ((number "100155" 9801 . 9807)))
+          ("GLU_VERSION_1_2" . ((number "1" 2747 . 2748)))
+          ("GLU_INCOMPATIBLE_GL_VERSION" . ((number "100903" 3122 . 3128)))
+          ("GLU_NURBS_NORMAL_EXT" . ((number "100166" 3733 . 3739)))
+          ("GLU_NURBS_COLOR" . ((number "100167" 3783 . 3789)))
+          ("GLU_NURBS_END_EXT" . ((number "100169" 4033 . 4039)))
+          ("GLU_NURBS_VERTEX_DATA_EXT" . ((number "100171" 4233 . 4239)))
+          ("GLU_NURBS_COLOR_DATA_EXT" . ((number "100173" 4433 . 4439)))
+          ("GLU_NURBS_ERROR8" . ((number "100258" 5051 . 5057)))
+          ("GLU_NURBS_ERROR10" . ((number "100260" 5151 . 5157)))
+          ("GLU_NURBS_ERROR37" . ((number "100287" 6501 . 6507)))
+          ("GLU_CULLING" . ((number "100201" 6622 . 6628)))
+          ("GLU_U_STEP" . ((number "100206" 6872 . 6878)))
+          ("GLU_NURBS_TESSELLATOR" . ((number "100161" 7072 . 7078)))
+          ("GLU_DOMAIN_DISTANCE" . ((number "100217" 7593 . 7599)))
+          ("GLU_TESS_END_DATA" . ((number "100108" 8945 . 8951)))
+          ("GLU_TESS_ERROR6" . ((number "100156" 9851 . 9857)))
+          ("GLU_TESS_MISSING_END_CONTOUR" . ((number "100154" 10151 . 10157)))
+          ("GLU_VERSION_1_3" . ((number "1" 2792 . 2793)))
+          ("GLU_VERSION" . ((number "100800" 2855 . 2861)))
+          ("GLU_NURBS_NORMAL_DATA_EXT" . ((number "100172" 4333 . 4339)))
+          ("GLU_NURBS_ERROR9" . ((number "100259" 5101 . 5107)))
+          ("GLU_NURBS_ERROR11" . ((number "100261" 5201 . 5207)))
+          ("GLU_SILHOUETTE" . ((number "100013" 7934 . 7940)))
+          ("GLU_FLAT" . ((number "100001" 8099 . 8105)))
+          ("GLU_INSIDE" . ((number "100021" 8275 . 8281)))
+          ("GLU_TESS_EDGE_FLAG" . ((number "100104" 8695 . 8701)))
+          ("GLU_TESS_COMBINE_DATA" . ((number "100111" 9095 . 9101)))
+          ("GLU_TESS_BOUNDARY_ONLY" . ((number "100141" 9484 . 9490)))
+          ("GLU_TESS_ERROR7" . ((number "100157" 9901 . 9907)))
+          ("GLU_INVALID_ENUM" . ((number "100900" 2972 . 2978)))
+          ("GLU_ERROR" . ((number "100103" 3433 . 3439)))
+          ("GLU_NURBS_ERROR12" . ((number "100262" 5251 . 5257)))
+          ("GLU_NURBS_TESSELLATOR_EXT" . ((number "100161" 7122 . 7128)))
+          ("GLU_MAP1_TRIM_2" . ((number "100210" 7660 . 7666)))
+          ("GLU_POINT" . ((number "100010" 7784 . 7790)))
+          ("GLU_BEGIN" . ((number "100100" 8395 . 8401)))
+          ("GLU_CCW" . ((number "100121" 9214 . 9220)))
+          ("GLU_TESS_ERROR8" . ((number "100158" 9951 . 9957)))
+          ("GLAPIENTRY")
+          ("GLU_EXT_nurbs_tessellator" . ((number "1" 2537 . 2538)))
+          ("GLU_INVALID_VALUE" . ((number "100901" 3022 . 3028)))
+          ("GLU_NURBS_COLOR_EXT" . ((number "100167" 3833 . 3839)))
+          ("GLU_NURBS_TEX_COORD_EXT" . ((number "100168" 3933 . 3939)))
+          ("GLU_NURBS_ERROR13" . ((number "100263" 5301 . 5307)))
+          ("GLU_NURBS_ERROR20" . ((number "100270" 5651 . 5657)))
+          ("GLU_MAP1_TRIM_3" . ((number "100211" 7710 . 7716)))
+          ("GLU_VERTEX" . ((number "100101" 8495 . 8501)))
+          ("GLU_TESS_END" . ((number "100102" 8545 . 8551)))
+          ("GLU_UNKNOWN" . ((number "100124" 9364 . 9370)))
+          ("GLU_TESS_WINDING_NONZERO" . ((number "100131" 10370 . 10376)))
+          ("GLU_TESS_MAX_COORD" . ((number "1.0e150" 10972 . 10979)))
+          ("GLU_OUT_OF_MEMORY" . ((number "100902" 3072 . 3078)))
+          ("GLU_OUTLINE_PATCH" . ((number "100241" 3312 . 3318)))
+          ("GLU_NURBS_NORMAL_DATA" . ((number "100172" 4283 . 4289)))
+          ("GLU_NURBS_END_DATA_EXT" . ((number "100175" 4633 . 4639)))
+          ("GLU_NURBS_ERROR14" . ((number "100264" 5351 . 5357)))
+          ("GLU_NURBS_ERROR21" . ((number "100271" 5701 . 5707)))
+          ("GLU_PARAMETRIC_TOLERANCE" . ((number "100202" 6772 . 6778)))
+          ("GLU_NURBS_RENDERER" . ((number "100162" 7172 . 7178)))
+          ("GLU_LINE" . ((number "100011" 7834 . 7840)))
+          ("GLU_TESS_WINDING_NEGATIVE" . ((number "100133" 10470 . 10476)))
+          ("GLU_EXTENSIONS" . ((number "100801" 2905 . 2911)))
+          ("GLU_NURBS_ERROR15" . ((number "100265" 5401 . 5407)))
+          ("GLU_NURBS_ERROR22" . ((number "100272" 5751 . 5757)))
+          ("GLU_DISPLAY_MODE" . ((number "100204" 6722 . 6728)))
+          ("GLU_NURBS_RENDERER_EXT" . ((number "100162" 7222 . 7228)))
+          ("GLU_TESS_COMBINE" . ((number "100105" 8795 . 8801)))
+          ("GLU_NURBS_BEGIN_DATA" . ((number "100170" 4083 . 4089)))
+          ("GLU_NURBS_ERROR1" . ((number "100251" 4701 . 4707)))
+          ("GLU_NURBS_ERROR16" . ((number "100266" 5451 . 5457)))
+          ("GLU_NURBS_ERROR23" . ((number "100273" 5801 . 5807)))
+          ("GLU_NURBS_ERROR30" . ((number "100280" 6151 . 6157)))
+          ("GLU_NURBS_MODE" . ((number "100160" 6972 . 6978)))
+          ("GLU_TESS_BEGIN_DATA" . ((number "100106" 8845 . 8851)))
+          ("GLU_TESS_VERTEX_DATA" . ((number "100107" 8895 . 8901)))
+          ("GLU_TESS_ERROR_DATA" . ((number "100109" 8995 . 9001)))
+          ("GLU_TESS_MISSING_BEGIN_POLYGON" . ((number "100151" 10001 . 10007)))
+          ("GLU_TESS_COORD_TOO_LARGE" . ((number "100155" 10201 . 10207)))
+          ("__glu_h__")
+          ("GLU_EXT_object_space_tess" . ((number "1" 2492 . 2493)))
+          ("GLU_NURBS_ERROR2" . ((number "100252" 4751 . 4757)))
+          ("GLU_NURBS_ERROR17" . ((number "100267" 5501 . 5507)))
+          ("GLU_NURBS_ERROR24" . ((number "100274" 5851 . 5857)))
+          ("GLU_NURBS_ERROR31" . ((number "100281" 6201 . 6207)))
+          ("GLU_SMOOTH" . ((number "100000" 8049 . 8055)))
+          )
+))
+  :file "!usr!include!GL!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

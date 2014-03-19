@@ -1,0 +1,243 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "scena.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("scena.h" include nil nil [57 75])
+            ("FPS" variable (:type "int") nil [91 99])
+            ("flag" variable
+               (:default-value "0"
+                :type "bool")
+                nil [100 112])
+            ("i" variable
+               (:default-value "1"
+                :type "bool")
+                nil [113 122])
+            ("delta" variable
+               (:default-value "1.0f"
+                :type "float")
+                nil [162 179])
+            ("texture" variable
+               (:dereference 1
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [180 198])
+            ("tex" variable
+               (:dereference 1
+                :type ("QImage" type (:type "class") nil nil))
+                nil [199 218])
+            ("buf" variable (:type ("QImage" type (:type "class") nil nil)) nil [199 218])
+            ("Scena" function
+               (:constructor-flag t
+                :parent "Scena"
+                :arguments 
+                  ( ("app" variable
+                       (:pointer 1
+                        :type ("QApplication" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [287 305])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [306 322])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [323 340]))                  
+                :type ("Scena" type (:type "class") nil nil))
+                nil [274 630])
+            ("timerFPS" function
+               (:parent "Scena"
+                :type "void")
+                nil [632 726])
+            ("timerGL" function
+               (:parent "Scena"
+                :type "void")
+                nil [730 781])
+            ("keyPressEvent" function
+               (:parent "Scena"
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("QKeyEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [809 822]))                  
+                :type "void")
+                nil [783 1081])
+            ("keyReleaseEvent" function
+               (:parent "Scena"
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("QKeyEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1112 1125]))                  
+                :type "void")
+                nil [1084 1129])
+            ("resizeGL" function
+               (:parent "Scena"
+                :arguments 
+                  ( ("w" variable (:type "int") (reparse-symbol arg-sub-list) [1153 1159])
+                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [1160 1166]))                  
+                :type "void")
+                nil [1132 1355])
+            ("paintGL" function
+               (:parent "Scena"
+                :type "void")
+                nil [1357 1403])
+            ("initializeGL" function
+               (:parent "Scena"
+                :type "void")
+                nil [1407 2873])
+            ("paintGL" function
+               (:parent "scenapierw"
+                :type "void")
+                nil [2875 5814])
+            ("scenadruga" function
+               (:constructor-flag t
+                :parent "scenadruga"
+                :type ("scenadruga" type (:type "class") nil nil))
+                nil [5817 6180])
+            ("scenadruga" function
+               (:destructor-flag t
+                :parent "scenadruga"
+                :type "void")
+                nil [6183 6412])
+            ("podloga" function
+               (:parent "scenadruga"
+                :type "void")
+                nil [6413 7572])
+            ("podloga3" function
+               (:parent "scenadruga"
+                :type "void")
+                nil [7575 8643])
+            ("lisc" function
+               (:parent "scenadruga"
+                :type "void")
+                nil [8644 9364])
+            ("drzewo" function
+               (:parent "scenadruga"
+                :type "void")
+                nil [9368 10265])
+            ("niebo" function
+               (:parent "scenadruga"
+                :type "void")
+                nil [10268 10714])
+            ("paintGL" function
+               (:parent "scenadruga"
+                :type "void")
+                nil [10718 12325])
+            ("Scena" function
+               (:destructor-flag t
+                :parent "Scena"
+                :type "void")
+                nil [12329 12398]))          
+      :file "scena.cpp"
+      :pointmax 12413
+      :fsize 12415
+      :lastmodtime '(21218 22401 150511 807000)
+      :unmatched-syntax nil)
+    (semanticdb-table "scena_moc.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("../include/scena.h" include nil nil [338 367])
+            ("qt_meta_data_Scena" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+
+ // content:
+       6,       // revision
+       0,       // classname
+       0,    0, // classinfo
+       2,   14, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       0,       // signalCount
+
+ // slots: signature, parameters, type, tag, flags
+       7,    6,    6,    6, 0x08,
+      17,    6,    6,    6, 0x08,
+
+       0        // eod
+}"
+                :type ("uint" type (:type "class") nil nil))
+                nil [706 1170])
+            ("qt_meta_stringdata_Scena" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{
+    \"Scena\\0\\0timerGL()\\0timerFPS()\\0\"
+}"
+                :type "char")
+                nil [1172 1262])
+            ("qt_static_metacall" function
+               (:parent "Scena"
+                :arguments 
+                  ( ("_o" variable
+                       (:pointer 1
+                        :type ("QObject" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1295 1307])
+                    ("_c" variable (:type ("QMetaObject::Call" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1308 1329])
+                    ("_id" variable (:type "int") (reparse-symbol arg-sub-list) [1330 1338])
+                    ("_a" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1339 1349]))                  
+                :type "void")
+                nil [1264 1644])
+            ("Scena::staticMetaObjectExtraData" variable
+               (:constant-flag t
+                :default-value "{
+    0,  qt_static_metacall 
+}"
+                :type ("QMetaObjectExtraData" type (:type "class") nil nil))
+                nil [1646 1740])
+            ("Scena::staticMetaObject" variable
+               (:constant-flag t
+                :default-value "{
+    { &QGLWidget::staticMetaObject, qt_meta_stringdata_Scena,
+      qt_meta_data_Scena, &staticMetaObjectExtraData }
+}"
+                :type ("QMetaObject" type (:type "class") nil nil))
+                nil [1742 1907])
+            ("metaObject" function
+               (:pointer 1
+                :parent "Scena"
+                :constant-flag t
+                :type ("QMetaObject" type (:type "class") nil nil))
+                nil [2045 2181])
+            ("qt_metacast" function
+               (:pointer 1
+                :parent "Scena"
+                :arguments 
+                  ( ("_clname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2208 2228]))                  
+                :type "void")
+                nil [2183 2418])
+            ("qt_metacall" function
+               (:parent "Scena"
+                :arguments 
+                  ( ("_c" variable (:type ("QMetaObject::Call" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2443 2464])
+                    ("_id" variable (:type "int") (reparse-symbol arg-sub-list) [2465 2473])
+                    ("_a" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2474 2484]))                  
+                :type "int")
+                nil [2420 2731]))          
+      :file "scena_moc.cpp"
+      :pointmax 2753
+      :fsize 2752
+      :lastmodtime '(21218 12801 577348 934000)
+      :unmatched-syntax '((symbol 2732 . 2752) (symbol 683 . 705) (string 641 . 674) (symbol 635 . 640) (punctuation 634 . 635) (string 569 . 633) (symbol 563 . 568) (punctuation 562 . 563) (string 507 . 561) (symbol 501 . 506) (punctuation 500 . 501) (string 411 . 465) (symbol 405 . 410) (punctuation 404 . 405))))
+  :file "!home!dearn!Document!Studia!Grafika!5!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,101 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "scena.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("scena.h" include nil nil [104 122])
+            ("FPS" variable (:type "int") nil [138 146])
+            ("Scena" function
+               (:constructor-flag t
+                :parent "Scena"
+                :arguments 
+                  ( ("app" variable
+                       (:pointer 1
+                        :type ("QApplication" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [161 179])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [180 196])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [197 214]))                  
+                :type ("Scena" type (:type "class") nil nil))
+                nil [148 409])
+            ("timerFPS" function
+               (:parent "Scena"
+                :type "void")
+                nil [411 485])
+            ("timerGL" function
+               (:parent "Scena"
+                :type "void")
+                nil [487 535])
+            ("keyPressEvent" function
+               (:parent "Scena"
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("QKeyEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [563 576]))                  
+                :type "void")
+                nil [537 678])
+            ("keyReleaseEvent" function
+               (:parent "Scena"
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("QKeyEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [708 721]))                  
+                :type "void")
+                nil [680 725])
+            ("resizeGL" function
+               (:parent "Scena"
+                :arguments 
+                  ( ("w" variable (:type "int") (reparse-symbol arg-sub-list) [748 754])
+                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [755 761]))                  
+                :type "void")
+                nil [727 951])
+            ("paintGL" function
+               (:parent "Scena"
+                :type "void")
+                nil [953 1984])
+            ("initializeGL" function
+               (:parent "Scena"
+                :type "void")
+                nil [1986 2824])
+            ("Scena" function
+               (:destructor-flag t
+                :parent "Scena"
+                :type "void")
+                nil [2826 2845]))          
+      :file "scena.cpp"
+      :pointmax 2860
+      :fsize 2861
+      :lastmodtime '(21228 61759 287752 82000)
+      :unmatched-syntax nil)
+    (semanticdb-table "test.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("scena.h" include nil nil [57 75])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [100 109])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [110 122]))                  
+                :type "int")
+                nil [91 808]))          
+      :file "test.cpp"
+      :pointmax 823
+      :fsize 823
+      :lastmodtime '(21096 62663 0 0)
+      :unmatched-syntax nil))
+  :file "!home!dearn!Document!Studia!Grafika!6!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

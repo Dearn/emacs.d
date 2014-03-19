@@ -1,0 +1,36 @@
+;; Object 3/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "3/"
+  :tables
+  (list
+    (semanticdb-table "makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("PROJECT" variable (:default-value ("test")) nil [67 82])
+            ("INC" variable (:default-value ("./include")) nil [83 103])
+            ("SRC" variable (:default-value ("./src")) nil [103 119])
+            ("BIN" variable (:default-value ("./bin")) nil [119 135])
+            ("OBJ" variable (:default-value ("./obj")) nil [135 151])
+            ("MKFILES" variable (:default-value ("./mk")) nil [151 171])
+            ("CXXFLAGS" variable (:default-value ("-I$(INC)")) nil [172 193])
+            ("./$(MKFILES)/config.mk" include nil nil [194 225])
+            ("CXXFLAGS" variable (:default-value ("-I/usr/include/qt4" "-I/usr/include/qt4/QtOpenGL" "-I/usr/include/qt4/Qt" "-I/usr/include/qt4/QtCore" "-I/usr/include/qt4/QtGui")) nil [226 358])
+            ("LIBS" variable (:default-value ("-L/usr/lib64/qt4" "-lQtGui" "-lQtCore" "-lGLU" "-lGL" "-lglut" "-lQtOpenGL")) nil [358 429])
+            ("OBJS" variable (:default-value ("$(OBJ)/test.o" "$(OBJ)/scena.o" "$(OBJ)/scena_moc.o")) nil [430 485])
+            ("all" function (:arguments ("$(PROJECT)")) nil [486 502])
+            ("depend" function nil nil [503 716])
+            ("$(OBJ)" function (:arguments ("$(SRC)/%.cpp")) nil [717 774])
+            ("$(SRC)" function (:arguments ("$(INC)/scena.h")) nil [775 826])
+            ("$(PROJECT)" function (:arguments ("$(SRC)/scena_moc.cpp" "$(OBJS)")) nil [827 925])
+            ("run" function nil nil [926 950])
+            ("clean" function nil nil [951 999])
+            ("realclean" function (:arguments ("clean")) nil [1000 1044])
+            ("./$(MKFILES)/depend.mk" include nil nil [1045 1076]))          
+      :file "makefile"
+      :pointmax 1076
+      :fsize 1076
+      :lastmodtime '(21288 6153 382999 993000)
+      :unmatched-syntax nil))
+  :file "!home!dearn!Documents!cpp!Grafika!3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,177 @@
+;; Object spotify-notify/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "spotify-notify/"
+  :tables
+  (list
+    (semanticdb-table "spotify-notify.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("dbus" include nil nil [270 281])
+            ("dbus.mainloop.glib" include nil nil [282 326])
+            ("pynotify" include nil nil [328 395])
+            ("urllib2" include nil nil [328 395])
+            ("re" include nil nil [328 395])
+            ("time" include nil nil [328 395])
+            ("sys" include nil nil [328 395])
+            ("tempfile" include nil nil [328 395])
+            ("os" include nil nil [328 395])
+            ("gtk" include nil nil [328 395])
+            ("gobject" include nil nil [328 395])
+            ("optparse" include nil nil [396 429])
+            ("subprocess" include nil nil [430 454])
+            ("SPOTIFY_OPEN_URL" variable nil nil [514 565])
+            ("APPLICATION_DIR" code nil nil [611 646])
+            ("SPOTIFY_PROCESS_NAME" variable nil nil [714 739])
+            ("SPOTIFY_CLOSED_CHECK" variable nil nil [808 836])
+            ("SpotifyNotify" type
+               (:members 
+                  ( ("spotifyPath" variable nil (reparse-symbol indented_block_body) [866 898])
+                    ("tryToReconnect" variable nil (reparse-symbol indented_block_body) [904 926])
+                    ("tmpfile" variable nil (reparse-symbol indented_block_body) [932 947])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [991 1021])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1030 1057])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1067 1085])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1094 1116])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1125 1144])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1153 1171])
+                            ("self" code nil (reparse-symbol indented_block_body) [1181 1195]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [966 970])
+                            ("debugger" variable nil (reparse-symbol function_parameters) [972 980]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [953 1196])
+                    ("__del__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1213 1217]))                          )
+                        (reparse-symbol indented_block_body) [1201 1314])
+                    ("connect" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1331 1335]))                          )
+                        (reparse-symbol indented_block_body) [1319 1794])
+                    ("executeCommand" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1818 1822])
+                            ("key" variable nil (reparse-symbol function_parameters) [1824 1827]))                          )
+                        (reparse-symbol indented_block_body) [1799 2064])
+                    ("pollChange" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2084 2088]))                          )
+                        (reparse-symbol indented_block_body) [2069 2632])
+                    ("trackChange" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2653 2657])
+                            ("trackChange" variable nil (reparse-symbol function_parameters) [2659 2671]))                          )
+                        (reparse-symbol indented_block_body) [2637 5341])
+                    ("retrieveCoverImage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5635 5639])
+                            ("trackInfo" variable nil (reparse-symbol function_parameters) [5641 5650]))                          )
+                        (reparse-symbol indented_block_body) [5612 6312])
+                    ("fetchCoverImageSpotify" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6344 6348])
+                            ("artist" variable nil (reparse-symbol function_parameters) [6350 6356])
+                            ("album" variable nil (reparse-symbol function_parameters) [6358 6363])
+                            ("trackhash" variable nil (reparse-symbol function_parameters) [6365 6374]))                          )
+                        (reparse-symbol indented_block_body) [6317 7357])
+                    ("fetchCoverImage" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7382 7386])
+                            ("url" variable nil (reparse-symbol function_parameters) [7388 7391]))                          )
+                        (reparse-symbol indented_block_body) [7362 8110])
+                    ("startSpotify" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("Debug" variable nil (reparse-symbol function_parameters) [8150 8155]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [8115 8950])
+                    ("checkForClosedSpotify" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("SN" variable nil (reparse-symbol function_parameters) [8999 9001])
+                            ("Debug" variable nil (reparse-symbol function_parameters) [9003 9008]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [8955 9748])
+                    ("preventDuplicate" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("Debug" variable nil (reparse-symbol function_parameters) [9792 9797]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [9753 10708])
+                    ("checkForProcess" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("proc" variable nil (reparse-symbol function_parameters) [10751 10755])
+                            ("Debug" variable nil (reparse-symbol function_parameters) [10757 10762]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [10713 11008]))                  
+                :type "class")
+                nil [838 11008])
+            ("MediaKeyHandler" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [11091 11117])
+                            ("self" variable nil (reparse-symbol indented_block_body) [11126 11147])
+                            ("self" variable nil (reparse-symbol indented_block_body) [11156 11356])
+                            ("try" code nil (reparse-symbol indented_block_body) [11366 11724])
+                            ("try" code nil (reparse-symbol indented_block_body) [11732 11947])
+                            ("self" code nil (reparse-symbol indented_block_body) [11956 12070]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11051 11055])
+                            ("spotifyNotify" variable nil (reparse-symbol function_parameters) [11057 11070])
+                            ("debugger" variable nil (reparse-symbol function_parameters) [11072 11080]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [11038 12071])
+                    ("handle_mediakey" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12096 12100])
+                            ("mmkeys" variable nil (reparse-symbol function_parameters) [12102 12109]))                          )
+                        (reparse-symbol indented_block_body) [12076 12275]))                  
+                :type "class")
+                nil [11009 12275])
+            ("DebugMe" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [12333 12421]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12310 12314])
+                            ("toggle" variable nil (reparse-symbol function_parameters) [12316 12322]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [12297 12421])
+                    ("out" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12434 12438])
+                            ("msg" variable nil (reparse-symbol function_parameters) [12440 12443]))                          )
+                        (reparse-symbol indented_block_body) [12426 12530]))                  
+                :type "class")
+                nil [12276 12530])
+            ("if" code nil nil [12531 14940]))          
+      :file "spotify-notify.py"
+      :pointmax 14940
+      :fsize 14939
+      :lastmodtime '(21217 11927 126415 611000)
+      :unmatched-syntax '(($EOI 14940 . 14940) ($EOI 14940 . 14940) ($EOI 14940 . 14940))))
+  :file "!home!dearn!spot!spotify-notify!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

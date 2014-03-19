@@ -1,0 +1,16 @@
+;; Object ctable-20140206.1656/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ctable-20140206.1656/"
+  :tables
+  (list
+    (semanticdb-table "ctable-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "ctable-autoloads.el"
+      :pointmax 285
+      :fsize 363
+      :lastmodtime '(21248 47732 910746 369000)
+      :unmatched-syntax nil))
+  :file "!home!dearn!.emacs.d!elpa!ctable-20140206.1656!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

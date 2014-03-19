@@ -1,0 +1,195 @@
+;; Object Downloads/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Downloads/"
+  :tables
+  (list
+    (semanticdb-table "figura.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [22 42])
+            ("figura" type
+               (:members 
+                  ( ("protected" label nil (reparse-symbol classsubparts) [59 69])
+                    ("kol_" variable
+                       (:pointer 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [72 85])
+                    ("a_" variable (:type "double") (reparse-symbol classsubparts) [88 104])
+                    ("b_" variable (:type "double") (reparse-symbol classsubparts) [88 104])
+                    ("h_" variable (:type "double") (reparse-symbol classsubparts) [88 104])
+                    ("public" label nil (reparse-symbol classsubparts) [105 112])
+                    ("figura" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("kol" variable
+                               (:default-value "\"--\""
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [122 137])
+                            ("a" variable
+                               (:default-value "0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [139 149])
+                            ("b" variable
+                               (:default-value "0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [151 161])
+                            ("h" variable
+                               (:default-value "0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [163 173]))                          
+                        :type ("figura" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [115 222])
+                    ("kol" function
+                       (:constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [227 268])
+                    ("kol" function (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [271 300])
+                    ("<<" function
+                       (:operator-flag t
+                        :typemodifiers ("friend")
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type ("ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [331 344])
+                            ("r" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("figura" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [345 361]))                          
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [304 408])
+                    ("pole" function
+                       (:pure-virtual-flag t
+                        :prototype-flag t
+                        :typemodifiers ("virtual")
+                        :type "double")
+                        (reparse-symbol classsubparts) [412 442])
+                    ("figura" function
+                       (:destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [445 476]))                  
+                :type "class")
+                nil [44 479])
+            ("kolo" type
+               (:superclasses 
+                  ( ("figura" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [509 516])
+                    ("kolo" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("kol" variable
+                               (:default-value "\"--\""
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [524 539])
+                            ("a" variable
+                               (:default-value "0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [541 551])
+                            ("b" variable
+                               (:default-value "0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [553 563])
+                            ("h" variable
+                               (:default-value "0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [565 575]))                          
+                        :type ("kolo" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [519 598])
+                    ("pole" function (:type "double") (reparse-symbol classsubparts) [602 644])
+                    ("kolo" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [648 657]))                  
+                :type "class")
+                nil [481 660])
+            ("prosto" type
+               (:superclasses 
+                  ( ("figura" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [691 698])
+                    ("prosto" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("kol" variable
+                               (:default-value "\"--\""
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [708 723])
+                            ("a" variable
+                               (:default-value "0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [725 735])
+                            ("b" variable
+                               (:default-value "0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [737 747])
+                            ("h" variable
+                               (:default-value "0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [749 759]))                          
+                        :type ("prosto" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [701 782])
+                    ("pole" function (:type "double") (reparse-symbol classsubparts) [786 821])
+                    ("prosto" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [825 836]))                  
+                :type "class")
+                nil [662 839])
+            ("prostop" type
+               (:superclasses 
+                  ( ("figura" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [871 878])
+                    ("prostop" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("kol" variable
+                               (:default-value "\"--\""
+                                :type ("string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [889 904])
+                            ("a" variable
+                               (:default-value "0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [906 916])
+                            ("b" variable
+                               (:default-value "0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [918 928])
+                            ("h" variable
+                               (:default-value "0"
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [930 940]))                          
+                        :type ("prostop" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [881 963])
+                    ("pole" function (:type "double") (reparse-symbol classsubparts) [967 1028])
+                    ("prostop" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1031 1043]))                  
+                :type "class")
+                nil [841 1046])
+            ("main" function (:type "int") nil [1049 1591]))          
+      :file "figura.cpp"
+      :pointmax 1592
+      :fsize 1681
+      :lastmodtime '(21210 48688 235402 726000)
+      :unmatched-syntax nil))
+  :file "!home!dearn!Downloads!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

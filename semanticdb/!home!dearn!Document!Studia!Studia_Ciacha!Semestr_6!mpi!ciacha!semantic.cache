@@ -1,0 +1,46 @@
+;; Object ciacha/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ciacha/"
+  :tables
+  (list
+    (semanticdb-table "lab3.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [457 476])
+            ("iostream" include (:system-flag t) nil [477 496])
+            ("mpi.h" include (:system-flag t) nil [497 513])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [515 535])
+            ("max" function
+               (:arguments 
+                  ( ("a" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [546 561])
+                    ("b" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [562 577]))                  
+                :type "float")
+                nil [536 600])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [611 620])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [620 632]))                  
+                :type "int")
+                nil [602 989]))          
+      :file "lab3.cpp"
+      :pointmax 990
+      :fsize 989
+      :lastmodtime '(21153 47364 560264 761000)
+      :unmatched-syntax nil))
+  :file "!home!dearn!Document!Studia!Studia_Ciacha!Semestr_6!mpi!ciacha!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

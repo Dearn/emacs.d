@@ -1,0 +1,33 @@
+;; Object fz3temp-1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "fz3temp-1/"
+  :tables
+  (list
+    (semanticdb-table "index.php"
+      :major-mode 'html-mode
+      :tags nil
+      :file "index.php"
+      :pointmax 228
+      :fsize 227
+      :lastmodtime '(21226 38243 120485 719000)
+      :unmatched-syntax nil)
+    (semanticdb-table "config.php"
+      :major-mode 'html-mode
+      :tags nil
+      :file "config.php"
+      :pointmax 2247
+      :fsize 2246
+      :lastmodtime '(21226 37079 891703 614000)
+      :unmatched-syntax nil)
+    (semanticdb-table "tests.php"
+      :major-mode 'html-mode
+      :tags 
+        '( ("'.$player_info->get('personaname').'\\'s steam profile" anchor nil nil [2035 2038]))          
+      :file "tests.php"
+      :pointmax 2492
+      :fsize 2491
+      :lastmodtime '(21226 36799 107040 794000)
+      :unmatched-syntax nil))
+  :file "!tmp!fz3temp-1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

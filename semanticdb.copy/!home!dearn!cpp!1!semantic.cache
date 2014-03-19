@@ -1,0 +1,138 @@
+;; Object 1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "1/"
+  :tables
+  (list
+    (semanticdb-table "people.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("PEOPLE_H" variable (:constant-flag t) nil [26 34])
+            ("string" include (:system-flag t) nil [36 53])
+            ("Birthday.h" include nil nil [54 75])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [77 97])
+            ("People" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [116 123])
+                    ("People" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("x" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [133 142])
+                            ("bo" variable (:type ("Birthday" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [143 155]))                          
+                        :type ("People" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [126 156])
+                    ("printInfo" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [159 176])
+                    ("private" label nil (reparse-symbol classsubparts) [178 186])
+                    ("name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [189 201])
+                    ("dateOfBirth" variable (:type ("Birthday" type (:type "class") nil nil)) (reparse-symbol classsubparts) [204 225]))                  
+                :type "class")
+                nil [99 228]))          
+      :file "people.h"
+      :pointmax 248
+      :fsize 247
+      :lastmodtime '(21209 18466 427157 111000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PEOPLE_H")
+          )
+)
+    (semanticdb-table "People.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("Birthday.h" include nil nil [1 22])
+            ("people.h" include nil nil [23 42])
+            ("iostream" include (:system-flag t) nil [43 62])
+            ("People" function
+               (:constructor-flag t
+                :parent "People"
+                :arguments 
+                  ( ("x" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78 87])
+                    ("bo" variable (:type ("Birthday" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [88 100]))                  
+                :type ("People" type (:type "class") nil nil))
+                nil [63 136])
+            ("printInfo" function
+               (:parent "People"
+                :type "void")
+                nil [139 236]))          
+      :file "People.cpp"
+      :pointmax 237
+      :fsize 236
+      :lastmodtime '(21209 18623 634964 321000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Birthday.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("BIRTHDAY_H" variable (:constant-flag t) nil [28 38])
+            ("Birthday" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [58 65])
+                    ("Birthday" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("m" variable (:type "int") (reparse-symbol arg-sub-list) [77 83])
+                            ("d" variable (:type "int") (reparse-symbol arg-sub-list) [84 90])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [91 97]))                          
+                        :type ("Birthday" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [68 98])
+                    ("printDate" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [101 118])
+                    ("private" label nil (reparse-symbol classsubparts) [120 128])
+                    ("month" variable (:type "int") (reparse-symbol classsubparts) [131 141])
+                    ("day" variable (:type "int") (reparse-symbol classsubparts) [144 152])
+                    ("year" variable (:type "int") (reparse-symbol classsubparts) [155 164]))                  
+                :type "class")
+                nil [40 167]))          
+      :file "Birthday.h"
+      :pointmax 189
+      :fsize 188
+      :lastmodtime '(21209 17697 964872 682000)
+      :unmatched-syntax '((symbol 170 . 171) (punctuation 169 . 170))
+      :lexical-table 
+        '(("BIRTHDAY_H")
+          )
+)
+    (semanticdb-table "Birthday.cpp"
+      :major-mode 'c++-mode
+      :tags nil
+      :file "Birthday.cpp"
+      :pointmax 286
+      :fsize 285
+      :lastmodtime '(21209 17995 395580 490000)
+      :unmatched-syntax nil)
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("people.h" include nil nil [21 40])
+            ("Birthday.h" include nil nil [41 62])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [64 84])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [95 104])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [105 118]))                  
+                :type "int")
+                nil [86 233]))          
+      :file "main.cpp"
+      :pointmax 234
+      :fsize 233
+      :lastmodtime '(21209 18409 410860 387000)
+      :unmatched-syntax nil))
+  :file "!home!dearn!cpp!1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

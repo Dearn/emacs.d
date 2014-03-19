@@ -1,0 +1,181 @@
+;; Object emacs-lisp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "emacs-lisp/"
+  :tables
+  (list
+    (semanticdb-table "autoload.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("lisp-mode" include nil nil [1211 1231])
+            ("help-fns" include nil nil [1268 1287])
+            ("cl-lib" include nil nil [1337 1354])
+            ("generated-autoload-file" variable nil nil [1357 1879])
+            ("put" code nil nil [1895 1955])
+            ("generated-autoload-load-name" variable nil nil [1957 2127])
+            ("put" code nil nil [2143 2208])
+            ("generate-autoload-cookie" variable (:default-value ";;;###autoload") nil [2351 2854])
+            ("autoload-excludes" variable nil nil [2856 2957])
+            ("generate-autoload-section-header" variable
+               (:constant-flag t
+                :default-value "
+;;;### ")
+                nil [2959 3094])
+            ("generate-autoload-section-trailer" variable
+               (:constant-flag t
+                :default-value "
+;;;***
+")
+                nil [3096 3228])
+            ("generate-autoload-section-continuation" variable
+               (:constant-flag t
+                :default-value ";;;;;; ")
+                nil [3230 3356])
+            ("autoload-modified-buffers" variable nil nil [3358 3392])
+            ("make-autoload" function (:arguments ("form" "file" "expansion")) nil [3424 9927])
+            ("autoload-find-generated-file" function nil nil [10137 10595])
+            ("autoload-generated-file" function nil nil [10597 11000])
+            ("autoload-read-section-header" function nil nil [11003 11709])
+            ("autoload-print-form-outbuf" variable nil nil [11711 11809])
+            ("autoload-print-form" function (:arguments ("form")) nil [11811 13498])
+            ("autoload-rubric" function (:arguments ("file" "type" "feature")) nil [13500 14519])
+            ("autoload-ensure-default-file" function (:arguments ("file")) nil [14521 14725])
+            ("autoload-insert-section-header" function (:arguments ("outbuf" "autoloads" "load-name" "file" "time")) nil [14727 15352])
+            ("autoload-find-file" function (:arguments ("file")) nil [15354 15943])
+            ("no-update-autoloads" variable nil nil [15945 16053])
+            ("autoload-file-load-name" function (:arguments ("file")) nil [16055 17380])
+            ("generate-file-autoloads" function
+               (:user-visible-flag t
+                :arguments ("file"))
+                nil [17382 17890])
+            ("print-readably" variable nil nil [17892 17915])
+            ("autoload-generate-file-autoloads" function (:arguments ("file" "outbuf" "outfile")) nil [18268 25752])
+            ("autoload-save-buffers" function nil nil [25755 25935])
+            ("update-file-autoloads" function
+               (:user-visible-flag t
+                :arguments ("file" "save-after" "outfile"))
+                nil [25952 27027])
+            ("autoload-find-destination" function (:arguments ("file" "load-name")) nil [27029 30322])
+            ("autoload-remove-section" function (:arguments ("begin")) nil [30324 30468])
+            ("update-directory-autoloads" function
+               (:user-visible-flag t
+                :arguments ("dirs"))
+                nil [30485 35019])
+            ("define-obsolete-function-alias" code nil nil [35021 35127])
+            ("batch-update-autoloads" function nil nil [35144 36195])
+            ("autoload" package nil nil [36197 36216]))          
+      :file "autoload.el"
+      :pointmax 36244
+      :fsize 36243
+      :lastmodtime '(20707 18685 0 0)
+      :unmatched-syntax '((close-paren 1354 . 1355) (symbol 1319 . 1336) (open-paren 1318 . 1319)))
+    (semanticdb-table "lisp-mode.el"
+      :file "lisp-mode.el"
+      :fsize 61827
+      :lastmodtime '(20726 10557 0 0))
+    (semanticdb-table "cl-lib.el"
+      :file "cl-lib.el"
+      :fsize 28187
+      :lastmodtime '(20707 18685 0 0))
+    (semanticdb-table "timer.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [1285 1302])
+            ("cl-defstruct" code nil nil [1305 1580])
+            ("timerp" function (:arguments ("object")) nil [1582 1687])
+            ("timer--time" function (:arguments ("timer")) nil [1713 1856])
+            ("gv-define-simple-setter" code nil nil [1858 2345])
+            ("timer-set-time" function (:arguments ("timer" "time" "delta")) nil [2348 2743])
+            ("timer-set-idle-time" function (:arguments ("timer" "secs" "repeat")) nil [2745 3260])
+            ("timer-next-integral-multiple-of-time" function (:arguments ("time" "secs")) nil [3262 4267])
+            ("timer-relative-time" function (:arguments ("time" "secs" "usecs" "psecs")) nil [4269 4709])
+            ("timer--time-less-p" function (:arguments ("t1" "t2")) nil [4711 4853])
+            ("timer-inc-time" function (:arguments ("timer" "secs" "usecs" "psecs")) nil [4855 5186])
+            ("timer-set-time-with-usecs" function (:arguments ("timer" "time" "usecs" "delta")) nil [5188 5841])
+            ("timer-set-function" function (:arguments ("timer" "function" "args")) nil [5843 6102])
+            ("timer--activate" function (:arguments ("timer" "triggered-p" "reuse-cell" "idle")) nil [6105 7089])
+            ("timer-activate" function (:arguments ("timer" "triggered-p" "reuse-cell")) nil [7091 7607])
+            ("timer-activate-when-idle" function (:arguments ("timer" "dont-wait" "reuse-cell")) nil [7609 8487])
+            ("defalias" code nil nil [8489 8530])
+            ("cancel-timer" function (:arguments ("timer")) nil [8532 8765])
+            ("cancel-timer-internal" function (:arguments ("timer")) nil [8767 9189])
+            ("cancel-function-timers" function
+               (:user-visible-flag t
+                :arguments ("function"))
+                nil [9191 9729])
+            ("timer-event-last" variable nil nil [9778 9836])
+            ("timer-event-last-1" variable nil nil [9837 9905])
+            ("timer-event-last-2" variable nil nil [9906 9975])
+            ("timer-max-repeats" variable (:default-value 10) nil [9977 10354])
+            ("timer-until" function (:arguments ("timer" "time")) nil [10356 10613])
+            ("timer-event-handler" function (:arguments ("timer")) nil [10615 12403])
+            ("timeout-event-p" function (:arguments ("event")) nil [12466 12590])
+            ("declare-function" code nil nil [12594 12645])
+            ("run-at-time" function
+               (:user-visible-flag t
+                :arguments ("time" "repeat" "function" "args"))
+                nil [12647 14940])
+            ("run-with-timer" function
+               (:user-visible-flag t
+                :arguments ("secs" "repeat" "function" "args"))
+                nil [14942 15428])
+            ("add-timeout" function (:arguments ("secs" "function" "object" "repeat")) nil [15430 15734])
+            ("run-with-idle-timer" function
+               (:user-visible-flag t
+                :arguments ("secs" "repeat" "function" "args"))
+                nil [15736 16887])
+            ("with-timeout-timers" variable nil nil [16890 16993])
+            ("with-timeout" function (:arguments ("list" "body")) nil [16995 18474])
+            ("with-timeout-suspend" function nil nil [18476 18939])
+            ("with-timeout-unsuspend" function (:arguments ("timer-spec-list")) nil [18941 19284])
+            ("y-or-n-p-with-timeout" function (:arguments ("prompt" "seconds" "default-value")) nil [19286 19526])
+            ("timer-duration-words" variable
+               (:constant-flag t
+                :default-value (list (cons "microsec" 1e-06) (cons "microsecond" 1e-06) (cons "millisec" 0.001) (cons "millisecond" 0.001) (cons "sec" 1) (cons "second" 1) (cons "min" 60) (cons "minute" 60) (cons "hour" (* 60 60)) (cons "day" (* 24 60 60)) (cons "week" (* 7 24 60 60)) (cons "fortnight" (* 14 24 60 60)) (cons "month" (* 30 24 60 60)) (cons "year" (* 365.25 24 60 60))))
+                nil [19529 20045])
+            ("timer-duration" function (:arguments ("string")) nil [20047 20749])
+            ("timer" package nil nil [20752 20768]))          
+      :file "timer.el"
+      :pointmax 20793
+      :fsize 20792
+      :lastmodtime '(20707 18685 0 0)
+      :unmatched-syntax '((close-paren 1302 . 1303) (symbol 1267 . 1284) (open-paren 1266 . 1267)))
+    (semanticdb-table "easymenu.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("easy-menu-precalculate-equivalent-keybindings" variable nil nil [1108 1629])
+            ("make-obsolete-variable" code nil nil [1630 1713])
+            ("easy-menu-intern" function (:arguments ("s")) nil [1715 1778])
+            ("easy-menu-define" function (:arguments ("symbol" "maps" "doc" "menu")) nil [1795 5416])
+            ("easy-menu-binding" function (:arguments ("menu" "item-name")) nil [5418 6180])
+            ("easy-menu-do-define" function (:arguments ("symbol" "maps" "doc" "menu")) nil [6197 7142])
+            ("easy-menu-filter-return" function (:arguments ("menu" "name")) nil [7144 7930])
+            ("easy-menu-avoid-duplicate-keys" variable (:default-value t) nil [7932 8186])
+            ("easy-menu-create-menu" function (:arguments ("menu-name" "menu-items")) nil [8203 10168])
+            ("easy-menu-button-prefix" variable (:default-value (quote ((radio . :radio) (toggle . :toggle)))) nil [10194 10267])
+            ("easy-menu-converted-items-table" variable (:default-value (make-hash-table :test (quote equal))) nil [10269 10340])
+            ("easy-menu-convert-item" function (:arguments ("item")) nil [10342 11780])
+            ("easy-menu-convert-item-1" function (:arguments ("item")) nil [11782 16166])
+            ("easy-menu-define-key" function (:arguments ("menu" "key" "item" "before")) nil [16168 17917])
+            ("easy-menu-name-match" function (:arguments ("name" "item")) nil [17919 18515])
+            ("easy-menu-always-true-p" function (:arguments ("x")) nil [18517 18690])
+            ("easy-menu-item-count" variable nil nil [18692 18723])
+            ("easy-menu-make-symbol" function (:arguments ("callback" "noexp")) nil [18725 19354])
+            ("easy-menu-change" function (:arguments ("path" "name" "items" "before" "map")) nil [19371 20308])
+            ("defalias" code nil nil [20481 20708])
+            ("easy-menu-add" function (:arguments ("menu" "map")) nil [20710 21084])
+            ("add-submenu" function (:arguments ("menu-path" "submenu" "before" "in-menu")) nil [21086 21484])
+            ("easy-menu-add-item" function (:arguments ("map" "path" "item" "before")) nil [21486 23378])
+            ("easy-menu-item-present-p" function (:arguments ("map" "path" "name")) nil [23380 23686])
+            ("easy-menu-remove-item" function (:arguments ("map" "path" "name")) nil [23688 24074])
+            ("easy-menu-return-item" function (:arguments ("menu" "name")) nil [24076 25688])
+            ("easy-menu-lookup-name" function (:arguments ("map" "name")) nil [25690 26483])
+            ("easy-menu-get-map" function (:arguments ("map" "path" "to-modify")) nil [26485 28049])
+            ("easymenu" package nil nil [28051 28070]))          
+      :file "easymenu.el"
+      :pointmax 28098
+      :fsize 28097
+      :lastmodtime '(20707 18685 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!share!emacs!24.3!lisp!emacs-lisp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

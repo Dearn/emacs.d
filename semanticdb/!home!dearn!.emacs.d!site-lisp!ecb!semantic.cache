@@ -1,0 +1,853 @@
+;; Object ecb/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ecb/"
+  :tables
+  (list
+    (semanticdb-table "ecb-common-browser.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("silentcomp" include nil nil [1414 1435])
+            ("ecb-util" include nil nil [1439 1458])
+            ("tree-buffer" include nil nil [1460 1482])
+            ("ecb-mode-line" include nil nil [1539 1563])
+            ("ecb-navigate" include nil nil [1564 1587])
+            ("cl" include nil nil [1639 1652])
+            ("silentcomp-defvar" code nil nil [1655 1687])
+            ("ecb-tree-buffer" customgroup (:user-visible-flag t) nil [1689 1807])
+            ("ecb-bucket-node-display" variable
+               (:user-visible-flag t
+                :default-value (quote ("" "" ecb-bucket-node-face)))
+                nil [1809 3269])
+            ("ecb-use-speedbar-instead-native-tree-buffer" variable (:user-visible-flag t) nil [3271 4970])
+            ("ecb-tree-do-not-leave-window-after-select--internal" variable nil nil [4972 5231])
+            ("ecb-tree-do-not-leave-window-after-select" variable (:user-visible-flag t) nil [5233 7263])
+            ("ecb-tree-indent" variable
+               (:user-visible-flag t
+                :default-value 4)
+                nil [7265 7502])
+            ("ecb-tree-expand-symbol-before" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [7504 8395])
+            ("ecb-tree-buffer-style" variable
+               (:user-visible-flag t
+                :default-value (quote image))
+                nil [8557 10369])
+            ("ecb-tree-image-icons-directories" variable
+               (:user-visible-flag t
+                :default-value (let ((base (concat (if ecb-regular-xemacs-package-p (format "%s" (locate-data-directory "ecb")) ecb-ecb-dir) "ecb-images/"))) (cons (concat base "default/height-17") (mapcar (function (lambda (i) (cons (car i) (concat base (cdr i))))) (quote ((ecb-directories-buffer-name . "directories/height-17") (ecb-sources-buffer-name . "sources/height-14_to_21") (ecb-methods-buffer-name . "methods/height-14_to_21")))))))
+                nil [10561 13294])
+            ("ecb-tree-truncate-lines" variable
+               (:user-visible-flag t
+                :default-value (quote (ecb-directories-buffer-name ecb-sources-buffer-name ecb-methods-buffer-name ecb-history-buffer-name ecb-analyse-buffer-name)))
+                nil [13376 14630])
+            ("ecb-tree-easy-hor-scroll" variable
+               (:user-visible-flag t
+                :default-value 5)
+                nil [14632 15867])
+            ("ecb-tree-make-parent-node-sticky" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [15870 16575])
+            ("ecb-tree-stickynode-indent-string" variable
+               (:user-visible-flag t
+                :default-value (tree-buffer-sticky-default-indent-string))
+                nil [16577 17276])
+            ("ecb-truncate-long-names" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [17404 17659])
+            ("ecb-tree-incremental-search" variable
+               (:user-visible-flag t
+                :default-value (quote prefix))
+                nil [17784 18387])
+            ("ecb-tree-navigation-by-arrow" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [18389 19222])
+            ("ecb-show-any-node-info-by-mouse-moving-p" function nil nil [19224 19954])
+            ("ecb-primary-secondary-mouse-buttons" variable
+               (:user-visible-flag t
+                :default-value (quote mouse-2--C-mouse-2))
+                nil [19956 22289])
+            ("ecb-tree-mouse-action-trigger" variable
+               (:user-visible-flag t
+                :default-value (quote button-release))
+                nil [22291 22908])
+            ("ecb-mouse-click-destination" variable
+               (:user-visible-flag t
+                :default-value (quote last-point))
+                nil [22910 24473])
+            ("ecb-common-tree-buffer-after-create-hook" variable (:user-visible-flag t) nil [24476 25025])
+            ("ecb-basic-buffer-sync" variable
+               (:user-visible-flag t
+                :default-value (quote (Info-mode dired-mode)))
+                nil [25027 26560])
+            ("ecb-basic-buffer-sync-delay" variable
+               (:user-visible-flag t
+                :default-value 0.25)
+                nil [26562 27455])
+            ("ecb-basic-buffer-sync-hook" variable (:user-visible-flag t) nil [27457 28652])
+            ("ecb-adviced-function-sets" variable nil nil [28840 29134])
+            ("ecb-adviced-permanent-function-sets" variable nil nil [29136 29413])
+            ("ecb-adviced-functions" variable nil nil [29415 29620])
+            ("ecb-advices-debug-error" variable nil nil [29622 29738])
+            ("ecb-advices-debug-error" function (:arguments ("advice" "class" "action" "args")) nil [29740 30536])
+            ("defecb-advice-set" function (:arguments ("advice-set" "docstring" "permanent")) nil [30538 32402])
+            ("put" code nil nil [32404 32452])
+            ("defecb-advice" function (:arguments ("adviced-function" "advice-class" "advice-set" "advice-docstring" "body")) nil [32454 34335])
+            ("put" code nil nil [34337 34381])
+            ("ecb-enable-ecb-advice" function (:arguments ("function-symbol" "advice-class" "arg")) nil [34586 35360])
+            ("ecb-enable-advices" function (:arguments ("adviced-function-set-var")) nil [35367 36121])
+            ("ecb-disable-advices" function (:arguments ("adviced-function-set-var" "force-permanent")) nil [36125 37748])
+            ("ecb-with-ecb-advice" function (:arguments ("function-symbol" "advice-class" "body")) nil [37825 40497])
+            ("put" code nil nil [40508 40558])
+            ("ecb-with-original-adviced-function-set" function (:arguments ("adviced-function-set-var" "body")) nil [40681 42931])
+            ("put" code nil nil [42934 43003])
+            ("defecb-advice-set" code nil nil [43358 43635])
+            ("ecb-source-make" function (:arguments ("filename" "buffer")) nil [43638 44191])
+            ("ecb-source-get-filename" function (:arguments ("source")) nil [44193 44472])
+            ("ecb-source-get-buffername" function (:arguments ("source")) nil [44474 44744])
+            ("ecb-source-get-buffer" function (:arguments ("source")) nil [44746 45497])
+            ("ecb-path-selected-directory" variable nil nil [45499 45581])
+            ("ecb-path-selected-source" variable nil nil [45583 46012])
+            ("ecb-path-selected-source-set" function (:arguments ("filename" "buffer")) nil [46014 46485])
+            ("ecb-path-selected-source" function (:arguments ("type")) nil [46489 47297])
+            ("ecb-tree-buffer-creators" variable nil nil [47337 47642])
+            ("ecb-tree-buffer-creators-init" function nil nil [47644 47805])
+            ("ecb-tree-buffer-creators-register" function (:arguments ("name-symbol" "fn")) nil [47807 47999])
+            ("ecb-tree-buffer-creators-run" function nil nil [48001 48239])
+            ("defecb-tree-buffer-creator" function (:arguments ("creator" "tree-buffer-name-symbol" "docstring" "body")) nil [48244 49681])
+            ("put" code nil nil [49683 49740])
+            ("ecb-ecb-buffer-registry" variable nil nil [49940 51305])
+            ("ecb-ecb-buffer-registry-init" function nil nil [51307 51383])
+            ("ecb-ecb-buffer-registry-add" function (:arguments ("name" "name-symbol" "tree-buffer-p" "set-fcn-symbol")) nil [51385 51741])
+            ("ecb-ecb-buffer-registry-name-list" function (:arguments ("only-tree-buffers")) nil [51743 52072])
+            ("ecb-ecb-buffer-registry-symbol-list" function (:arguments ("only-tree-buffers")) nil [52074 52405])
+            ("ecb-ecb-buffer-registry-buffer-list" function (:arguments ("only-tree-buffers")) nil [52407 52755])
+            ("ecb-ecb-buffer-registry-get-symbol" function (:arguments ("name")) nil [52759 52858])
+            ("ecb-ecb-buffer-registry-get-set-fcn" function (:arguments ("name")) nil [52860 52960])
+            ("ecb-tree-buffer-callbacks" variable (:default-value (quote ((expand) (select)))) nil [52963 53339])
+            ("ecb-tree-buffer-callbacks-add" function (:arguments ("type" "buffer-name-symbol" "callback")) nil [53342 53960])
+            ("ecb-tree-buffer-callbacks-alist-of-type" function (:arguments ("type")) nil [53963 54208])
+            ("defecb-tree-buffer-callback" function (:arguments ("callback" "tree-buffer-name-symbol" "callback-type" "optional-arg-list" "docstring" "body")) nil [54211 58533])
+            ("put" code nil nil [58800 58858])
+            ("defecb-multicache" code nil nil [58888 61775])
+            ("ecb-filename-cache-init" function nil nil [61777 61967])
+            ("ecb-directory-sep-char" variable
+               (:constant-flag t
+                :default-value (if ecb-running-xemacs (symbol-value (quote directory-sep-char)) 47))
+                nil [61993 62140])
+            ("ecb-directory-sep-char" function (:arguments ("refdir")) nil [62142 62297])
+            ("ecb-directory-sep-string" function (:arguments ("refdir")) nil [62299 62404])
+            ("ecb-autotrace-autocontrol/sync-functions" variable nil nil [62481 63136])
+            ("ecb-bodytrace-autocontrol/sync-functions" variable nil nil [63138 63616])
+            ("ecb-autotrace-autocontrol/sync-fcn-error" function (:arguments ("autocontrol-fcn" "args")) nil [63831 64636])
+            ("ecb-bodytrace-autocontrol/sync-fcn-error" function (:arguments ("autocontrol-fcn" "args")) nil [64638 65571])
+            ("ecb-autocontrol/sync-fcn-register" variable nil nil [65573 65861])
+            ("ecb-idle-timer-alist" variable nil nil [65862 65933])
+            ("ecb-post-command-hooks" variable nil nil [65934 66049])
+            ("ecb-pre-command-hooks" variable nil nil [66050 66163])
+            ("ecb-register-autocontrol/sync-function" function (:arguments ("fcn-symbol" "buffer-name-symbol")) nil [66165 66331])
+            ("ecb-stop-all-autocontrol/sync-functions" function nil nil [66333 66495])
+            ("ecb-stop-autocontrol/sync-function" function (:arguments ("fcn-symbol")) nil [66497 67019])
+            ("ecb-activate-ecb-autocontrol-function" function (:arguments ("value" "func")) nil [67024 68292])
+            ("defecb-autocontrol/sync-function" function (:arguments ("fcn" "buffer-name-symbol" "buffer-sync-option-symbol" "ecb-interactive-p" "docstring" "body")) nil [68294 74287])
+            ("put" code nil nil [74288 74351])
+            ("defecb-autocontrol/sync-function" code nil nil [75329 75976])
+            ("dolist" code nil nil [76067 76715])
+            ("ecb-expand-file-name" function (:arguments ("name" "default-dir")) nil [76717 76931])
+            ("ecb-fix-path" function (:arguments ("path")) nil [76995 77658])
+            ("ecb-fixed-filename-cache-put" function (:arguments ("path" "filename" "fixed-filename")) nil [77704 78061])
+            ("ecb-fixed-filename-cache-get" function (:arguments ("path" "filename")) nil [78063 78431])
+            ("ecb-fixed-filename-cache-dump" function
+               (:user-visible-flag t
+                :arguments ("no-nil-value"))
+                nil [78433 78826])
+            ("silentcomp-defun" code nil nil [79060 79109])
+            ("ecb-fix-filename" function (:arguments ("path" "filename" "substitute-env-vars")) nil [79110 82594])
+            ("ecb-format-bucket-name" function (:arguments ("name" "ignore-prefix-suffix" "ignore-bucket-face")) nil [82686 84156])
+            ("ecb-toggle-do-not-leave-window-after-select" function (:user-visible-flag t) nil [84158 85701])
+            ("ecb-common-tree-buffer-modeline-menu-creator" function (:arguments ("buf-name")) nil [85703 85953])
+            ("ecb-common-after-tree-buffer-create-actions" function nil nil [85955 86559])
+            ("ecb-tree-buffer-node-select-callback" function (:arguments ("node" "mouse-button" "shift-pressed" "control-pressed" "meta-pressed" "tree-buffer-name")) nil [86697 89812])
+            ("ecb-tree-buffer-node-collapsed-callback" function (:arguments ("node" "mouse-button" "shift-pressed" "control-pressed" "meta-pressed" "tree-buffer-name")) nil [89815 90660])
+            ("ecb-tree-buffer-node-expand-callback" function (:arguments ("node" "mouse-button" "shift-pressed" "control-pressed" "meta-pressed" "tree-buffer-name")) nil [90662 92109])
+            ("ecb-interpret-mouse-click" function (:arguments ("mouse-button" "shift-pressed" "control-pressed" "meta-pressed" "tree-buffer-name")) nil [92111 93968])
+            ("ecb-show-minibuffer-info" function (:arguments ("node" "window" "when-spec")) nil [93970 94371])
+            ("tree-buffer-defpopup-command" code nil nil [94374 94553])
+            ("ecb-stealthy-function-list" variable nil nil [94578 94753])
+            ("ecb-stealthy-function-state-alist" variable nil nil [94755 94982])
+            ("ecb-stealthy-function-list-add" function (:arguments ("fcn")) nil [94984 95076])
+            ("ecb-stealthy-function-state-alist-add" function (:arguments ("fcn")) nil [95078 95212])
+            ("ecb-stealthy-function-state-get" function (:arguments ("fcn")) nil [95214 95409])
+            ("ecb-stealthy-function-state-set" function (:arguments ("fcn" "state")) nil [95411 95632])
+            ("ecb-stealthy-function-p" function (:arguments ("fcn")) nil [95634 95794])
+            ("ecb-stealthy-function-state-init" function (:arguments ("fcn" "state")) nil [95796 96418])
+            ("defecb-stealthy" function (:arguments ("name" "docstring" "body")) nil [96420 98396])
+            ("put" code nil nil [98400 98446])
+            ("ecb-stealthy-update-running" variable nil nil [98448 98547])
+            ("defecb-autocontrol/sync-function" code nil nil [98549 99728])
+            ("ecb-generate-node-name" function (:arguments ("text-name" "first-chars" "icon-name" "name-of-buffer")) nil [99784 101158])
+            ("silentcomp-provide" code nil nil [101161 101201]))          
+      :file "ecb-common-browser.el"
+      :pointmax 101239
+      :fsize 101238
+      :lastmodtime '(21162 52344 728753 372000)
+      :unmatched-syntax '((close-paren 1652 . 1653) (symbol 1590 . 1607) (open-paren 1589 . 1590) (close-paren 1435 . 1436) (symbol 1394 . 1411) (open-paren 1393 . 1394)))
+    (semanticdb-table "silentcomp.el"
+      :file "silentcomp.el"
+      :fsize 7288
+      :lastmodtime '(21162 52344 760753 402000))
+    (semanticdb-table "ecb-util.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("silentcomp" include nil nil [1557 1578])
+            ("cl" include nil nil [1600 1613])
+            ("silentcomp-defun" code nil nil [1688 1729])
+            ("silentcomp-defun" code nil nil [1730 1771])
+            ("silentcomp-defun" code nil nil [1772 1811])
+            ("silentcomp-defun" code nil nil [1812 1840])
+            ("silentcomp-defun" code nil nil [1841 1874])
+            ("silentcomp-defun" code nil nil [1875 1906])
+            ("silentcomp-defun" code nil nil [1907 1938])
+            ("silentcomp-defun" code nil nil [1939 1973])
+            ("silentcomp-defun" code nil nil [1974 2016])
+            ("silentcomp-defun" code nil nil [2017 2053])
+            ("silentcomp-defun" code nil nil [2054 2091])
+            ("silentcomp-defun" code nil nil [2092 2125])
+            ("silentcomp-defun" code nil nil [2135 2170])
+            ("silentcomp-defun" code nil nil [2171 2202])
+            ("silentcomp-defun" code nil nil [2203 2240])
+            ("silentcomp-defun" code nil nil [2241 2270])
+            ("silentcomp-defun" code nil nil [2271 2301])
+            ("silentcomp-defun" code nil nil [2302 2332])
+            ("silentcomp-defun" code nil nil [2333 2370])
+            ("silentcomp-defun" code nil nil [2381 2415])
+            ("silentcomp-defun" code nil nil [2416 2450])
+            ("silentcomp-defun" code nil nil [2451 2483])
+            ("silentcomp-defun" code nil nil [2484 2513])
+            ("silentcomp-defvar" code nil nil [2523 2558])
+            ("silentcomp-defvar" code nil nil [2559 2601])
+            ("silentcomp-defun" code nil nil [2602 2635])
+            ("silentcomp-defun" code nil nil [2636 2671])
+            ("silentcomp-defvar" code nil nil [2672 2708])
+            ("silentcomp-defvar" code nil nil [2709 2749])
+            ("silentcomp-defun" code nil nil [2750 2787])
+            ("silentcomp-defvar" code nil nil [2788 2826])
+            ("silentcomp-defun" code nil nil [2854 2886])
+            ("silentcomp-defun" code nil nil [2887 2918])
+            ("silentcomp-defun" code nil nil [2945 2980])
+            ("silentcomp-defun" code nil nil [2981 3012])
+            ("silentcomp-defun" code nil nil [3014 3044])
+            ("ecb-running-xemacs" variable
+               (:constant-flag t
+                :default-value (featurep (quote xemacs)))
+                nil [3123 3171])
+            ("ecb-running-gnu-emacs" variable
+               (:constant-flag t
+                :default-value (not ecb-running-xemacs))
+                nil [3173 3230])
+            ("ecb-running-unsupported-emacs" variable
+               (:constant-flag t
+                :default-value (condition-case nil (<= emacs-major-version 20) (error t)))
+                nil [3232 3463])
+            ("ecb-running-gnu-emacs-version-22" variable
+               (:constant-flag t
+                :default-value (and ecb-running-gnu-emacs (>= emacs-major-version 22)))
+                nil [3465 3656])
+            ("ecb-running-gnu-emacs-version-23" variable
+               (:constant-flag t
+                :default-value (and ecb-running-gnu-emacs (>= emacs-major-version 23)))
+                nil [3658 3849])
+            ("ecb-temp-dir" variable
+               (:constant-flag t
+                :default-value (file-name-as-directory (or (getenv "TMPDIR") (getenv "TMP") (getenv "TEMP") (if (eq system-type (quote windows-nt)) "c:/temp/" "/tmp/"))))
+                nil [3851 4071])
+            ("ecb-ecb-dir" variable
+               (:constant-flag t
+                :default-value (expand-file-name (file-name-directory (locate-library "ecb"))))
+                nil [4073 4161])
+            ("ecb-semantic-dir" variable
+               (:constant-flag t
+                :default-value (if (locate-library "semantic") (expand-file-name (file-name-directory (locate-library "semantic")))))
+                nil [4162 4299])
+            ("ecb-ecb-parent-dir" variable
+               (:constant-flag t
+                :default-value (expand-file-name (concat ecb-ecb-dir "../")))
+                nil [4301 4376])
+            ("ecb-regular-xemacs-package-p" variable
+               (:constant-flag t
+                :default-value (and ecb-running-xemacs (file-exists-p (expand-file-name (concat ecb-ecb-dir "_pkg.el"))) (file-exists-p (expand-file-name (concat ecb-ecb-dir "auto-autoloads.el")))))
+                nil [4557 4779])
+            ("ecb-images-can-be-used" variable nil nil [4946 5019])
+            ("ecb-images-can-be-used-init-p" variable nil nil [5020 5100])
+            ("ecb-images-can-be-used" function nil nil [5102 5547])
+            ("when-ecb-running-xemacs" function (:arguments ("body")) nil [5737 5990])
+            ("when-ecb-running-emacs" function (:arguments ("body")) nil [5992 6255])
+            ("when-ecb-running-emacs-22" function (:arguments ("body")) nil [6257 6556])
+            ("when-ecb-running-emacs-23" function (:arguments ("body")) nil [6558 6857])
+            ("when" code nil nil [6994 9866])
+            ("unless" code nil nil [9868 11470])
+            ("if" code nil nil [11497 12344])
+            ("if" code nil nil [12376 13253])
+            ("if" code nil nil [13271 13909])
+            ("ecb-custom-file" function nil nil [13974 14357])
+            ("ecb-option-get-value" function (:arguments ("option" "type")) nil [14359 15252])
+            ("ecb-remove-assoc" function (:arguments ("key" "list")) nil [15316 15568])
+            ("ecb-add-assoc" function (:arguments ("key-value" "list")) nil [15571 15633])
+            ("ecb-find-assoc-value" function (:arguments ("key" "list")) nil [15635 15699])
+            ("ecb-find-assoc" function (:arguments ("key" "list")) nil [15701 15753])
+            ("ecb-filter" function (:arguments ("seq" "pred")) nil [15818 16062])
+            ("ecb-some" function (:arguments ("cl-pred" "cl-seq" "cl-rest")) nil [16064 16584])
+            ("ecb-copy-list" function (:arguments ("list")) nil [16586 16972])
+            ("ecb-set-difference" function (:arguments ("list1" "list2" "test-fcn")) nil [16975 17721])
+            ("ecb-member" function (:arguments ("item" "list" "test-fcn")) nil [17724 18325])
+            ("ecb-delete-duplicates" function (:arguments ("cl-seq" "cl-test-fcn" "cl-start" "cl-end" "cl-from-end" "cl-copy")) nil [18364 21722])
+            ("ecb-position" function (:arguments ("cl-item" "cl-seq" "cl-test-fcn" "cl-start" "cl-end" "cl-from-end")) nil [22593 23921])
+            ("ecb-set-elt" function (:arguments ("seq" "n" "val")) nil [24993 25245])
+            ("ecb-remove-elt" function (:arguments ("seq" "n")) nil [25247 25489])
+            ("ecb-replace-first-occurence" function (:arguments ("seq" "old-elem" "new-elem")) nil [25491 25797])
+            ("ecb-replace-all-occurences" function (:arguments ("seq" "old-elem" "new-elem")) nil [25799 26108])
+            ("ecb-delete-first-occurence-from-list" function (:arguments ("list" "elem")) nil [26110 26398])
+            ("ecb-delete-all-occurences-from-list" function (:arguments ("list" "elem")) nil [26400 26838])
+            ("ecb-subseq" function (:arguments ("seq" "start" "end")) nil [26840 27921])
+            ("ecb-concatenate" function (:arguments ("type" "seqs")) nil [27923 28269])
+            ("ecb-rotate" function (:arguments ("seq" "start-elem")) nil [28271 28863])
+            ("ecb-last" function (:arguments ("seq")) nil [28865 29050])
+            ("ecb-first" function (:arguments ("seq")) nil [29052 29216])
+            ("ecb-next-listelem" function (:arguments ("list" "elem" "nth-next")) nil [29221 30101])
+            ("ecb-aggregate-alist" function (:arguments ("alist" "same-predicate" "sort-predicate")) nil [30103 31598])
+            ("ecb-values-of-symbol/value-list" function (:arguments ("list" "elem-accessor")) nil [31912 32601])
+            ("ecb-member-of-symbol/value-list" function (:arguments ("value" "list" "elem-accessor" "return-accessor" "compare-fcn")) nil [32649 33938])
+            ("ecb-match-regexp-list" function (:arguments ("str" "regexp-list" "elem-accessor" "return-accessor")) nil [34611 35444])
+            ("ecb-multicache-init" function (:arguments ("cache-var")) nil [35530 35919])
+            ("ecb-multicache-add-empty-key" function (:arguments ("cache-var" "key")) nil [35921 36743])
+            ("ecb-multicache-get-subcache" function (:arguments ("cache-var" "key" "subcache")) nil [36745 37197])
+            ("defecb-multicache" function (:arguments ("name" "size" "test" "subcache" "docstring")) nil [37240 39069])
+            ("put" code nil nil [39070 39118])
+            ("ecb-multicache-p" function (:arguments ("cache-var")) nil [39213 39428])
+            ("ecb-multicache-get-value" function (:arguments ("cache-var" "key" "subcache")) nil [39430 40161])
+            ("ecb-multicache-get-values" function (:arguments ("cache-var" "key" "subcache-list")) nil [40163 41065])
+            ("ecb-multicache-apply-to-value" function (:arguments ("cache-var" "key" "subcache" "apply-fcn" "only-if-key-exist")) nil [41067 43047])
+            ("ecb-multicache-put-value" function (:arguments ("cache-var" "key" "subcache" "value")) nil [43057 43736])
+            ("ecb-multicache-clear-value" function (:arguments ("cache-var" "key" "subcache")) nil [43738 44106])
+            ("ecb-multicache-remove" function (:arguments ("cache-var" "key")) nil [44108 44393])
+            ("ecb-multicache-mapsubcache" function (:arguments ("cache-var" "subcache" "mapfcn")) nil [44395 45349])
+            ("ecb-multicache-clear-subcache" function (:arguments ("cache-var" "subcache")) nil [45351 45756])
+            ("ecb-multicache-clear" function (:arguments ("cache-var")) nil [45758 46030])
+            ("ecb-multicache-print-subcache" function (:arguments ("cache-var" "subcache" "no-nil-value")) nil [46032 48952])
+            ("ecb-confirm" function (:arguments ("text")) nil [49019 49066])
+            ("ecb-query-string" function (:arguments ("prompt" "choices" "other-prompt")) nil [49183 50667])
+            ("ecb-offer-choices" function (:arguments ("prompt" "choices")) nil [50778 51764])
+            ("ecb-read-number" function (:arguments ("prompt" "init-value")) nil [53809 54655])
+            ("ecb-message-box" function (:arguments ("message-str" "title-text" "button-text")) nil [54657 56007])
+            ("ecb-nolog-message" function (:arguments ("args")) nil [60489 61263])
+            ("ecb-error" function (:arguments ("args")) nil [61265 61610])
+            ("ecb-warning" function (:arguments ("args")) nil [61612 61744])
+            ("ecb-info-message" function (:arguments ("args")) nil [61746 61885])
+            ("ecb-merge-face" function (:arguments ("face" "start" "end" "text")) nil [61949 64541])
+            ("ecb-merge-face-into-text" function (:arguments ("text" "face")) nil [64543 64937])
+            ("if" code nil nil [64939 66566])
+            ("ecb-string=" function (:arguments ("str1" "str2" "ignore-case")) nil [66568 66819])
+            ("ecb-string<" function (:arguments ("str1" "str2" "ignore-case")) nil [66821 67140])
+            ("ecb-excessive-trim" function (:arguments ("str")) nil [67142 67516])
+            ("ecb-left-trim" function (:arguments ("str")) nil [67772 68062])
+            ("ecb-right-trim" function (:arguments ("str")) nil [68064 68204])
+            ("ecb-trim" function (:arguments ("str")) nil [68206 68324])
+            ("ecb-full-trim" function (:arguments ("str")) nil [68326 68444])
+            ("ecb-fit-str-to-width" function (:arguments ("str" "width" "from")) nil [68446 69208])
+            ("ecb-normalize-number" function (:arguments ("value" "ref-value")) nil [69272 69655])
+            ("ecb-working-message" variable nil nil [69950 70024])
+            ("ecb-working-donestring" variable nil nil [70025 70106])
+            ("ecb-working-ref1" variable nil nil [70107 70182])
+            ("ecb-working-last-percent" variable nil nil [70183 70264])
+            ("ecb-working-frame-animation-display" function (:arguments ("length" "number" "frames")) nil [70266 71520])
+            ("ecb-working-celeron-strings" variable (:default-value ["[O     ]" "[oO    ]" "[-oO   ]" "[ -oO  ]" "[  -oO ]" "[   -oO]" "[    -O]" "[     O]" "[    Oo]" "[   Oo-]" "[  Oo- ]" "[ Oo-  ]" "[Oo-   ]" "[O-    ]"]) nil [71522 71768])
+            ("ecb-working-celeron-display" function (:arguments ("length" "number")) nil [71770 72328])
+            ("ecb-working-dynamic-status" function (:arguments ("number")) nil [72332 72776])
+            ("ecb-working-status-timeout" function (:arguments ("timeout" "message" "donestr" "forms")) nil [72778 73772])
+            ("ecb-working-status-call-process" function (:arguments ("timeout" "message" "donestr" "program" "infile" "buffer" "display" "args")) nil [73775 74946])
+            ("ecb-current-line" function nil nil [75010 75180])
+            ("ecb-goto-line" function (:arguments ("line")) nil [75182 75536])
+            ("ecb-with-readonly-buffer" function (:arguments ("buffer" "body")) nil [75538 76153])
+            ("put" code nil nil [76155 76210])
+            ("ecb-do-if-buffer-visible-in-ecb-frame" function (:arguments ("buffer-name-symbol" "body")) nil [76212 77588])
+            ("put" code nil nil [77589 77657])
+            ("ecb-buffer-substring" function (:arguments ("minpoint" "maxpoint" "buffer")) nil [77659 77971])
+            ("ecb-delete-file" function (:arguments ("file")) nil [77973 78144])
+            ("ecb-buffer-name" function (:arguments ("buffer-or-window")) nil [78146 78568])
+            ("ecb-buffer-obj" function (:arguments ("buffer-or-window")) nil [78570 78966])
+            ("ecb-buffer-local-value" function (:arguments ("sym" "buffer")) nil [78968 79298])
+            ("ecb-file-content-as-string" function (:arguments ("file")) nil [79458 79975])
+            ("ecb-current-buffer-archive-extract-p" function nil nil [79977 80379])
+            ("ecb-buffer-file-name" function (:arguments ("buffer" "no-indirect-buffers")) nil [80381 80953])
+            ("ecb-buffer-or-file-readable-p" function (:arguments ("filename")) nil [80956 81670])
+            ("ecb-window-list" function (:arguments ("frame" "minibuf" "window")) nil [82125 85091])
+            ("ecb-canonical-windows-list" function nil nil [85093 85369])
+            ("ecb-window-live-p" function (:arguments ("buffer-or-name")) nil [85371 85565])
+            ("ecb-enlarge-window" function (:arguments ("window" "val")) nil [85567 86374])
+            ("ecb-window-safely-shrinkable-p" function (:arguments ("window")) nil [86376 86811])
+            ("ecb-fit-window-to-buffer" function
+               (:user-visible-flag t
+                :arguments ("window" "max-height" "min-height"))
+                nil [86813 90785])
+            ("ecb-test-fit-window-to-buffer" function nil nil [90787 91021])
+            ("ecb-scroll-window" function (:arguments ("point" "window-start")) nil [91023 91266])
+            ("ecb-window-select" function (:arguments ("buffer-or-name")) nil [91268 91680])
+            ("ecb-exec-in-window" function (:arguments ("buffer-or-name" "body")) nil [92311 92884])
+            ("put" code nil nil [92886 92935])
+            ("ecb-make-windows-not-dedicated" function (:arguments ("frame")) nil [92937 93176])
+            ("ecb-set-windows-dedicated-state" function (:arguments ("buf-list" "state")) nil [93178 93556])
+            ("ecb-window-in-window-list-number" function (:arguments ("win-list" "window")) nil [93559 94008])
+            ("ecb-time-to-seconds" function (:arguments ("time")) nil [94116 94280])
+            ("ecb-seconds-to-time" function (:arguments ("seconds")) nil [94282 94503])
+            ("ecb-subtract-time" function (:arguments ("t1" "t2")) nil [94505 94753])
+            ("ecb-time-diff" function (:arguments ("t1" "t2" "rounded")) nil [94755 95066])
+            ("ecb-time-less-p" function (:arguments ("t1" "t2")) nil [95215 95385])
+            ("ring" include nil nil [95449 95464])
+            ("defalias" code nil nil [95465 95501])
+            ("defalias" code nil nil [95502 95532])
+            ("defalias" code nil nil [95533 95575])
+            ("defalias" code nil nil [95576 95616])
+            ("defalias" code nil nil [95617 95651])
+            ("ecb-ring-elements" function (:arguments ("ring")) nil [95700 95808])
+            ("ecb-max-submenu-depth" variable (:default-value 4) nil [95872 95968])
+            ("ecb-create-menu-user-ext-type" function (:arguments ("curr-level" "max-level")) nil [95970 97122])
+            ("ecb-is-byte-compiling" function nil nil [97185 97388])
+            ("ecb-load-in-progress-p" function nil nil [97390 97442])
+            ("ecb-current-input-throw-symbol" variable nil nil [97539 97636])
+            ("ecb-exit-on-input" function (:arguments ("symbol" "forms")) nil [97638 98071])
+            ("put" code nil nil [98072 98120])
+            ("ecb-throw-on-input" function (:arguments ("from" "value")) nil [98122 98845])
+            ("ecb-test-throw-on-input" function (:user-visible-flag t) nil [98848 99672])
+            ("ecb-interactive-p" function (:arguments ("kind")) nil [100019 100234])
+            ("unless" code nil nil [100351 100406])
+            ("unless" code nil nil [100407 100456])
+            ("ecb-redraw-modeline" function (:arguments ("kind")) nil [100522 100741])
+            ("silentcomp-provide" code nil nil [100805 100835]))          
+      :file "ecb-util.el"
+      :pointmax 100902
+      :fsize 100901
+      :lastmodtime '(21162 52344 743753 386000)
+      :unmatched-syntax '((close-paren 1613 . 1614) (symbol 1582 . 1599) (open-paren 1581 . 1582) (close-paren 1578 . 1579) (symbol 1537 . 1554) (open-paren 1536 . 1537)))
+    (semanticdb-table "tree-buffer.el"
+      :file "tree-buffer.el"
+      :fsize 168742
+      :lastmodtime '(21162 52344 760753 402000))
+    (semanticdb-table "ecb-mode-line.el"
+      :file "ecb-mode-line.el"
+      :fsize 16980
+      :lastmodtime '(21162 52344 742753 385000))
+    (semanticdb-table "ecb-navigate.el"
+      :file "ecb-navigate.el"
+      :fsize 13470
+      :lastmodtime '(21162 52344 742753 385000))
+    (semanticdb-table "ecb-layout.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("silentcomp" include nil nil [5291 5312])
+            ("ecb-util" include nil nil [5315 5334])
+            ("ecb-common-browser" include nil nil [5335 5364])
+            ("ecb-compilation" include nil nil [5391 5417])
+            ("ecb-create-layout" include nil nil [5418 5446])
+            ("ecb-navigate" include nil nil [5447 5470])
+            ("silentcomp-defvar" code nil nil [5482 5522])
+            ("silentcomp-defun" code nil nil [5523 5565])
+            ("silentcomp-defvar" code nil nil [5566 5613])
+            ("silentcomp-defvar" code nil nil [5614 5655])
+            ("silentcomp-defvar" code nil nil [5656 5697])
+            ("silentcomp-defun" code nil nil [5698 5749])
+            ("silentcomp-defvar" code nil nil [5750 5782])
+            ("silentcomp-defun" code nil nil [5783 5815])
+            ("silentcomp-defun" code nil nil [5858 5898])
+            ("silentcomp-defun" code nil nil [5899 5937])
+            ("silentcomp-defun" code nil nil [5938 5979])
+            ("silentcomp-defun" code nil nil [5980 6015])
+            ("silentcomp-defun" code nil nil [6016 6049])
+            ("silentcomp-defun" code nil nil [6050 6086])
+            ("silentcomp-defun" code nil nil [6087 6124])
+            ("silentcomp-defun" code nil nil [6125 6157])
+            ("silentcomp-defun" code nil nil [6158 6198])
+            ("silentcomp-defun" code nil nil [6199 6235])
+            ("silentcomp-defun" code nil nil [6236 6273])
+            ("silentcomp-defun" code nil nil [6274 6312])
+            ("silentcomp-defun" code nil nil [6313 6345])
+            ("silentcomp-defun" code nil nil [6346 6390])
+            ("silentcomp-defun" code nil nil [6391 6428])
+            ("silentcomp-defvar" code nil nil [6429 6474])
+            ("silentcomp-defvar" code nil nil [6485 6520])
+            ("silentcomp-defvar" code nil nil [6547 6584])
+            ("silentcomp-defvar" code nil nil [6627 6670])
+            ("silentcomp-defun" code nil nil [6671 6713])
+            ("silentcomp-defun" code nil nil [6714 6756])
+            ("silentcomp-defvar" code nil nil [6769 6807])
+            ("cl" include nil nil [6859 6872])
+            ("ecb-layouts-reload-needed" variable (:default-value t) nil [6875 6911])
+            ("ecb-load-layouts" function nil nil [6912 7168])
+            ("ecb-layout" customgroup (:user-visible-flag t) nil [7170 7288])
+            ("ecb-compilation" customgroup (:user-visible-flag t) nil [7290 7402])
+            ("ecb-layout-option-set-function" variable
+               (:constant-flag t
+                :default-value (function (lambda (symbol value) (set symbol value) (when (and (boundp (quote ecb-minor-mode)) ecb-minor-mode (frame-live-p ecb-frame)) (let ((curr-frame (selected-frame))) (unwind-protect (progn (select-frame ecb-frame) (ecb-redraw-layout-full)) (select-frame curr-frame)))))))
+                nil [7405 8082])
+            ("ecb-select-edit-window-on-redraw" variable (:user-visible-flag t) nil [8105 8249])
+            ("ecb-new-ecb-frame" variable (:user-visible-flag t) nil [8251 8402])
+            ("ecb-activate-before-new-frame-created-hook" variable (:user-visible-flag t) nil [8404 8647])
+            ("ecb-last-selected-layout" variable nil nil [8649 8771])
+            ("ecb-layout-name" variable
+               (:user-visible-flag t
+                :default-value "left8")
+                nil [8861 10507])
+            ("ecb-enable-temp-buffer-shrink-to-fit" function (:arguments ("arg")) nil [10509 12103])
+            ("ecb-compile-window-height" variable (:user-visible-flag t) nil [12105 15640])
+            ("ecb-compile-window-width" variable
+               (:user-visible-flag t
+                :default-value (quote frame))
+                nil [15644 18758])
+            ("ecb-change-layout-preserves-compwin-state" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [18760 19086])
+            ("ecb-compile-window-temporally-enlarge" variable
+               (:user-visible-flag t
+                :default-value (quote after-display))
+                nil [19088 20554])
+            ("ecb-maximize-ecb-window-after-selection" variable (:user-visible-flag t) nil [20556 21007])
+            ("ecb-maximize-next-after-maximized-select" variable (:user-visible-flag t) nil [21009 23285])
+            ("ecb-compile-window-prevent-shrink-below-height" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [23653 24219])
+            ("ecb-enlarged-compilation-window-max-height" variable
+               (:user-visible-flag t
+                :default-value (quote best))
+                nil [24222 25448])
+            ("ecb-scroll-other-window-scrolls-compile-window" variable (:user-visible-flag t) nil [25450 25746])
+            ("ecb-ignore-special-display" variable
+               (:user-visible-flag t
+                :default-value (quote compile-window))
+                nil [25748 26570])
+            ("ecb-ignore-special-display" function nil nil [26572 26762])
+            ("ecb-ignore-pop-up-frames" variable
+               (:user-visible-flag t
+                :default-value (quote compile-window))
+                nil [26764 27419])
+            ("ecb-ignore-pop-up-frames" function nil nil [27421 27605])
+            ("ecb-ignore-display-buffer-function" variable
+               (:user-visible-flag t
+                :default-value (quote always))
+                nil [27607 28721])
+            ("ecb-ignore-display-buffer-function" function nil nil [28723 28937])
+            ("ecb-split-edit-window-after-start" variable
+               (:user-visible-flag t
+                :default-value (quote before-deactivation))
+                nil [28939 31684])
+            ("ecb-windows-width" variable
+               (:user-visible-flag t
+                :default-value 0.33)
+                nil [31686 31985])
+            ("ecb-windows-height" variable
+               (:user-visible-flag t
+                :default-value 0.33)
+                nil [31987 32275])
+            ("ecb-fix-window-size" variable (:user-visible-flag t) nil [32278 34961])
+            ("ecb-get-window-fix-type" function (:arguments ("layout-name")) nil [34963 35378])
+            ("ecb-set-window-size-fixed" function (:arguments ("fix")) nil [35380 35971])
+            ("ecb-do-with-unfixed-ecb-buffers" function (:arguments ("body")) nil [35974 36500])
+            ("ecb-do-with-fixed-ecb-buffers" function (:arguments ("body")) nil [36502 37022])
+            ("ecb-other-window-behavior" variable
+               (:user-visible-flag t
+                :default-value (quote smart))
+                nil [37026 40999])
+            ("ecb-advice-window-functions-signal-error" variable (:user-visible-flag t) nil [41002 41765])
+            ("ecb-layout-always-operate-in-edit-window" variable
+               (:user-visible-flag t
+                :default-value (quote (switch-to-buffer)))
+                nil [41767 43504])
+            ("ecb-layout-window-sizes" variable (:user-visible-flag t) nil [43506 46117])
+            ("ecb-redraw-layout-quickly" variable nil nil [46119 46329])
+            ("ecb-major-modes-show-or-hide" variable
+               (:user-visible-flag t
+                :default-value (cons nil nil))
+                nil [46331 47089])
+            ("ecb-toggle-layout-sequence" variable
+               (:user-visible-flag t
+                :default-value (quote ("left9" "left14")))
+                nil [47091 48978])
+            ("ecb-left-right-layout-hide-sequence" variable
+               (:user-visible-flag t
+                :default-value (quote (left-side all right-side none)))
+                nil [48980 49539])
+            ("ecb-hide-ecb-windows-before-hook" variable (:user-visible-flag t) nil [49541 50149])
+            ("ecb-hide-ecb-windows-after-hook" variable (:user-visible-flag t) nil [50151 50664])
+            ("ecb-show-ecb-windows-before-hook" variable (:user-visible-flag t) nil [50666 51510])
+            ("ecb-show-ecb-windows-after-hook" variable (:user-visible-flag t) nil [51512 52364])
+            ("ecb-redraw-layout-after-hook" variable
+               (:user-visible-flag t
+                :default-value (quote (ecb-eshell-recenter)))
+                nil [52366 52630])
+            ("ecb-redraw-layout-before-hook" variable (:user-visible-flag t) nil [52632 52773])
+            ("ecb-layout-debug-mode" variable (:user-visible-flag t) nil [52775 53567])
+            ("ecb-frame" variable nil nil [53637 53839])
+            ("ecb-edit-window" variable nil nil [53841 53991])
+            ("ecb-last-edit-window-with-point" variable nil nil [53993 54117])
+            ("ecb-last-source-buffer" variable nil nil [54119 54214])
+            ("ecb-last-compile-buffer-in-compile-window" variable nil nil [54216 54340])
+            ("ecb-compile-window" variable nil nil [54342 54414])
+            ("ecb-compile-window-height-lines" variable nil nil [54872 55211])
+            ("ecb-compile-window-was-selected-before-command" variable nil nil [55213 55358])
+            ("ecb-layout-default-window-sizes" variable nil nil [55360 55545])
+            ("ecb-windows-hidden" variable nil nil [55628 55764])
+            ("ecb-windows-hidden-all-value" variable
+               (:constant-flag t
+                :default-value (quote all))
+                nil [55766 55810])
+            ("ecb-windows-hidden-none-value" variable
+               (:constant-flag t
+                :default-value (quote none))
+                nil [55811 55857])
+            ("ecb-windows-hidden-state" variable (:default-value ecb-windows-hidden-none-value) nil [55859 56545])
+            ("ecb-windows-all-hidden" function (:arguments ("hidden-state")) nil [56696 57260])
+            ("ecb-windows-all-displayed" function (:arguments ("hidden-state")) nil [57262 57859])
+            ("ecb-windows-hidden-state-list" function (:arguments ("hidden-state")) nil [57861 58687])
+            ("ecb-windows-toggled-hidden-state" function (:arguments ("hidden-state")) nil [58689 59567])
+            ("ecb-special-ecb-buffers-of-current-layout" variable nil nil [59569 59733])
+            ("ecb-ecb-buffer-name-selected-before-command" variable nil nil [59735 59940])
+            ("ecb-layout-prevent-handle-ecb-window-selection" variable nil nil [59942 60075])
+            ("ecb-canonical-ecb-windows-list" function (:arguments ("winlist")) nil [60078 61060])
+            ("ecb-canonical-edit-windows-list" function (:arguments ("winlist")) nil [61062 62100])
+            ("ecb-canonical-residual-windows-list" function (:arguments ("winlist")) nil [62102 63166])
+            ("ecb-last-major-mode" variable nil nil [63170 63202])
+            ("defecb-autocontrol/sync-function" code nil nil [63204 66104])
+            ("ecb-initialize-layout" function nil nil [66106 66895])
+            ("ecb-layout-debug-error" function (:arguments ("args")) nil [66897 67226])
+            ("ecb-compile-window-live-p" function (:arguments ("display-msg")) nil [67229 67714])
+            ("ecb-get-compile-window-buffer" function nil nil [67716 67944])
+            ("ecb-edit-window-live-p" function nil nil [68085 68168])
+            ("defecb-advice-set" code nil nil [68250 68374])
+            ("defecb-advice" code nil nil [68376 69074])
+            ("compile" include nil nil [69076 69094])
+            ("defecb-advice" code nil nil [69819 72626])
+            ("defecb-advice" code nil nil [72790 73662])
+            ("ecb-toggle-scroll-other-window-scrolls-compile" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [75200 75992])
+            ("ecb-edit-window-splitted" function (:arguments ("edit-windows-list")) nil [76004 76975])
+            ("ecb-temp-buffer-shrink-to-fit" variable nil nil [76977 77189])
+            ("when-ecb-running-xemacs" code nil nil [77191 82076])
+            ("when-ecb-running-emacs" code nil nil [82110 91011])
+            ("ecb-display-buffer-xemacs" function
+               (:user-visible-flag t
+                :arguments ("buffer" "not-this-window-p" "override-frame" "shrink-to-fit"))
+                nil [91756 109802])
+            ("ecb-temp-buffer-show-function-emacs" function (:arguments ("buf")) nil [109804 111852])
+            ("ecb-temp-buffer-show-function-old" variable nil nil [111854 111900])
+            ("ecb-enable-own-temp-buffer-show-function" function (:arguments ("arg")) nil [111902 112522])
+            ("ecb-with-original-basic-functions" function (:arguments ("body")) nil [112597 113048])
+            ("defecb-advice-set" code nil nil [113050 113222])
+            ("ecb-with-original-permanent-layout-functions" function (:arguments ("body")) nil [113224 113740])
+            ("ecb-where-is-point" function (:arguments ("win-list")) nil [113742 116308])
+            ("ecb-point-in-ecb-window-number" function (:arguments ("ecb-windows-list")) nil [116568 117327])
+            ("ecb-point-in-edit-window-number" function (:arguments ("edit-windows-list")) nil [117330 118097])
+            ("ecb-when-point-in-edit-window-ecb-windows-visible" function (:arguments ("body")) nil [118099 118385])
+            ("ecb-display-source" function (:arguments ("source" "other-edit-window")) nil [118387 119031])
+            ("ecb-get-edit-window-by-number" function (:arguments ("edit-win-nr" "edit-win-list")) nil [119033 119452])
+            ("ecb-get-window-by-number" function (:arguments ("win-nr" "win-list")) nil [119454 119808])
+            ("ecb-get-ecb-window-by-number" function (:arguments ("ecb-win-nr" "ecb-win-list")) nil [119810 120216])
+            ("ecb-combine-ecb-button/edit-win-nr" function (:arguments ("ecb-button" "edit-window-nr")) nil [120218 120567])
+            ("ecb-get-edit-window" function (:arguments ("other-edit-window")) nil [120569 121806])
+            ("ecb-point-in-compile-window" function nil nil [121809 122038])
+            ("ecb-point-in-ecb-tree-buffer" function nil nil [122040 122615])
+            ("ecb-point-in-dedicated-special-buffer" function nil nil [122865 123397])
+            ("ecb-buffer-is-dedicated-special-buffer-p" function (:arguments ("buffer-or-name")) nil [123409 123724])
+            ("ecb-goto-ecb-window" function (:arguments ("ecb-buffer-name")) nil [123727 125013])
+            ("ecb-goto-window-edit-last" function (:user-visible-flag t) nil [125015 125375])
+            ("ecb-goto-window-edit1" function (:user-visible-flag t) nil [125377 125598])
+            ("ecb-goto-window-edit2" function (:user-visible-flag t) nil [125600 125835])
+            ("ecb-goto-window-edit-by-smart-selection" function
+               (:user-visible-flag t
+                :arguments ("use-immediate-completion"))
+                nil [125837 127243])
+            ("ecb-goto-window-ecb-by-smart-selection" function
+               (:user-visible-flag t
+                :arguments ("use-immediate-completion"))
+                nil [127245 128701])
+            ("ecb-goto-window-by-smart-selection--internal" function (:arguments ("win-list" "use-immediate-completion")) nil [128703 132108])
+            ("ecb-goto-window-compilation" function (:user-visible-flag t) nil [132110 132405])
+            ("ecb-select-ecb-frame" function (:user-visible-flag t) nil [132408 132684])
+            ("ecb-select-edit-window" function (:arguments ("edit-window-number")) nil [132686 134136])
+            ("ecb-layout-window-sync" function (:arguments ("ecb-window-list")) nil [134138 135385])
+            ("defecb-autocontrol/sync-function" code nil nil [135653 137171])
+            ("ecb-layout-prevent-handle-compile-window-selection" variable nil nil [137180 137243])
+            ("ecb-last-edit-area-creators" variable nil nil [137244 137284])
+            ("defecb-autocontrol/sync-function" code nil nil [137285 141767])
+            ("ecb-check-for-special-buffer" function (:arguments ("buffer-or-name")) nil [142467 143911])
+            ("ecb-check-for-same-window-buffer" function (:arguments ("buffer-or-name")) nil [143917 145048])
+            ("if" code nil nil [145050 145691])
+            ("ecb-layout-temporary-dedicated-windows" variable nil nil [145700 145990])
+            ("when-ecb-running-emacs-22" code nil nil [146144 147387])
+            ("defecb-advice" code nil nil [148008 161326])
+            ("ecb-get-other-window-minibuf-active" function (:arguments ("win-list" "edit-win-list" "ecb-win-list" "comp-win" "minibuf-win" "point-loc" "nth-window")) nil [161328 162722])
+            ("ecb-get-other-window-smart" function (:arguments ("win-list" "edit-win-list" "ecb-win-list" "comp-win" "minibuf-win" "point-loc" "nth-window")) nil [162728 165059])
+            ("ecb-get-other-window" function (:arguments ("nth-window")) nil [165061 168845])
+            ("defecb-advice" code nil nil [169010 169562])
+            ("defecb-advice" code nil nil [169565 172264])
+            ("ecb-edit-area-creators" variable nil nil [172266 172301])
+            ("ecb-edit-area-creators-init" function nil nil [172303 172380])
+            ("ecb-edit-area-creators-add" function (:arguments ("creator")) nil [172382 172508])
+            ("ecb-restore-edit-area" function nil nil [172510 172725])
+            ("ecb-edit-area-creators-number-of-edit-windows" function nil nil [172727 173249])
+            ("defecb-advice" code nil nil [173282 174947])
+            ("defecb-advice" code nil nil [174949 178934])
+            ("defecb-advice" code nil nil [178936 180357])
+            ("defecb-advice" code nil nil [180359 185109])
+            ("defecb-advice" code nil nil [185126 186026])
+            ("defecb-advice" code nil nil [186028 186780])
+            ("defecb-advice" code nil nil [186782 188313])
+            ("defecb-advice" code nil nil [188322 190060])
+            ("defecb-advice" code nil nil [190062 191837])
+            ("defecb-advice" code nil nil [192142 195090])
+            ("defecb-advice" code nil nil [195092 196411])
+            ("defecb-advice" code nil nil [196414 197806])
+            ("defecb-advice" code nil nil [197808 198967])
+            ("ecb-split-hor" function (:arguments ("amount" "dont-switch-window" "use-frame")) nil [199042 199613])
+            ("ecb-split-hor-abs" function (:arguments ("amount" "dont-switch-window")) nil [199615 199783])
+            ("ecb-split-ver" function (:arguments ("amount" "dont-switch-window" "use-frame")) nil [199785 200359])
+            ("ecb-split-ver-abs" function (:arguments ("amount" "dont-switch-window")) nil [200361 200527])
+            ("ecb-dedicated-special-buffers" function nil nil [200755 201599])
+            ("ecb-get-current-visible-ecb-buffers" function (:arguments ("ecb-window-list")) nil [201601 202169])
+            ("ecb-buffer-is-visible-ecb-buffer-p" function (:arguments ("buffer-or-name")) nil [202171 202492])
+            ("ecb-buffer-is-ecb-buffer-of-current-layout-p" function (:arguments ("buffer-or-name")) nil [202494 202938])
+            ("ecb-buffer-is-the-only-visible-ecb-buffer-p" function (:arguments ("buffer-or-name")) nil [202940 203301])
+            ("ecb-set-minor-mode-text" function nil nil [203303 203567])
+            ("ecb-toggle-ecb-windows" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [203805 205719])
+            ("ecb-toggle-ecb-windows-new" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [205721 207353])
+            ("ecb-hide-ecb-windows-internal" function (:arguments ("new-state")) nil [207355 209057])
+            ("ecb-hide-ecb-windows" function (:user-visible-flag t) nil [209060 209184])
+            ("ecb-show-ecb-windows" function (:user-visible-flag t) nil [209335 209445])
+            ("ecb-current-maximized-ecb-buffer-name" variable nil nil [209598 209901])
+            ("ecb-redraw-layout-preserving-compwin-state" function (:user-visible-flag t) nil [209903 210188])
+            ("ecb-toggle-maximize-ecb-window-with-mouse" function (:user-visible-flag t) nil [210190 210353])
+            ("ecb-toggle-maximize-ecb-window" function (:arguments ("ecb-buffer-name")) nil [210355 211074])
+            ("ecb-undo-maximize-ecb-buffer" function (:arguments ("preserve-selected-window")) nil [211076 211930])
+            ("ecb-maximized-ecb-buffer-name" function nil nil [211932 212096])
+            ("ecb-buffer-is-maximized-p" function (:arguments ("ecb-buffer-name")) nil [212098 212639])
+            ("ecb-maximize-ecb-buffer" function (:arguments ("ecb-buffer-name" "preserve-selected-window")) nil [213974 215660])
+            ("ecb-maximize-ecb-buffer-new" function (:arguments ("ecb-buffer-name" "preserve-selected-window")) nil [215662 218002])
+            ("ecb-cycle-ecb-buffer-state" variable nil nil [218004 218326])
+            ("ecb-cycle-maximized-ecb-buffers" function (:user-visible-flag t) nil [218328 219498])
+            ("ecb-window-configuration-data" function nil nil [219501 221627])
+            ("ecb-with-dedicated-window" function (:arguments ("body")) nil [221705 222132])
+            ("defecb-window-dedicator-to-ecb-buffer" function (:arguments ("dedicator" "buffer-name-symbol" "tree-buffer-p" "docstring" "body")) nil [222134 223826])
+            ("put" code nil nil [223828 223896])
+            ("ecb-default-buffer-name" variable (:default-value " *ECB-default-buffer*") nil [224048 224145])
+            ("defecb-window-dedicator-to-ecb-buffer" code nil nil [224147 224790])
+            ("ecb-delete-window-ecb-windows-left" function (:arguments ("window" "edit-win-list")) nil [225267 226086])
+            ("defalias" code nil nil [226088 226178])
+            ("ecb-delete-window-ecb-windows-right" function (:arguments ("window" "edit-win-list")) nil [226217 226308])
+            ("ecb-delete-window-ecb-windows-top" function (:arguments ("window" "edit-win-list")) nil [226340 226832])
+            ("ecb-layout-types" variable
+               (:constant-flag t
+                :default-value (quote (left right top left-right)))
+                nil [226835 226891])
+            ("ecb-layout-type-p" function (:arguments ("type" "err")) nil [226893 227095])
+            ("ecb-available-layouts" variable nil nil [227097 227388])
+            ("ecb-available-layouts-of-type" function (:arguments ("type")) nil [227432 227948])
+            ("ecb-available-layouts-member-p" function (:arguments ("layout-name")) nil [227950 228156])
+            ("ecb-available-layouts-add" function (:arguments ("name" "type")) nil [228158 228553])
+            ("ecb-available-layouts-remove" function (:arguments ("name")) nil [228555 228918])
+            ("ecb-get-layout-type" function (:arguments ("name")) nil [228920 229103])
+            ("ecb-layout-left-p" function (:arguments ("name")) nil [229105 229259])
+            ("ecb-layout-leftright-p" function (:arguments ("name")) nil [229261 229432])
+            ("ecb-layout-right-p" function (:arguments ("name")) nil [229434 229591])
+            ("ecb-layout-top-p" function (:arguments ("name")) nil [229593 229744])
+            ("ecb-layout-define" function (:arguments ("name" "type" "doc" "create-code")) nil [229785 236159])
+            ("put" code nil nil [236330 236378])
+            ("ecb-layout-undefine" function (:arguments ("name")) nil [236380 236757])
+            ("ecb-choose-layout-name" function (:arguments ("layout-list" "require-match")) nil [236760 237329])
+            ("ecb-layout-switch" function (:arguments ("name")) nil [237331 237652])
+            ("ecb-change-layout" function
+               (:user-visible-flag t
+                :arguments ("preselect-type"))
+                nil [237657 238602])
+            ("ecb-show-layout-help" function (:user-visible-flag t) nil [238604 239105])
+            ("ecb-window-config-cache-size" variable (:default-value 200) nil [239200 239241])
+            ("ecb-window-config-cache" variable nil nil [239242 239472])
+            ("ecb-window-config-cache-add" function (:arguments ("ecb-window-config")) nil [239474 239841])
+            ("ecb-window-config-cache-get" function (:arguments ("emacs-window-config")) nil [239843 240329])
+            ("ecb-window-config-cache-get-latest" function nil nil [240331 240572])
+            ("ecb-window-config-cache-init" function nil nil [240574 240853])
+            ("ecb-window-config-cache-clear" function nil nil [240855 240953])
+            ("ecb-window-configuration-invalidp" function (:arguments ("window-config")) nil [240991 241416])
+            ("defecb-advice" code nil nil [241419 243123])
+            ("defecb-advice" code nil nil [243126 244767])
+            ("when-ecb-running-xemacs" code nil nil [244769 245676])
+            ("ecb-current-window-configuration" function nil nil [245679 245856])
+            ("ecb-set-window-configuration" function (:arguments ("ecb-window-config")) nil [245858 246131])
+            ("ecb-save-window-excursion" function (:arguments ("body")) nil [246133 246517])
+            ("ecb-redraw-layout" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [247733 250637])
+            ("defecb-autocontrol/sync-function" code nil nil [250640 254278])
+            ("ecb-get-ecb-window-location" function (:arguments ("ecb-window" "residual-window")) nil [255087 256553])
+            ("ecb-delete-ecb-windows" function (:arguments ("side" "residual-window" "except-ecb-window-or-buffer")) nil [256555 259223])
+            ("ecb-draw-compile-window" function (:arguments ("height")) nil [259225 260444])
+            ("ecb-redraw-layout-full" function (:arguments ("no-buffer-sync" "ecb-windows-creator" "window-configuration-data" "no-ecb-windows" "emergency")) nil [260612 277004])
+            ("ecb-redraw-layout-quickly" function nil nil [277011 277394])
+            ("ecb-toggle-layout-state" variable nil nil [277397 277492])
+            ("ecb-toggle-layout" function
+               (:user-visible-flag t
+                :arguments ("last-one"))
+                nil [277493 278701])
+            ("ecb-store-window-sizes" function
+               (:user-visible-flag t
+                :arguments ("fix"))
+                nil [278703 280639])
+            ("ecb-restore-window-sizes" function (:user-visible-flag t) nil [280642 280945])
+            ("ecb-restore-default-window-sizes" function (:user-visible-flag t) nil [280947 281295])
+            ("ecb-get-window-size" function (:arguments ("window" "fix" "ref-size")) nil [281436 282461])
+            ("ecb-get-ecb-window-sizes" function (:arguments ("fix" "ecb-win-list")) nil [282464 283922])
+            ("ecb-set-window-size" function (:arguments ("window" "size" "ref-size")) nil [284049 285822])
+            ("ecb-set-ecb-window-sizes" function (:arguments ("window-sizes")) nil [285824 288107])
+            ("ecb-get-edit-area-size" function (:arguments ("win-list")) nil [288389 289581])
+            ("ecb-compile-window-specified-height-config" variable nil nil [291309 291602])
+            ("ecb-use-window-config-for-compwin-shrink" variable nil nil [291778 291831])
+            ("ecb-store-compile-window-specified-height-config" function nil nil [291833 292473])
+            ("ecb-reset-compile-window-specified-height-config" function nil nil [292652 293283])
+            ("defalias" code nil nil [293315 293401])
+            ("ecb-toggle-compile-window-height" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [293403 300269])
+            ("ecb-set-compile-window-height" function nil nil [300913 301791])
+            ("ecb-compile-window-state" function nil nil [301794 302187])
+            ("ecb-toggle-compile-window" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [302189 304680])
+            ("silentcomp-provide" code nil nil [304683 304715]))          
+      :file "ecb-layout.el"
+      :pointmax 304903
+      :fsize 304902
+      :lastmodtime '(21162 52344 741753 384000)
+      :unmatched-syntax '((close-paren 6872 . 6873) (symbol 6810 . 6827) (open-paren 6809 . 6810) (close-paren 5312 . 5313) (symbol 5271 . 5288) (open-paren 5270 . 5271)))
+    (semanticdb-table "ecb-compilation.el"
+      :file "ecb-compilation.el"
+      :fsize 13538
+      :lastmodtime '(21162 52344 729753 373000))
+    (semanticdb-table "ecb-create-layout.el"
+      :file "ecb-create-layout.el"
+      :fsize 34606
+      :lastmodtime '(21162 52344 729753 373000)))
+  :file "!home!dearn!.emacs.d!site-lisp!ecb!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object auctex-11.87.3/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "auctex-11.87.3/"
+  :tables
+  (list
+    (semanticdb-table "auctex-autoloads.el"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "auctex-autoloads.el"
+      :pointmax 260
+      :fsize 11103
+      :lastmodtime '(21285 55025 730334 531000)
+      :unmatched-syntax nil))
+  :file "!home!dearn!.emacs.d!elpa!auctex-11.87.3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,102 @@
+;; Object lisp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lisp/"
+  :tables
+  (list
+    (semanticdb-table "custom.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("widget" include nil nil [1232 1249])
+            ("custom-define-hook" variable nil nil [1251 1400])
+            ("custom-dont-initialize" variable nil nil [1402 1585])
+            ("custom-current-group-alist" variable nil nil [1587 1700])
+            ("custom-initialize-default" function (:arguments ("symbol" "value")) nil [1730 2238])
+            ("custom-initialize-set" function (:arguments ("symbol" "value")) nil [2240 2768])
+            ("custom-initialize-reset" function (:arguments ("symbol" "value")) nil [2770 3491])
+            ("custom-initialize-changed" function (:arguments ("symbol" "value")) nil [3493 4072])
+            ("custom-delayed-init-variables" variable nil nil [4074 4171])
+            ("custom-initialize-delay" function (:arguments ("symbol" "_value")) nil [4173 5297])
+            ("custom-declare-variable" function (:arguments ("symbol" "default" "doc" "args")) nil [5299 7898])
+            ("defcustom" function (:arguments ("symbol" "standard" "doc" "args")) nil [7900 13974])
+            ("defface" function (:arguments ("face" "spec" "doc" "args")) nil [14002 16913])
+            ("custom-current-group" function nil nil [16942 17031])
+            ("custom-declare-group" function (:arguments ("symbol" "members" "doc" "args")) nil [17033 18094])
+            ("defgroup" function (:arguments ("symbol" "members" "doc" "args")) nil [18096 19256])
+            ("custom-add-to-group" function (:arguments ("group" "option" "widget")) nil [19258 19604])
+            ("custom-group-of-mode" function (:arguments ("mode")) nil [19606 20008])
+            ("custom-handle-all-keywords" function (:arguments ("symbol" "args" "type")) nil [20027 20617])
+            ("custom-handle-keyword" function (:arguments ("symbol" "keyword" "value" "type")) nil [20619 21330])
+            ("custom-add-dependencies" function (:arguments ("symbol" "value")) nil [21332 22085])
+            ("custom-add-option" function (:arguments ("symbol" "option")) nil [22087 22538])
+            ("defalias" code nil nil [22539 22595])
+            ("custom-add-link" function (:arguments ("symbol" "widget")) nil [22597 22833])
+            ("custom-add-version" function (:arguments ("symbol" "version")) nil [22835 22985])
+            ("custom-add-package-version" function (:arguments ("symbol" "version")) nil [22987 23161])
+            ("custom-add-load" function (:arguments ("symbol" "load")) nil [23163 23459])
+            ("custom-autoload" function (:arguments ("symbol" "load" "noset")) nil [23461 23747])
+            ("custom-variable-p" function (:arguments ("variable")) nil [23749 24182])
+            ("define-obsolete-function-alias" code nil nil [24184 24259])
+            ("custom-note-var-changed" function (:arguments ("variable")) nil [24261 24556])
+            ("custom-load-recursion" variable nil nil [24699 24775])
+            ("custom-load-symbol" function (:arguments ("symbol")) nil [24777 26034])
+            ("custom-local-buffer" variable nil nil [26037 26357])
+            ("put" code nil nil [26358 26403])
+            ("custom-set-default" function (:arguments ("variable" "value")) nil [26405 26786])
+            ("custom-set-minor-mode" function (:arguments ("variable" "value")) nil [26788 27212])
+            ("custom-quote" function (:arguments ("sexp")) nil [27214 27552])
+            ("customize-mark-to-save" function (:arguments ("symbol")) nil [27554 28717])
+            ("customize-mark-as-set" function (:arguments ("symbol")) nil [28719 29874])
+            ("custom-reevaluate-setting" function (:arguments ("symbol")) nil [29876 30348])
+            ("custom-known-themes" variable (:default-value (quote (user changed))) nil [32175 32563])
+            ("custom-theme-p" function (:arguments ("theme")) nil [32565 32674])
+            ("custom-check-theme" function (:arguments ("theme")) nil [32676 32854])
+            ("custom-push-theme" function (:arguments ("prop" "symbol" "theme" "mode" "value")) nil [32856 35001])
+            ("custom-fix-face-spec" function (:arguments ("spec")) nil [35003 35773])
+            ("custom-set-variables" function (:arguments ("args")) nil [35776 36387])
+            ("custom-theme-set-variables" function (:arguments ("theme" "args")) nil [36389 39862])
+            ("deftheme" function (:arguments ("theme" "doc" "ignored")) nil [40458 41079])
+            ("custom-declare-theme" function (:arguments ("theme" "feature" "doc" "ignored")) nil [41081 41569])
+            ("custom-make-theme-feature" function (:arguments ("theme")) nil [41571 42076])
+            ("custom-theme-directory" variable (:default-value user-emacs-directory) nil [42100 42447])
+            ("custom-theme-load-path" variable (:default-value (list (quote custom-theme-directory) t)) nil [42449 43250])
+            ("custom--inhibit-theme-enable" variable nil nil [43252 43538])
+            ("provide-theme" function (:arguments ("theme")) nil [43540 43938])
+            ("custom-safe-themes" variable (:default-value (quote (default))) nil [43940 44560])
+            ("load-theme" function
+               (:user-visible-flag t
+                :arguments ("theme" "no-confirm" "no-enable"))
+                nil [44562 47438])
+            ("custom-theme-load-confirm" function (:arguments ("hash")) nil [47440 48190])
+            ("custom-theme-name-valid-p" function (:arguments ("name")) nil [48192 48457])
+            ("custom-available-themes" function nil nil [48459 48991])
+            ("custom-theme--load-path" function nil nil [48993 49312])
+            ("enable-theme" function
+               (:user-visible-flag t
+                :arguments ("theme"))
+                nil [49359 50595])
+            ("custom-enabled-themes" variable nil nil [50597 51907])
+            ("custom-theme-enabled-p" function (:arguments ("theme")) nil [51909 52027])
+            ("disable-theme" function
+               (:user-visible-flag t
+                :arguments ("theme"))
+                nil [52029 53628])
+            ("custom--frame-color-default" function (:arguments ("frame" "attribute" "resource-attr" "resource-class" "tty-default" "x-default")) nil [53630 53990])
+            ("custom-variable-theme-value" function (:arguments ("variable")) nil [53992 54385])
+            ("custom-theme-recalc-variable" function (:arguments ("variable")) nil [54387 54842])
+            ("custom-theme-recalc-face" function (:arguments ("face")) nil [54844 55116])
+            ("custom-theme-reset-variables" function (:arguments ("theme" "args")) nil [55333 55704])
+            ("custom-reset-variables" function (:arguments ("args")) nil [55706 56047])
+            ("while" code nil nil [56128 56307])
+            ("custom" package nil nil [56309 56326]))          
+      :file "custom.el"
+      :pointmax 56352
+      :fsize 56351
+      :lastmodtime '(20707 18685 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "widget.el"
+      :file "widget.el"
+      :fsize 3845
+      :lastmodtime '(20707 18685 0 0)))
+  :file "!usr!share!emacs!24.3!lisp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

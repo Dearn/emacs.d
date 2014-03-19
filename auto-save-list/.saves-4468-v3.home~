@@ -1,0 +1,4 @@
+/sudo:root@v3.home:/etc/conf.d/hwclock
+#_asudo_broot@v3.home_b_aetc_aconf.d_ahwclock#
+/sudo:root@v3.home:/etc/conf.d/ntp-client
+#_asudo_broot@v3.home_b_aetc_aconf.d_antp-client#

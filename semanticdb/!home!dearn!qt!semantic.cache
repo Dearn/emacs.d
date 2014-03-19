@@ -1,0 +1,28 @@
+;; Object qt/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "qt/"
+  :tables
+  (list
+    (semanticdb-table "hello.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("qapplication.h" include (:system-flag t) nil [1 26])
+            ("qpushbutton.h" include (:system-flag t) nil [27 51])
+            ("qimage.h" include (:system-flag t) nil [52 71])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [82 91])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [92 104]))                  
+                :type "int")
+                nil [73 267]))          
+      :file "hello.cpp"
+      :pointmax 268
+      :fsize 429
+      :lastmodtime '(21228 57077 392606 360000)
+      :unmatched-syntax nil))
+  :file "!home!dearn!qt!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

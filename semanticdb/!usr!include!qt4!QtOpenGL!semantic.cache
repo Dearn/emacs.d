@@ -1,0 +1,187 @@
+;; Object QtOpenGL/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "QtOpenGL/"
+  :tables
+  (list
+    (semanticdb-table "qglcolormap.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("QGLCOLORMAP_H" variable (:constant-flag t) nil [2002 2015])
+            ("QtGui/qcolor.h" include (:system-flag t) nil [2017 2042])
+            ("QtCore/qvector.h" include (:system-flag t) nil [2043 2070])
+            ("QtOpenGLModule" type
+               (:typedef ("QtValidLicenseForOpenGLModule" type (:type "class") nil nil)
+                :type "typedef")
+                nil [2109 2126])
+            ("QGLColormap" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2164 2171])
+                    ("QGLColormap" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("QGLColormap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2176 2190])
+                    ("QGLColormap" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QGLColormap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2207 2227]))                          
+                        :type ("QGLColormap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2195 2228])
+                    ("QGLColormap" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2233 2248])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QGLColormap" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2277 2297]))                          
+                        :type ("QGLColormap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2254 2298])
+                    ("isEmpty" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2304 2327])
+                    ("size" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2332 2352])
+                    ("detach" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2357 2373])
+                    ("setEntries" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("count" variable (:type "int") (reparse-symbol arg-sub-list) [2397 2407])
+                            ("colors" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("QRgb" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2408 2428])
+                            ("base" variable
+                               (:default-value "0"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2429 2441]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2379 2443])
+                    ("setEntry" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [2464 2472])
+                            ("color" variable (:type ("QRgb" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2473 2484]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2448 2485])
+                    ("setEntry" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [2506 2514])
+                            ("color" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("QColor" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2515 2536]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2490 2537])
+                    ("entryRgb" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [2558 2566]))                          
+                        :type ("QRgb" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2542 2573])
+                    ("entryColor" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [2596 2604]))                          
+                        :type ("QColor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2578 2611])
+                    ("find" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("color" variable (:type ("QRgb" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2628 2639]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2616 2646])
+                    ("findNearest" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("color" variable (:type ("QRgb" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2670 2681]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2651 2688])
+                    ("protected" label nil (reparse-symbol classsubparts) [2690 2700])
+                    ("handle" function (:type ("Qt::HANDLE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2705 2758])
+                    ("setHandle" function
+                       (:arguments 
+                          ( ("ahandle" variable (:type ("Qt::HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2778 2797]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2763 2826])
+                    ("private" label nil (reparse-symbol classsubparts) [2828 2836])
+                    ("QGLColormapData" type
+                       (:members 
+                          ( ("ref" variable (:type ("QBasicAtomicInt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2874 2894])
+                            ("cells" variable
+                               (:pointer 1
+                                :type ("QVector" type
+                                     (:template-specifier 
+                                        ( ("QRgb" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [2903 2924])
+                            ("cmapHandle" variable (:type ("Qt::HANDLE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2933 2955]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [2841 2962])
+                    ("d" variable
+                       (:pointer 1
+                        :type ("QGLColormapData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2968 2987])
+                    ("shared_null" variable
+                       (:typemodifiers ("static")
+                        :type ("QGLColormapData" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2992 3034])
+                    ("cleanup" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("x" variable
+                               (:pointer 1
+                                :type ("QGLColormapData" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3059 3078]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3039 3079])
+                    ("detach_helper" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3084 3105])
+                    ("QGLWidget" friend nil (reparse-symbol classsubparts) [3111 3133])
+                    ("QGLWidgetPrivate" friend nil (reparse-symbol classsubparts) [3139 3168]))                  
+                :type "class")
+                nil [2128 3172])
+            ("detach" function
+               (:parent "QGLColormap"
+                :typemodifiers ("inline")
+                :type "void")
+                nil [3174 3257]))          
+      :file "qglcolormap.h"
+      :pointmax 3316
+      :fsize 3315
+      :lastmodtime '(20913 27852 0 0)
+      :unmatched-syntax '((punctuation 3168 . 3169) (punctuation 3133 . 3134))
+      :lexical-table 
+        '(("QGLCOLORMAP_H")
+          )
+))
+  :file "!usr!include!qt4!QtOpenGL!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

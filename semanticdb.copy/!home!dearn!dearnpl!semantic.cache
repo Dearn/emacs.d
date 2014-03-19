@@ -1,0 +1,17 @@
+;; Object dearnpl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dearnpl/"
+  :tables
+  (list
+    (semanticdb-table "tests.php"
+      :major-mode 'html-mode
+      :tags 
+        '( ("'.$player_info->get('personaname').'\\'s steam profile" anchor nil nil [2035 2038]))          
+      :file "tests.php"
+      :pointmax 2492
+      :fsize 2491
+      :lastmodtime '(21226 36089 724207 674000)
+      :unmatched-syntax nil))
+  :file "!home!dearn!dearnpl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,20 @@
+;; Object www/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "www/"
+  :tables
+  (list
+    (semanticdb-table "index.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("mod_python" include nil nil [1 30])
+            ("pylast" include nil nil [31 44])
+            ("index" function (:arguments 
+              ( ("req" variable nil (reparse-symbol function_parameters) [81 84]))              ) nil [71 2898]))          
+      :file "index.py"
+      :pointmax 2921
+      :fsize 2920
+      :lastmodtime '(21217 28182)
+      :unmatched-syntax nil))
+  :file "!scpc:dearn@dearn.pl:!var!www!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

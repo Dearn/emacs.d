@@ -1,0 +1,275 @@
+;; Object progmodes/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "progmodes/"
+  :tables
+  (list
+    (semanticdb-table "autoconf.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("autoconf-mode-map" variable (:default-value (make-sparse-keymap)) nil [1356 1403])
+            ("autoconf-mode-hook" variable nil nil [1405 1469])
+            ("autoconf-definition-regexp" variable
+               (:constant-flag t
+                :default-value "A\\(?:H_TEMPLATE\\|C_\\(?:SUBST\\|DEFINE\\(?:_UNQUOTED\\)?\\)\\)(\\[*\\(\\sw+\\)\\]*")
+                nil [1471 1597])
+            ("autoconf-font-lock-keywords" variable (:default-value (\` (("\\_<A[CHMS]_\\sw+" . font-lock-keyword-face) ((\, autoconf-definition-regexp) 1 font-lock-function-name-face) ("changequote" . font-lock-keyword-face)))) nil [1599 1903])
+            ("autoconf-mode-syntax-table" variable (:default-value (let ((table (make-syntax-table))) (modify-syntax-entry 34 "." table) (modify-syntax-entry 10 ">" table) (modify-syntax-entry 35 "<" table) table)) nil [1905 2107])
+            ("autoconf-imenu-generic-expression" variable (:default-value (list (list nil autoconf-definition-regexp 1))) nil [2109 2200])
+            ("autoconf-current-defun-function" function nil nil [2248 2816])
+            ("define-derived-mode" code nil nil [2833 3809])
+            ("autoconf-mode" package nil nil [3811 3835])
+            ("autoconf" package nil nil [3836 3855]))          
+      :file "autoconf.el"
+      :pointmax 3883
+      :fsize 3882
+      :lastmodtime '(20707 18685 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "cc-fonts.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("let" code nil nil [2619 2834])
+            ("cc-require" code nil nil [2837 2858])
+            ("cc-require-when-compile" code nil nil [2859 2894])
+            ("cc-require" code nil nil [2895 2916])
+            ("cc-require" code nil nil [2917 2940])
+            ("cc-require-when-compile" code nil nil [2941 2974])
+            ("cc-fonts" package nil nil [3211 3230])
+            ("cc-external-require" code nil nil [3232 3264])
+            ("cc-bytecomp-defvar" code nil nil [3266 3315])
+            ("cc-bytecomp-defvar" code nil nil [3619 3664])
+            ("cc-bytecomp-defvar" code nil nil [3665 3707])
+            ("cc-bytecomp-defun" code nil nil [3708 3761])
+            ("cc-bytecomp-defun" code nil nil [3762 3805])
+            ("cc-bytecomp-defun" code nil nil [3806 3849])
+            ("cc-bytecomp-defun" code nil nil [3850 3896])
+            ("c-preprocessor-face-name" variable
+               (:constant-flag t
+                :default-value (cond ((c-face-name-p (quote font-lock-preprocessor-face)) (quote font-lock-preprocessor-face)) ((c-face-name-p (quote font-lock-builtin-face)) (quote font-lock-builtin-face)) (t (quote font-lock-reference-face))))
+                nil [4081 4451])
+            ("cc-bytecomp-defvar" code nil nil [4453 4497])
+            ("c-label-face-name" variable
+               (:constant-flag t
+                :default-value (cond ((c-face-name-p (quote font-lock-label-face)) (quote font-lock-label-face)) ((and (c-face-name-p (quote font-lock-constant-face)) (eq font-lock-constant-face (quote font-lock-constant-face))) (quote font-lock-constant-face)) (t (quote font-lock-reference-face))))
+                nil [4499 5081])
+            ("c-constant-face-name" variable
+               (:constant-flag t
+                :default-value (if (and (c-face-name-p (quote font-lock-constant-face)) (eq font-lock-constant-face (quote font-lock-constant-face))) (quote font-lock-constant-face) c-label-face-name))
+                nil [5083 5346])
+            ("c-reference-face-name" variable
+               (:constant-flag t
+                :default-value (with-no-warnings (if (and (c-face-name-p (quote font-lock-reference-face)) (eq font-lock-reference-face (quote font-lock-reference-face))) (quote font-lock-reference-face) c-label-face-name)))
+                nil [5348 5750])
+            ("c-doc-face-name" variable
+               (:constant-flag t
+                :default-value (cond ((c-face-name-p (quote font-lock-doc-string-face)) (quote font-lock-doc-string-face)) ((c-face-name-p (quote font-lock-doc-face)) (quote font-lock-doc-face)) (t (quote font-lock-comment-face))))
+                nil [5868 6107])
+            ("c-doc-markup-face-name" variable
+               (:constant-flag t
+                :default-value (if (c-face-name-p (quote font-lock-doc-markup-face)) (quote font-lock-doc-markup-face) c-label-face-name))
+                nil [6109 6374])
+            ("c-negation-char-face-name" variable
+               (:constant-flag t
+                :default-value (if (c-face-name-p (quote font-lock-negation-char-face)) (quote font-lock-negation-char-face)))
+                nil [6376 6558])
+            ("cc-bytecomp-defun" code nil nil [6560 6600])
+            ("cc-bytecomp-defun" code nil nil [6618 6660])
+            ("c-make-inverse-face" function (:arguments ("oldface" "newface")) nil [6680 7342])
+            ("c-annotation-face" variable (:default-value (quote c-annotation-face)) nil [7344 7389])
+            ("c-annotation-face" variable
+               (:default-value (quote ((default :inherit font-lock-constant-face)))
+                :type "face")
+                nil [7391 7566])
+            ("def-edebug-spec" code nil nil [20835 20953])
+            ("def-edebug-spec" code nil nil [20624 20668])
+            ("def-edebug-spec" code nil nil [20574 20621])
+            ("c-make-font-lock-context-search-function" function (:arguments ("normal" "state-stanzas")) nil [17999 20479])
+            ("c-make-font-lock-BO-decl-search-function" function (:arguments ("regexp" "highlights")) nil [15495 17995])
+            ("c-make-font-lock-search-function" function (:arguments ("regexp" "highlights")) nil [12584 15491])
+            ("c-make-font-lock-search-form" function (:arguments ("regexp" "highlights")) nil [11195 12580])
+            ("c-make-syntactic-matcher" function (:arguments ("regexp")) nil [10479 11191])
+            ("c-skip-comments-and-strings" function (:arguments ("limit")) nil [9903 10475])
+            ("put" code nil nil [9844 9899])
+            ("c-fontify-types-and-refs" function (:arguments ("varlist" "body")) nil [9400 9841])
+            ("c-put-font-lock-string-face" function (:arguments ("from" "to")) nil [8965 9396])
+            ("c-remove-font-lock-face" function (:arguments ("from" "to")) nil [8674 8961])
+            ("c-put-font-lock-face" function (:arguments ("from" "to" "face")) nil [8065 8670])
+            ("make-variable-buffer-local" code nil nil [8012 8061])
+            ("c-font-lock-context" variable nil nil [7977 8009])
+            ("c-fontify-recorded-types-and-refs" function nil nil [20959 21766])
+            ("c-lang-defconst" code nil nil [21768 27450])
+            ("c-font-lock-invalid-string" function nil nil [27452 28452])
+            ("c-lang-defconst" code nil nil [28454 33929])
+            ("c-font-lock-complex-decl-prepare" function (:arguments ("limit")) nil [33931 36174])
+            ("c-font-lock-<>-arglists" function (:arguments ("limit")) nil [36176 38996])
+            ("c-font-lock-declarators" function (:arguments ("limit" "list" "types")) nil [38998 45395])
+            ("c-font-lock-maybe-decl-faces" variable
+               (:constant-flag t
+                :default-value (list nil font-lock-type-face c-reference-face-name font-lock-keyword-face))
+                nil [45397 45709])
+            ("c-font-lock-declarations" function (:arguments ("limit")) nil [45711 59451])
+            ("c-font-lock-enum-tail" function (:arguments ("limit")) nil [59453 60641])
+            ("c-font-lock-enclosing-decls" function (:arguments ("limit")) nil [60643 61927])
+            ("c-lang-defconst" code nil nil [61929 64511])
+            ("c-lang-defconst" code nil nil [64513 70020])
+            ("c-font-lock-labels" function (:arguments ("limit")) nil [70022 71750])
+            ("c-lang-defconst" code nil nil [71752 74664])
+            ("c-lang-defconst" code nil nil [74666 74730])
+            ("c-lang-defconst" code nil nil [74732 74933])
+            ("c-lang-defconst" code nil nil [74935 75137])
+            ("c-compose-keywords-list" function (:arguments ("base-list")) nil [75139 76579])
+            ("c-override-default-keywords" function (:arguments ("def-var")) nil [76581 77481])
+            ("c-override-default-keywords" code nil nil [77493 77544])
+            ("c-font-lock-keywords-1" variable
+               (:constant-flag t
+                :default-value (c-lang-const c-matchers-1 c))
+                nil [77546 77755])
+            ("c-font-lock-keywords-2" variable
+               (:constant-flag t
+                :default-value (c-lang-const c-matchers-2 c))
+                nil [77757 78110])
+            ("c-font-lock-keywords-3" variable
+               (:constant-flag t
+                :default-value (c-lang-const c-matchers-3 c))
+                nil [78112 78391])
+            ("c-font-lock-keywords" variable (:default-value c-font-lock-keywords-3) nil [78393 78493])
+            ("c-font-lock-keywords-2" function nil nil [78495 78579])
+            ("c-font-lock-keywords-3" function nil nil [78580 78664])
+            ("c-font-lock-keywords" function nil nil [78665 78745])
+            ("c-font-lock-c++-new" function (:arguments ("limit")) nil [78759 83347])
+            ("c-override-default-keywords" code nil nil [83349 83402])
+            ("c++-font-lock-keywords-1" variable
+               (:constant-flag t
+                :default-value (c-lang-const c-matchers-1 c++))
+                nil [83404 83619])
+            ("c++-font-lock-keywords-2" variable
+               (:constant-flag t
+                :default-value (c-lang-const c-matchers-2 c++))
+                nil [83621 83984])
+            ("c++-font-lock-keywords-3" variable
+               (:constant-flag t
+                :default-value (c-lang-const c-matchers-3 c++))
+                nil [83986 84275])
+            ("c++-font-lock-keywords" variable (:default-value c++-font-lock-keywords-3) nil [84277 84383])
+            ("c++-font-lock-keywords-2" function nil nil [84385 84473])
+            ("c++-font-lock-keywords-3" function nil nil [84474 84562])
+            ("c++-font-lock-keywords" function nil nil [84563 84647])
+            ("c-font-lock-objc-method" function nil nil [84669 86172])
+            ("c-font-lock-objc-methods" function (:arguments ("limit")) nil [86174 86724])
+            ("c-override-default-keywords" code nil nil [86726 86780])
+            ("objc-font-lock-keywords-1" variable
+               (:constant-flag t
+                :default-value (c-lang-const c-matchers-1 objc))
+                nil [86782 87003])
+            ("objc-font-lock-keywords-2" variable
+               (:constant-flag t
+                :default-value (c-lang-const c-matchers-2 objc))
+                nil [87005 87380])
+            ("objc-font-lock-keywords-3" variable
+               (:constant-flag t
+                :default-value (c-lang-const c-matchers-3 objc))
+                nil [87382 87683])
+            ("objc-font-lock-keywords" variable (:default-value objc-font-lock-keywords-3) nil [87685 87801])
+            ("objc-font-lock-keywords-2" function nil nil [87803 87893])
+            ("objc-font-lock-keywords-3" function nil nil [87894 87984])
+            ("objc-font-lock-keywords" function nil nil [87985 88071])
+            ("when" code nil nil [88344 88552])
+            ("c-override-default-keywords" code nil nil [88567 88621])
+            ("java-font-lock-keywords-1" variable
+               (:constant-flag t
+                :default-value (c-lang-const c-matchers-1 java))
+                nil [88623 88810])
+            ("java-font-lock-keywords-2" variable
+               (:constant-flag t
+                :default-value (c-lang-const c-matchers-2 java))
+                nil [88812 89180])
+            ("java-font-lock-keywords-3" variable
+               (:constant-flag t
+                :default-value (c-lang-const c-matchers-3 java))
+                nil [89182 89476])
+            ("java-font-lock-keywords" variable (:default-value java-font-lock-keywords-3) nil [89478 89587])
+            ("java-font-lock-keywords-2" function nil nil [89589 89679])
+            ("java-font-lock-keywords-3" function nil nil [89680 89770])
+            ("java-font-lock-keywords" function nil nil [89771 89857])
+            ("c-override-default-keywords" code nil nil [89877 89930])
+            ("idl-font-lock-keywords-1" variable
+               (:constant-flag t
+                :default-value (c-lang-const c-matchers-1 idl))
+                nil [89932 90122])
+            ("idl-font-lock-keywords-2" variable
+               (:constant-flag t
+                :default-value (c-lang-const c-matchers-2 idl))
+                nil [90124 90493])
+            ("idl-font-lock-keywords-3" variable
+               (:constant-flag t
+                :default-value (c-lang-const c-matchers-3 idl))
+                nil [90495 90790])
+            ("idl-font-lock-keywords" variable (:default-value idl-font-lock-keywords-3) nil [90792 90904])
+            ("idl-font-lock-keywords-2" function nil nil [90906 90994])
+            ("idl-font-lock-keywords-3" function nil nil [90995 91083])
+            ("idl-font-lock-keywords" function nil nil [91084 91168])
+            ("c-override-default-keywords" code nil nil [91183 91237])
+            ("pike-font-lock-keywords-1" variable
+               (:constant-flag t
+                :default-value (c-lang-const c-matchers-1 pike))
+                nil [91239 91457])
+            ("pike-font-lock-keywords-2" variable
+               (:constant-flag t
+                :default-value (c-lang-const c-matchers-2 pike))
+                nil [91459 91827])
+            ("pike-font-lock-keywords-3" variable
+               (:constant-flag t
+                :default-value (c-lang-const c-matchers-3 pike))
+                nil [91829 92123])
+            ("pike-font-lock-keywords" variable (:default-value pike-font-lock-keywords-3) nil [92125 92234])
+            ("pike-font-lock-keywords-2" function nil nil [92236 92326])
+            ("pike-font-lock-keywords-3" function nil nil [92327 92417])
+            ("pike-font-lock-keywords" function nil nil [92418 92504])
+            ("c-font-lock-doc-comments" function (:arguments ("prefix" "limit" "keywords")) nil [92527 95858])
+            ("put" code nil nil [95859 95914])
+            ("c-find-invalid-doc-markup" function (:arguments ("regexp" "limit")) nil [95916 96658])
+            ("gtkdoc-font-lock-doc-comments" variable
+               (:constant-flag t
+                :default-value (let ((symbol "[a-zA-Z0-9_]+") (header "^ \\* ")) (\` (((\, (concat header "\\(" symbol "\\):[ 	]*$")) 1 (\, c-doc-markup-face-name) prepend nil) ((\, (concat symbol "()")) 0 (\, c-doc-markup-face-name) prepend nil) ((\, (concat header "\\(" "@" symbol "\\):")) 1 (\, c-doc-markup-face-name) prepend nil) ((\, (concat "[#%@]" symbol)) 0 (\, c-doc-markup-face-name) prepend nil)))))
+                nil [96727 97196])
+            ("gtkdoc-font-lock-doc-protection" variable
+               (:constant-flag t
+                :default-value (\` (("< \\(public\\|private\\|protected\\) >" 1 (\, c-doc-markup-face-name) prepend nil))))
+                nil [97198 97331])
+            ("gtkdoc-font-lock-keywords" variable
+               (:constant-flag t
+                :default-value (\` (((\, (lambda (limit) (c-font-lock-doc-comments "/\\*\\*$" limit gtkdoc-font-lock-doc-comments) (c-font-lock-doc-comments "/\\*< " limit gtkdoc-font-lock-doc-protection)))))))
+                nil [97333 97552])
+            ("javadoc-font-lock-doc-comments" variable
+               (:constant-flag t
+                :default-value (\` (("{@[a-z]+[^}
+]*}" 0 (\, c-doc-markup-face-name) prepend nil) ("^\\(/\\*\\)?\\(\\s \\|\\*\\)*\\(@[a-z]+\\)" 3 (\, c-doc-markup-face-name) prepend nil) ((\, (concat "</?\\sw" "\\(" (concat "\\sw\\|\\s \\|[=
+*.:]\\|" "\"[^\"]*\"\\|'[^']*'") "\\)*>")) 0 (\, c-doc-markup-face-name) prepend nil) ("&\\(\\sw\\|[.:]\\)+;" 0 (\, c-doc-markup-face-name) prepend nil) ((\, (lambda (limit) (c-find-invalid-doc-markup "[<>&]\\|{@" limit))) 0 (quote font-lock-warning-face) prepend nil))))
+                nil [97567 98362])
+            ("javadoc-font-lock-keywords" variable
+               (:constant-flag t
+                :default-value (\` (((\, (lambda (limit) (c-font-lock-doc-comments "/\\*\\*" limit javadoc-font-lock-doc-comments)))))))
+                nil [98364 98504])
+            ("autodoc-decl-keywords" variable
+               (:constant-flag t
+                :default-value (cc-eval-when-compile (c-make-keywords-re t (quote ("@decl" "@elem" "@index" "@member")) (quote pike-mode))))
+                nil [98524 98749])
+            ("autodoc-decl-type-keywords" variable
+               (:constant-flag t
+                :default-value (cc-eval-when-compile (c-make-keywords-re t (quote ("@elem" "@member")) (quote pike-mode))))
+                nil [98751 98943])
+            ("autodoc-font-lock-line-markup" function (:arguments ("limit")) nil [98945 101527])
+            ("autodoc-font-lock-doc-comments" variable
+               (:constant-flag t
+                :default-value (\` (("@\\(\\w+{\\|\\[\\([^]@
+]\\|@@\\)*\\]\\|[@}]\\|$\\)" 0 (\, c-doc-markup-face-name) prepend nil) (autodoc-font-lock-line-markup) ((\, (lambda (limit) (c-find-invalid-doc-markup "@" limit))) 0 (quote font-lock-warning-face) prepend nil))))
+                nil [101529 101903])
+            ("autodoc-font-lock-keywords" function nil nil [101905 102396])
+            ("cc-provide" code nil nil [102473 102495]))          
+      :file "cc-fonts.el"
+      :pointmax 102523
+      :fsize 102522
+      :lastmodtime '(20707 18685 0 0)
+      :unmatched-syntax '((close-paren 20953 . 20954) (symbol 7569 . 7585) (open-paren 7568 . 7569) (close-paren 2834 . 2835) (symbol 2599 . 2616) (open-paren 2598 . 2599))))
+  :file "!usr!share!emacs!24.3!lisp!progmodes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

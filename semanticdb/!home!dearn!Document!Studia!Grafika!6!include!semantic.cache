@@ -1,0 +1,129 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "scena.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("SCENA_H" variable (:constant-flag t) nil [81 88])
+            ("cmath" include (:system-flag t) nil [90 106])
+            ("cstdlib" include (:system-flag t) nil [107 125])
+            ("iostream" include (:system-flag t) nil [126 145])
+            ("qapplication.h" include (:system-flag t) nil [146 171])
+            ("qcursor.h" include (:system-flag t) nil [172 192])
+            ("qgl.h" include (:system-flag t) nil [193 209])
+            ("qimage.h" include (:system-flag t) nil [210 229])
+            ("qtimer.h" include (:system-flag t) nil [230 249])
+            ("sstream" include (:system-flag t) nil [250 268])
+            ("GL/glu.h" include (:system-flag t) nil [269 288])
+            ("QKeyEvent" include (:system-flag t) nil [289 309])
+            ("Scena" type
+               (:superclasses 
+                  ( ("QGLWidget" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [373 381])
+                    ("application" variable
+                       (:pointer 1
+                        :type ("QApplication" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [388 414])
+                    ("public" label nil (reparse-symbol classsubparts) [419 426])
+                    ("Scena" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("app" variable
+                               (:pointer 1
+                                :type ("QApplication" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [439 457])
+                            ("parent" variable
+                               (:pointer 1
+                                :default-value "NULL"
+                                :type ("QWidget" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [458 478])
+                            ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :default-value "NULL"
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [480 501]))                          
+                        :type ("Scena" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [433 503])
+                    ("initializeGL" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [511 531])
+                    ("resizeGL" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("w" variable (:type "int") (reparse-symbol arg-sub-list) [552 558])
+                            ("h" variable (:type "int") (reparse-symbol arg-sub-list) [559 565]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [538 566])
+                    ("paintGL" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [573 588])
+                    ("keyPressEvent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:pointer 1
+                                :type ("QKeyEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [615 628]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [596 629])
+                    ("keyReleaseEvent" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("e" variable
+                               (:pointer 1
+                                :type ("QKeyEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [657 670]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [636 671])
+                    ("Scena" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [679 688])
+                    ("private" label nil (reparse-symbol classsubparts) [693 707])
+                    ("timerGL" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [714 729])
+                    ("timerFPS" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [736 752])
+                    ("private" label nil (reparse-symbol classsubparts) [754 762])
+                    ("qKolo" variable
+                       (:pointer 1
+                        :type ("GLUquadric" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [769 787])
+                    ("texture" variable
+                       (:dereference 1
+                        :type ("GLuint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [794 812])
+                    ("tex" variable
+                       (:dereference 1
+                        :type ("QImage" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [819 838])
+                    ("buf" variable (:type ("QImage" type (:type "class") nil nil)) (reparse-symbol classsubparts) [819 838]))                  
+                :type "class")
+                nil [325 841]))          
+      :file "scena.h"
+      :pointmax 864
+      :fsize 866
+      :lastmodtime '(21228 52442 649591 370000)
+      :unmatched-syntax '((symbol 361 . 369))
+      :lexical-table 
+        '(("SCENA_H")
+          )
+))
+  :file "!home!dearn!Document!Studia!Grafika!6!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

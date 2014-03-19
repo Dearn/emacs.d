@@ -1,0 +1,16 @@
+;; Object Grafika/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Grafika/"
+  :tables
+  (list
+    (semanticdb-table "Project.ede"
+      :major-mode 'emacs-lisp-mode
+      :tags nil
+      :file "Project.ede"
+      :pointmax 66
+      :fsize 65
+      :lastmodtime '(21200 21324 62374 386000)
+      :unmatched-syntax nil))
+  :file "!home!dearn!Document!Studia!Grafika!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

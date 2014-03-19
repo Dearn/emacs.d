@@ -1,0 +1,32 @@
+;; Object QtOpenGL/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "QtOpenGL/"
+  :tables
+  (list
+    (semanticdb-table "qglcolormap.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("QGLCOLORMAP_H" variable (:constant-flag t) nil [2002 2015])
+            ("QtGui/qcolor.h" include (:system-flag t) nil [2017 2042])
+            ("QtCore/qvector.h" include (:system-flag t) nil [2043 2070])
+            ("QGLColormap" variable (:type ("Q_OPENGL_EXPORT" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [2128 3172])
+            ("detach" function
+               (:parent "QGLColormap"
+                :typemodifiers ("inline")
+                :type "void")
+                nil [3174 3257]))          
+      :file "qglcolormap.h"
+      :pointmax 3316
+      :fsize 3315
+      :lastmodtime '(20913 27852 0 0)
+      :unmatched-syntax '((symbol 3277 . 3290) (symbol 3259 . 3275) (semantic-list 2118 . 2126) (symbol 2109 . 2118) (symbol 2089 . 2107) (symbol 2072 . 2087))
+      :lexical-table 
+        '(("QGLCOLORMAP_H")
+          )
+))
+  :file "!usr!include!qt4!QtOpenGL!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

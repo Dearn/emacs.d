@@ -1,0 +1,83 @@
+;; Object apel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "apel/"
+  :tables
+  (list
+    (semanticdb-table "pym.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("or" code nil nil [2145 2206])
+            ("static" include nil nil [2208 2225])
+            ("put" code nil nil [2253 2300])
+            ("defun-maybe" function (:arguments ("name" "everything-else")) nil [2301 2883])
+            ("put" code nil nil [2885 2935])
+            ("defmacro-maybe" function (:arguments ("name" "everything-else")) nil [2936 3533])
+            ("put" code nil nil [3535 3585])
+            ("defsubst-maybe" function (:arguments ("name" "everything-else")) nil [3586 4191])
+            ("defalias-maybe" function (:arguments ("symbol" "definition")) nil [4193 4656])
+            ("defvar-maybe" function (:arguments ("name" "everything-else")) nil [4658 5083])
+            ("defconst-maybe" function (:arguments ("name" "everything-else")) nil [5085 5529])
+            ("defun-maybe-cond" function (:arguments ("name" "args" "doc" "clauses")) nil [5531 6613])
+            ("defmacro-maybe-cond" function (:arguments ("name" "args" "doc" "clauses")) nil [6615 7712])
+            ("defsubst-maybe-cond" function (:arguments ("name" "args" "doc" "clauses")) nil [7714 8822])
+            ("defmacro-maybe" code nil nil [8975 9257])
+            ("def-edebug-spec" code nil nil [9299 9334])
+            ("def-edebug-spec" code nil nil [9335 9376])
+            ("def-edebug-spec" code nil nil [9377 9415])
+            ("def-edebug-spec" code nil nil [9416 9637])
+            ("def-edebug-spec" code nil nil [9638 9798])
+            ("def-edebug-spec" code nil nil [9799 10023])
+            ("def-edebug-spec" code nil nil [10085 10114])
+            ("def-edebug-spec" code nil nil [10116 10150])
+            ("def-edebug-spec" code nil nil [10151 10189])
+            ("def-edebug-spec" code nil nil [10190 10244])
+            ("def-edebug-spec" code nil nil [10245 10287])
+            ("def-edebug-spec" code nil nil [10288 10322])
+            ("subr-fboundp" function (:arguments ("symbol")) nil [10358 10521])
+            ("product" include nil nil [10583 10601])
+            ("product-provide" code nil nil [10602 10654]))          
+      :file "pym.el"
+      :pointmax 10677
+      :fsize 10676
+      :lastmodtime '(17099 15669 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "static.el"
+      :file "static.el"
+      :fsize 2935
+      :lastmodtime '(17099 15669 0 0))
+    (semanticdb-table "product.el"
+      :file "product.el"
+      :fsize 15763
+      :lastmodtime '(17484 26614 0 0))
+    (semanticdb-table "path-util.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("poe" include nil nil [1003 1017])
+            ("default-load-path" variable
+               (:user-visible-flag t
+                :default-value load-path)
+                nil [1019 1172])
+            ("add-path" function (:arguments ("path" "options")) nil [1189 2237])
+            ("add-latest-path" function (:arguments ("pattern" "all-paths")) nil [2254 2668])
+            ("get-latest-path" function (:arguments ("pattern" "all-paths")) nil [2685 3401])
+            ("file-installed-p" function (:arguments ("file" "paths")) nil [3418 3802])
+            ("exec-suffix-list" variable
+               (:user-visible-flag t
+                :default-value (quote ("")))
+                nil [3819 3888])
+            ("exec-installed-p" function (:arguments ("file" "paths" "suffixes")) nil [3905 4890])
+            ("module-installed-p" function (:arguments ("module" "paths")) nil [4907 5476])
+            ("product" include nil nil [5494 5512])
+            ("product-provide" code nil nil [5513 5571]))          
+      :file "path-util.el"
+      :pointmax 5600
+      :fsize 5599
+      :lastmodtime '(17099 15668 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "poe.el"
+      :file "poe.el"
+      :fsize 77506
+      :lastmodtime '(18626 40638 0 0)))
+  :file "!usr!share!emacs!site-lisp!apel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

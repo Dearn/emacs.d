@@ -1,0 +1,6 @@
+/sudo:root@v3.home:/etc/portage/make.conf
+#_asudo_broot@v3.home_b_aetc_aportage_amake.conf#
+/usr/share/portage/config/make.conf.example
+/usr/share/portage/config/#make.conf.example#
+/home/dearn/.rtorrent.rc
+/home/dearn/#.rtorrent.rc#

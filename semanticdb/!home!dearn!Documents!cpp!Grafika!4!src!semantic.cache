@@ -1,0 +1,142 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "scena.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("scena.h" include nil nil [57 75])
+            ("FPS" variable (:type "int") nil [91 99])
+            ("flag" variable
+               (:default-value "0"
+                :type "bool")
+                nil [100 112])
+            ("i" variable
+               (:default-value "1"
+                :type "bool")
+                nil [113 122])
+            ("delta" variable
+               (:default-value "1.0f"
+                :type "float")
+                nil [162 179])
+            ("texture" variable
+               (:dereference 1
+                :type ("GLuint" type (:type "class") nil nil))
+                nil [180 198])
+            ("tex" variable
+               (:dereference 1
+                :type ("QImage" type (:type "class") nil nil))
+                nil [199 218])
+            ("buf" variable (:type ("QImage" type (:type "class") nil nil)) nil [199 218])
+            ("quadratic" variable
+               (:pointer 1
+                :type ("GLUquadric" type (:type "class") nil nil))
+                nil [219 241])
+            ("sky" variable
+               (:pointer 1
+                :type ("GLUquadric" type (:type "class") nil nil))
+                nil [249 265])
+            ("Scena" function
+               (:constructor-flag t
+                :parent "Scena"
+                :arguments 
+                  ( ("app" variable
+                       (:pointer 1
+                        :type ("QApplication" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [281 299])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("QWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [300 316])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [317 334]))                  
+                :type ("Scena" type (:type "class") nil nil))
+                nil [268 627])
+            ("timerFPS" function
+               (:parent "Scena"
+                :type "void")
+                nil [629 723])
+            ("timerGL" function
+               (:parent "Scena"
+                :type "void")
+                nil [725 776])
+            ("keyPressEvent" function
+               (:parent "Scena"
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("QKeyEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [804 817]))                  
+                :type "void")
+                nil [778 1076])
+            ("keyReleaseEvent" function
+               (:parent "Scena"
+                :arguments 
+                  ( ("e" variable
+                       (:pointer 1
+                        :type ("QKeyEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1107 1120]))                  
+                :type "void")
+                nil [1079 1124])
+            ("resizeGL" function
+               (:parent "Scena"
+                :arguments 
+                  ( ("w" variable (:type "int") (reparse-symbol arg-sub-list) [1148 1154])
+                    ("h" variable (:type "int") (reparse-symbol arg-sub-list) [1155 1161]))                  
+                :type "void")
+                nil [1127 1350])
+            ("paintGL" function
+               (:parent "Scena"
+                :type "void")
+                nil [1352 1398])
+            ("initializeGL" function
+               (:parent "Scena"
+                :type "void")
+                nil [1399 2853])
+            ("paintGL" function
+               (:parent "scenapierw"
+                :type "void")
+                nil [2855 5456])
+            ("scenadruga" function
+               (:constructor-flag t
+                :parent "scenadruga"
+                :type ("scenadruga" type (:type "class") nil nil))
+                nil [5459 5822])
+            ("scenadruga" function
+               (:destructor-flag t
+                :parent "scenadruga"
+                :type "void")
+                nil [5825 5998])
+            ("podloga" function
+               (:parent "scenadruga"
+                :type "void")
+                nil [5999 7136])
+            ("drzewo" function
+               (:parent "scenadruga"
+                :type "void")
+                nil [7138 8070])
+            ("niebo" function
+               (:parent "scenadruga"
+                :type "void")
+                nil [8073 8439])
+            ("paintGL" function
+               (:parent "scenadruga"
+                :type "void")
+                nil [8440 9137])
+            ("Scena" function
+               (:destructor-flag t
+                :parent "Scena"
+                :type "void")
+                nil [9141 9210]))          
+      :file "scena.cpp"
+      :pointmax 9225
+      :fsize 9226
+      :lastmodtime '(21288 6153 392999 993000)
+      :unmatched-syntax nil))
+  :file "!home!dearn!Documents!cpp!Grafika!4!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

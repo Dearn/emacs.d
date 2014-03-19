@@ -1,0 +1,48 @@
+;; Object semantic/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semantic/"
+  :tables
+  (list
+    (semanticdb-table "dep.el"
+      :major-mode 'emacs-lisp-mode
+      :tags 
+        '( ("semantic/tag" include nil nil [1440 1463])
+            ("semantic-dependency-include-path" variable nil nil [1476 2144])
+            ("make-variable-buffer-local" code nil nil [2145 2207])
+            ("semantic-dependency-system-include-path" variable nil nil [2209 2774])
+            ("make-variable-buffer-local" code nil nil [2775 2844])
+            ("defcustom-mode-local-semantic-dependency-system-include-path" function (:arguments ("mode" "name" "value" "docstring")) nil [2846 4342])
+            ("semantic-add-system-include" function
+               (:user-visible-flag t
+                :arguments ("dir" "mode"))
+                nil [4428 4996])
+            ("semantic-remove-system-include" function
+               (:user-visible-flag t
+                :arguments ("dir" "mode"))
+                nil [5013 5678])
+            ("semantic-reset-system-include" function
+               (:user-visible-flag t
+                :arguments ("mode"))
+                nil [5695 6021])
+            ("semantic-customize-system-include-path" function
+               (:user-visible-flag t
+                :arguments ("mode"))
+                nil [6038 6583])
+            ("semantic--dependency-find-file-on-path" function (:arguments ("file" "path")) nil [6653 6980])
+            ("ede-minor-mode" variable nil nil [6982 7005])
+            ("ede-object" variable nil nil [7006 7025])
+            ("declare-function" code nil nil [7026 7074])
+            ("semantic-dependency-find-file-on-path" function (:arguments ("file" "systemp" "mode")) nil [7076 8163])
+            ("semantic/dep" package nil nil [8166 8189]))          
+      :file "dep.el"
+      :pointmax 8340
+      :fsize 8339
+      :lastmodtime '(21162 51904 690551 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "tag.el"
+      :file "tag.el"
+      :fsize 51787
+      :lastmodtime '(21162 51904 690551 0)))
+  :file "!home!dearn!.emacs.d!site-lisp!cedet-bzr!lisp!cedet!semantic!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

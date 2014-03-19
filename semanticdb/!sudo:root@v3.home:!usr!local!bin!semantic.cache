@@ -1,0 +1,90 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables
+  (list
+    (semanticdb-table "NotiTwitter.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [22 31])
+            ("tweepy" include nil nil [32 45])
+            ("pynotify" include nil nil [46 61])
+            ("gtk" include nil nil [62 72])
+            ("multiprocessing" include nil nil [73 108])
+            ("testValue" variable nil nil [111 124])
+            ("StreamListener" type
+               (:superclasses ("tweepy.StreamListener")
+                :members 
+                  ( ("on_status" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [189 193])
+                            ("tweet" variable nil (reparse-symbol function_parameters) [195 200]))                          )
+                        (reparse-symbol indented_block_body) [175 378])
+                    ("on_error" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [412 416])
+                            ("status_code" variable nil (reparse-symbol function_parameters) [418 429]))                          )
+                        (reparse-symbol indented_block_body) [399 497]))                  
+                :type "class")
+                nil [126 497])
+            ("NotiTwitter" type
+               (:superclasses ("tweepy.StreamListener")
+                :members 
+                  ( ("zamknijsie" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [563 567])
+                            ("event" variable nil (reparse-symbol function_parameters) [569 574])
+                            ("data" variable nil (reparse-symbol function_parameters) [576 580]))                          )
+                        (reparse-symbol indented_block_body) [548 635])
+                    ("delete_event" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [666 670])
+                            ("widget" variable nil (reparse-symbol function_parameters) [672 678])
+                            ("event" variable nil (reparse-symbol function_parameters) [680 685])
+                            ("data" variable nil (reparse-symbol function_parameters) [687 691]))                          )
+                        (reparse-symbol indented_block_body) [649 789])
+                    ("right_click_event" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [820 824])
+                            ("icon" variable nil (reparse-symbol function_parameters) [826 830])
+                            ("button" variable nil (reparse-symbol function_parameters) [832 838])
+                            ("time" variable nil (reparse-symbol function_parameters) [840 844]))                          )
+                        (reparse-symbol indented_block_body) [798 1102])
+                    ("destroy" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1119 1123])
+                            ("widget" variable nil (reparse-symbol function_parameters) [1125 1131])
+                            ("data" variable nil (reparse-symbol function_parameters) [1133 1137]))                          )
+                        (reparse-symbol indented_block_body) [1107 1238])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1271 1305])
+                            ("self" code nil (reparse-symbol indented_block_body) [1314 1381])
+                            ("self" code nil (reparse-symbol indented_block_body) [1390 1451]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1256 1260]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1243 1452])
+                    ("main" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1468 1472]))                          )
+                        (reparse-symbol indented_block_body) [1459 1494]))                  
+                :type "class")
+                nil [502 1494])
+            ("if" code nil nil [1499 2156]))          
+      :file "NotiTwitter.py"
+      :pointmax 2231
+      :fsize 2230
+      :lastmodtime '(21232 52677)
+      :unmatched-syntax nil))
+  :file "!sudo:root@v3.home:!usr!local!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

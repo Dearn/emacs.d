@@ -1,0 +1,8 @@
+/sudo:root@gtx770.home:/etc/fstab
+#_asudo_broot@gtx770.home_b_aetc_afstab#
+/sudo:root@gtx770.home:/etc/X11/xorg.conf.d/01-nvidia.conf
+#_asudo_broot@gtx770.home_b_aetc_aX11_axorg.conf.d_a01-nvidia.conf#
+/home/dearn/Documents/cpp/Grafika/4/src/scena.cpp
+/home/dearn/Documents/cpp/Grafika/4/src/#scena.cpp#
+/home/dearn/Documents/cpp/Grafika/3/makefile
+/home/dearn/Documents/cpp/Grafika/3/#makefile#
